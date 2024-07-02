@@ -753,6 +753,18 @@ header a:hover{
     background: conic-gradient(#FBB343 66.9%, transparent 66.9% 67.9%, #575757 67.9% 99%, transparent 99% 100%);
 }
 
+#portfolio_html{
+    background: conic-gradient(#1574BC 39.1%, transparent 39.1% 40.1%, #575757 40.1% 99%, transparent 99% 100%);
+}
+
+#portfolio_css{
+    background: conic-gradient(#F35C2B 27.1%, transparent 27.1% 28.1%, #575757 28.1% 99%, transparent 99% 100%);
+}
+
+#portfolio_js{
+    background: conic-gradient(#FBB343 33.8%, transparent 33.8% 34.8%, #575757 34.8% 99%, transparent 99% 100%);
+}
+
 /*          THEMES MENU CACHES     */
 
 #spinning_vinyl{
