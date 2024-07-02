@@ -12,31 +12,14 @@ function scrollFunction() {
     
   }
 
+  document.getElementById("html").style.width= "100%";
+  document.getElementById("sql").style.width= "75%";
+  document.getElementById("javascript").style.width= "85%";
+  document.getElementById("php").style.width= "50%";
 
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    
-    document.getElementById("html").style.width= "100%";
-    document.getElementById("sql").style.width= "75%";
-    document.getElementById("javascript").style.width= "85%";
-    document.getElementById("php").style.width= "50%";
-
-    document.getElementById("photoshop").style.width= "90%";
-    document.getElementById("figma").style.width= "90%";
-    document.getElementById("illustrator").style.width= "75%";
-
-  } else {
-
-    document.getElementById("html").style.width= "0%";
-    document.getElementById("sql").style.width= "0%";
-    document.getElementById("javascript").style.width= "0%";
-    document.getElementById("php").style.width= "0%";
-
-    document.getElementById("figma").style.width= "0%";
-    document.getElementById("photoshop").style.width= "0%";
-    document.getElementById("illustrator").style.width= "0%";
-
-  }
-
+  document.getElementById("photoshop").style.width= "90%";
+  document.getElementById("figma").style.width= "90%";
+  document.getElementById("illustrator").style.width= "75%";
 }
 
 function copier_telephone() {

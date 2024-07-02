@@ -184,11 +184,17 @@ header a:hover{
 
 #projets_dts{
     transition: ease 1s;
-    align-items: center;
+}
+
+#projets_dts_dt{
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
+#projet_box_limit{
+    margin-bottom: 20px;
+}
 .projet_box{
     background-color: #4E4E4E;
     border: none;
@@ -203,7 +209,29 @@ header a:hover{
 .projet_box:hover{
     box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.65);
     transition: 250ms;
-    transform: scale(1.05);
+    transform: scale(1.04);
+}
+
+#projet_box_langages{
+    display: flex;
+    align-items: baseline;
+    margin-left: 15px;
+}
+
+#projet_box_langages a{
+    margin-left: 5px;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-weight: 500;
+    align-items: baseline;
+    color: #ffffff;
+}
+
+#langages_rond{
+    height: 10px;
+    width: 10px;
+    border-radius: 90%;
+    margin-left: 10px;
 }
 
 .voir_projet{
@@ -1152,40 +1180,6 @@ header a:hover{
 
 #contact_copier img{
     margin-left: 5px;
-}
-
-/*          PIED DE LA PAGE        */
-
-footer {
-    align-items: center;
-    background-color: #3c3c3c;
-    display: flex;
-    height: auto;
-    justify-content: center;
-    padding: 25px;
-    width: auto;
-}
-
-footer img{
-    position: absolute;
-    transform: translateX(-100vh);
-}
-
-#merci {
-    display: flex;
-    justify-content: center;
-}
-
-#merci_grp {
-    margin: 0 5px;
-    list-style: none;
-    display: flex;
-}
-
-#merci_lettre {
-    color: white;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
 }
 
 @media(max-width: 1111px){
