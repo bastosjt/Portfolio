@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<head>
+    <title>Portfolio - Bastien JAMET</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="Icones/B_black.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body id="body_scroll">
+    <div id="menu"></div>
+    <div id="projets_menu_cache">
+        <div id="projet_menu_fond"></div>
+        <div id="menu_de_vinyles" class="projet_menu">
+            <div class="projet_menu_head">
+                <div class="projet_menu_titre">
+                    <img src="Icones/vinyle.svg" id="spinning_vinyl" width="25%">
+                    <h1>De Vinyles</h1>
+                </div>
+                <div class="scroll_down" id="scroll_down_1">
+                    <div class="scroll_down_arrows">
+                        <img id="arrow_1" src="Icones/arrow.svg" width="1.25%" style="transform: translateY(-7.5px);">
+                        <img id="arrow_2" src="Icones/arrow.svg" width="1.25%">
+                        <img id="arrow_3" src="Icones/arrow.svg" width="1.25%" style="transform: translateY(7.5px);">
+                    </div>
+                    <p style="padding: 10px;">Défiler vers le bas</p>
+                </div>
+                <button class="projet_menu_bouton" onclick="fermer_menu_de_vinyles()">Fermer</button>
+            </div>
+            <div class="projet_menu_images">
+                <div class="projet_menu_main_image" id="de_vinyles_main_image"></div>
+                <div class="projet_menu_mini_images">
+                    <img onclick="mettre_image_1_de_vinyles()" src="Images/De_vinyles_1.png" id="image_1_de_vinyles">
+                    <img onclick="mettre_image_2_de_vinyles()" src="Images/De_vinyles_2.png" id="image_2_de_vinyles">
+                    <img onclick="mettre_image_3_de_vinyles()" src="Images/De_vinyles_3.png" id="image_3_de_vinyles">
+                    <img onclick="mettre_image_4_de_vinyles()" src="Images/De_vinyles_4.png" id="image_4_de_vinyles">
+                    <img onclick="mettre_image_5_de_vinyles()" src="Images/De_vinyles_5.png" id="image_5_de_vinyles">
+                </div>
+            </div>
+            <div class="projet_menu_description">
+                <p>
+                    <span class="span_projet_bleu">De Vinyles</span> est mon premier projet final dans le cadre scolaire, réalisant un site web de choix interactif et animé contenant 4 pages différentes : la page d'accueil, la boutique, à propos et se connecter.  
+                </p>
+                <p>
+                    Site web d'une entreprise fictive permettant la gestion du service vente et clients des disques vinyles, contenant beaucoup d'images, des images animés en .gif, des vidéos en fond et des animations du type <span class="span_projet_orange">:hover</span> et <span class="span_projet_orange">:focus</span> ou encore <span class="span_projet_orange">@keyframes</span> sur les boutons, textes et images ainsi que le logo <span class="span_projet_bleu">De Vinyles</span> qui a été créé par moi-même.
+                </p>
+                <p>
+                    Ce projet final possède uniquement le fonctionnement <span class="span_projet_bleu">frontend</span>, la page de connexion n'est pas fonctionnelle. Entièrement <span class="span_projet_vert">animé</span> et <span class="span_projet_vert">interactif</span> grâce à des boutons et des menus en haut et dans la page permettant de retrouver facilement les éléments attendus et les informations utiles concernant le service client. 
+                </p>
+                <div class="view_project">
+                    <button onclick="ouvrir_fermer_view_project()" class="view_project_titre">
+                        <div class="view_project_titre_details">
+                            <div class="view_project_titre_fleches">
+                                <img src="Icones/arrow.svg" class="view_project_arrow_1" id="view_project_arrows">
+                                <img src="Icones/arrow.svg" class="view_project_arrow_2" id="view_project_arrows">
+                            </div>
+                            <h1 id="view_project_titre_h1">Voir le projet</h1>
+                            <div class="view_project_titre_fleches">
+                                <img src="Icones/arrow.svg" class="view_project_arrow_3" id="view_project_arrows">
+                                <img src="Icones/arrow.svg" class="view_project_arrow_4" id="view_project_arrows">
+                            </div>
+                        </div>
+                    </button>
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FqkA8rlELkQqzCuMI75jVUr%2FDe-Vinyles%3Ftype%3Ddesign%26node-id%3D1001-2%26t%3DbIg5LCrR0T72UDyi-1%26scaling%3Dcontain%26page-id%3D0%253A1%26mode%3Ddesign" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="projet_menu_bottom" id="fond_pattern_1">
+                <div class="infos_projet">
+                    <h1>Ce projet est réalisé en :</h1>
+                    <div class="projet_chart_pie">
+                        <div class="projet_chart_pie_box">
+                            <h1 style="color: #1574BC;">HTML</h1>
+                            <div class="chart_pie_box">
+                                <div class="chart_pie_outter" id="de_vinyles_html"></div>
+                                <div class="chart_pie_inner">
+                                    <a>38.8%</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projet_chart_pie_box">
+                            <h1 style="color: #F35C2B;">CSS</h1>
+                            <div class="chart_pie_box">
+                                <div class="chart_pie_outter" id="de_vinyles_css"></div>
+                                <div class="chart_pie_inner">
+                                    <a>61.2%</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="total_chart_pie">*Calculé par le nombre de ligne total par langages</h2>
+                </div>
+            </div>
+        </div>
+        <div id="menu_snakey" class="projet_menu">
+            <div class="projet_menu_head">
+                <div class="projet_menu_titre">
+                    <img src="Icones/snakey.svg" width="25%">
+                    <h1>Snakey</h1>
+                </div>
+                <div class="scroll_down" id="scroll_down_2">
+                    <div class="scroll_down_arrows">
+                        <img id="arrow_1" src="Icones/arrow.svg" width="1.25%" style="transform: translateY(-7.5px);">
+                        <img id="arrow_2" src="Icones/arrow.svg" width="1.25%">
+                        <img id="arrow_3" src="Icones/arrow.svg" width="1.25%" style="transform: translateY(7.5px);">
+                    </div>
+                    <p style="padding: 10px;">Défiler vers le bas</p>
+                </div>
+                <button class="projet_menu_bouton" onclick="fermer_menu_snakey()">Fermer</button>
+            </div>
+            <div class="projet_menu_images">
+                <div class="projet_menu_main_image" id="snakey_main_image"></div>
+                <div class="projet_menu_mini_images">
+                    <img onclick="mettre_image_1_snakey()" src="Images/Snakey_1.png" id="image_1_snakey">
+                    <img onclick="mettre_image_2_snakey()" src="Images/Snakey_2.png" id="image_2_snakey">
+                    <img onclick="mettre_image_3_snakey()" src="Images/Snakey_3.png" id="image_3_snakey">
+                    <img onclick="mettre_image_4_snakey()" src="Images/Snakey_4.png" id="image_4_snakey">
+                    <img onclick="mettre_image_5_snakey()" src="Images/Snakey_5.png" id="image_5_snakey">
+                </div>
+            </div>
+            <div class="projet_menu_description">
+                <p>
+                    <span class="span_projet_bleu">Snakey</span> est un autre projet final de groupe que j'ai réalisé avec un camarde de classe lors de mon échange universitaire à l'étranger (en Lettonie).  
+                </p>
+                <p>
+                    Inspiré du jeu original <span class="span_projet_bleu">Snake</span> populaire des années 2000, ce site web est recréation du jeu de serpent qui est majoritairement codé en Javascript.
+                    L'objectif de ce projet était de créer un jeu sous forme de logiciel offrant à la fois un visuel attrayant et des bonnes performances de gameplay.
+                </p>
+                <p>
+                    Entièrement <span class="span_projet_vert">animé</span> et <span class="span_projet_vert">interactif</span>, ce projet est en grande partie en <span class="span_projet_bleu">back-end</span> afin de s'assurer sur la fluidité du jeu permettant de le faire fonctionner sans aucun bug sur n'importe quel navigateur web.
+                    Le site web offre un visuel moderne du jeu original avec une possibilité de changer de thèmes et de pouvoir jouer en mode sombre grâce à des boutons se trouvant en dessous du jeu. 
+                </p>
+                <div class="view_project">
+                    <button onclick="ouvrir_projet_snakey()" class="view_project_titre">
+                        <div class="view_project_titre_details">
+                            <div class="view_project_titre_fleches">
+                                <img src="Icones/arrow.svg" class="view_project_arrow_1" id="view_project_arrows">
+                                <img src="Icones/arrow.svg" class="view_project_arrow_2" id="view_project_arrows">
+                            </div>
+                            <h1 id="view_project_titre_h1">jouer au jeu</h1>
+                            <div class="view_project_titre_fleches">
+                                <img src="Icones/arrow.svg" class="view_project_arrow_3" id="view_project_arrows">
+                                <img src="Icones/arrow.svg" class="view_project_arrow_4" id="view_project_arrows">
+                            </div>
+                        </div>
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="projet_menu_bottom" id="fond_pattern_1">
+                <div class="infos_projet">
+                    <h1>Ce projet est réalisé en :</h1>
+                    <div class="projet_chart_pie">
+                        <div class="projet_chart_pie_box">
+                            <h1 style="color: #1574BC;">HTML</h1>
+                            <div class="chart_pie_box">
+                                <div class="chart_pie_outter" id="snakey_html"></div>
+                                <div class="chart_pie_inner">
+                                    <a>21.2%</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projet_chart_pie_box">
+                            <h1 style="color: #F35C2B;">CSS</h1>
+                            <div class="chart_pie_box">
+                                <div class="chart_pie_outter" id="snakey_css"></div>
+                                <div class="chart_pie_inner">
+                                    <a>11.9%</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projet_chart_pie_box">
+                            <h1 style="color: #FBB343;">Javascript</h1>
+                            <div class="chart_pie_box">
+                                <div class="chart_pie_outter" id="snakey_js"></div>
+                                <div class="chart_pie_inner">
+                                    <a>66.9%</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="total_chart_pie">*Calculé par le nombre de ligne total par langages</h2>
+                </div>
+            </div>
+        </div>
+        <div id="menu_portfolio" class="projet_menu">
+            <div class="projet_menu_head">
+                <div class="projet_menu_titre">
+                    <img src="Icones/B.svg" width="25%">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="scroll_down" id="scroll_down_3">
+                    <div class="scroll_down_arrows">
+                        <img id="arrow_1" src="Icones/arrow.svg" width="1.25%" style="transform: translateY(-7.5px);">
+                        <img id="arrow_2" src="Icones/arrow.svg" width="1.25%">
+                        <img id="arrow_3" src="Icones/arrow.svg" width="1.25%" style="transform: translateY(7.5px);">
+                    </div>
+                    <p style="padding: 10px;">Défiler vers le bas</p>
+                </div>
+                <button class="projet_menu_bouton" onclick="fermer_menu_portfolio()">Fermer</button>
+            </div>
+            <div class="projet_menu_images">
+                <div class="projet_menu_main_image" id="portfolio_main_image"></div>
+                <div class="projet_menu_mini_images">
+                    <img onclick="mettre_image_1_portfolio()" src="Images/Portfolio_1.png" id="image_1_portfolio">
+                    <img onclick="mettre_image_2_portfolio()" src="Images/Portfolio_2.png" id="image_2_portfolio">
+                    <img onclick="mettre_image_3_portfolio()" src="Images/Portfolio_3.png" id="image_3_portfolio">
+                    <img onclick="mettre_image_4_portfolio()" src="Images/Portfolio_4.png" id="image_4_portfolio">
+                    <img onclick="mettre_image_5_portfolio()" src="Images/Portfolio_5.png" id="image_5_portfolio">
+                </div>
+            </div>
+            <div class="projet_menu_description">
+                <p>
+                    <span class="span_projet_bleu">De Vinyles</span> est mon premier projet final dans le cadre scolaire, réalisant un site web de choix interactif et animé contenant 4 pages différentes ; la page d'accueil, la boutique, à propos et se connecter.  
+                </p>
+                <p>
+                    Site web d'une entreprise fictive permettant la gestion du service vente et clients des disques vinyles, contenant beaucoup d'images, des images animés en .gif, des vidéos en fond et des animations du type <span class="span_projet_orange">:hover</span> et <span class="span_projet_orange">:focus</span> ou encore <span class="span_projet_orange">@keyframes</span> sur les boutons, textes et images ainsi que le logo <span class="span_projet_bleu">De Vinyles</span> qui a été créé par moi-même.
+                </p>
+                <p>
+                    Ce projet final possède uniquement le fonctionnement <span class="span_projet_bleu">frontend</span>, la page de connexion n'est pas fonctionnelle. Entièrement <span class="span_projet_vert">animé</span> et <span class="span_projet_vert">interactif</span> grâce à des boutons et des menus en haut et dans la page permettant de retrouver facilement les éléments attendus et les informations utiles concernant le service client. 
+                </p>
+            </div>
+            <div class="projet_menu_bottom" id="fond_pattern_1">
+                <div class="infos_projet">
+                    <h1>Ce projet est réalisé en :</h1>
+                    <div class="projet_chart_pie">
+                        <div class="projet_chart_pie_box">
+                            <h1 style="color: #1574BC;">HTML</h1>
+                            <div class="chart_pie_box">
+                                <div class="chart_pie_outter" id="snakey_html"></div>
+                                <div class="chart_pie_inner">
+                                    <a>17.8%</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projet_chart_pie_box">
+                            <h1 style="color: #F35C2B;">CSS</h1>
+                            <div class="chart_pie_box">
+                                <div class="chart_pie_outter" id="snakey_css"></div>
+                                <div class="chart_pie_inner">
+                                    <a>31.8%</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projet_chart_pie_box">
+                            <h1 style="color: #FBB343;">Javascript</h1>
+                            <div class="chart_pie_box">
+                                <div class="chart_pie_outter" id="snakey_js"></div>
+                                <div class="chart_pie_inner">
+                                    <a>50.4%</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="total_chart_pie">*Calculé par le nombre de ligne total par langages</h2>
+                </div>
+            </div>
+        </div>
+        <div id="menu_plantaa" class="projet_menu">
+            <div class="projet_menu_head">
+                <div class="projet_menu_titre">
+                    <img src="Icones/Plantaa.svg" width="25%">
+                    <h1>Plantaa</h1>
+                </div>
+                <div class="scroll_down" id="scroll_down_4">
+                    <div class="scroll_down_arrows">
+                        <img id="arrow_1" src="Icones/arrow.svg" width="1.25%" style="transform: translateY(-7.5px);">
+                        <img id="arrow_2" src="Icones/arrow.svg" width="1.25%">
+                        <img id="arrow_3" src="Icones/arrow.svg" width="1.25%" style="transform: translateY(7.5px);">
+                    </div>
+                    <p style="padding: 10px;">Défiler vers le bas</p>
+                </div>
+                <button class="projet_menu_bouton" onclick="fermer_menu_plantaa()">Fermer</button>
+            </div>
+            <div class="projet_menu_images">
+                <div class="projet_menu_main_image" id="plantaa_main_image"></div>
+                <div class="projet_menu_mini_images">
+                    <img onclick="mettre_image_1_plantaa()" src="Images/Plantaa_1.png" id="image_1_plantaa">
+                    <img onclick="mettre_image_2_plantaa()" src="Images/Plantaa_2.png" id="image_2_plantaa">
+                    <img onclick="mettre_image_3_plantaa()" src="Images/Plantaa_3.png" id="image_3_plantaa">
+                    <img onclick="mettre_image_4_plantaa()" src="Images/Plantaa_4.png" id="image_4_plantaa">
+                    <img onclick="mettre_image_5_plantaa()" src="Images/Plantaa_5.png" id="image_5_plantaa">
+                </div>
+            </div>
+            <div class="projet_menu_description">
+                <p>
+                    <span class="span_projet_bleu">De Vinyles</span> est mon premier projet final dans le cadre scolaire, réalisant un site web de choix interactif et animé contenant 4 pages différentes ; la page d'accueil, la boutique, à propos et se connecter.  
+                </p>
+                <p>
+                    Site web d'une entreprise fictive permettant la gestion du service vente et clients des disques vinyles, contenant beaucoup d'images, des images animés en .gif, des vidéos en fond et des animations du type <span class="span_projet_orange">:hover</span> et <span class="span_projet_orange">:focus</span> ou encore <span class="span_projet_orange">@keyframes</span> sur les boutons, textes et images ainsi que le logo <span class="span_projet_bleu">De Vinyles</span> qui a été créé par moi-même.
+                </p>
+                <p>
+                    Ce projet final possède uniquement le fonctionnement <span class="span_projet_bleu">frontend</span>, la page de connexion n'est pas fonctionnelle. Entièrement <span class="span_projet_vert">animé</span> et <span class="span_projet_vert">interactif</span> grâce à des boutons et des menus en haut et dans la page permettant de retrouver facilement les éléments attendus et les informations utiles concernant le service client. 
+                </p>
+                <div class="view_project">
+                    <button onclick="ouvrir_fermer_view_project()" class="view_project_titre">
+                        <div class="view_project_titre_details">
+                            <div class="view_project_titre_fleches">
+                                <img src="Icones/arrow.svg" class="view_project_arrow_1" id="view_project_arrows">
+                                <img src="Icones/arrow.svg" class="view_project_arrow_2" id="view_project_arrows">
+                            </div>
+                            <h1 id="view_project_titre_h1">Voir le projet</h1>
+                            <div class="view_project_titre_fleches">
+                                <img src="Icones/arrow.svg" class="view_project_arrow_3" id="view_project_arrows">
+                                <img src="Icones/arrow.svg" class="view_project_arrow_4" id="view_project_arrows">
+                            </div>
+                        </div>
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="projet_menu_bottom" id="fond_pattern_1">
+                <div class="infos_projet">
+                    <h1>Ce projet est réalisé en :</h1>
+                    <div class="projet_chart_pie">
+                        <div class="projet_chart_pie_box">
+                            <h1 style="color: #1574BC;">HTML</h1>
+                            <div class="chart_pie_box">
+                                <div class="chart_pie_outter" id="snakey_html"></div>
+                                <div class="chart_pie_inner">
+                                    <a>17.8%</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projet_chart_pie_box">
+                            <h1 style="color: #F35C2B;">CSS</h1>
+                            <div class="chart_pie_box">
+                                <div class="chart_pie_outter" id="snakey_css"></div>
+                                <div class="chart_pie_inner">
+                                    <a>31.8%</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projet_chart_pie_box">
+                            <h1 style="color: #FBB343;">Javascript</h1>
+                            <div class="chart_pie_box">
+                                <div class="chart_pie_outter" id="snakey_js"></div>
+                                <div class="chart_pie_inner">
+                                    <a>50.4%</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="total_chart_pie">*Calculé par le nombre de ligne total par langages</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <ul id="header_text">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#projets_titre">Portfolio</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <div id="bienvenue">
+        <div id="bienvenue_box">
+            <h1 id="bienvenue_anim">Bienvenue sur mon portfolio</h1>
+        </div>
+        <div id="bienvenue_dts">
+            <h2>Bastien JAMET</h2>
+            <div id="bienvenue_ligne"></div>
+            <p> Etudiant en deuxième année BIN à l'ESILV</p>
+        </div>
+    </div>
+    <div class="projets" id="fond_pattern_1">
+        <div id="projets_titre">
+            <div id="projets_titre_ligne"></div>
+            <p>Les projets sur lesquels j'ai travaillé</p>
+            <div id="projets_titre_ligne"></div>
+        </div>
+        <div id="projets_dts">
+            <div id="projets_dts_dt">
+                <button class="projet_box" onclick="ouvrir_menu_de_vinyles()">
+                    <div id="devinyles">
+                        <div class="voir_projet">
+                            <img src="Icones/Polygon 2.svg" class="voir_projet_poly">
+                            <h2>Voir le projet</h2>
+                        </div>
+                    </div>
+                    <div id="projet_nom">
+                        <img src="Icones/Polygon 1.svg" class="projet_nom_poly">
+                        <h1>De Vinyles</h1>
+                        <div class="projet_nom_ligne"></div>
+                        <p>Magasin et service fictif de vinyles</p>
+                    </div>
+                </button>
+                <button class="projet_box" onclick="ouvrir_menu_snakey()">
+                    <div id="snakey">
+                        <div class="voir_projet">
+                            <img src="Icones/Polygon 2.svg" class="voir_projet_poly">
+                            <h2>Voir le projet</h2>
+                        </div>
+                    </div>
+                    <div id="projet_nom">
+                        <img src="Icones/Polygon 1.svg" class="projet_nom_poly">
+                        <h1>Snakey</h1>
+                        <div class="projet_nom_ligne"></div>
+                        <p>Jeu de serpent</p>
+                    </div>
+                </button>
+                <button class="projet_box" onclick="ouvrir_menu_portfolio()">
+                    <div id="portfolio">
+                        <div class="voir_projet">
+                            <img src="Icones/Polygon 2.svg" class="voir_projet_poly">
+                            <h2>Voir le projet</h2>
+                        </div>
+                    </div>
+                    <div id="projet_nom">
+                        <img src="Icones/Polygon 1.svg" class="projet_nom_poly">
+                        <h1>Portofolio</h1>
+                        <div class="projet_nom_ligne"></div>
+                        <p>Vous êtes actuellement sur le site ;)</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="competences"></div>
+    <div id="competences_titre">
+        <h2>Mes Compétences</h2>
+        <div id="competences_titre_det">
+            <p>Elles évoluent progressivement</p>
+            <div id="competences_titre_chargement">
+                <img src="Icones/chargement-polygon1.svg" id="chargement_poly_1">
+                <img src="Icones/chargement-polygon2.svg" id="chargement_poly_2">
+                <img src="Icones/chargement-polygon3.svg" id="chargement_poly_3">
+                <img src="Icones/chargement-polygon4.svg" id="chargement_poly_4">
+            </div>
+        </div>
+    </div>
+    <div id="fond_competences_contact">
+        <div id="competences_main">
+            <div id="competences_det">
+                <div id="competences_box">
+                    <p>Compétences en développement</p>
+                    <div id="competences_box_mini">
+                        <div id="html" class="pourcentage">
+                            <h1>HTML - CSS</h1>
+                        </div>
+                    </div>
+                    <div id="competences_box_mini">
+                        <div id="javascript" class="pourcentage">
+                            <h1>Javascript</h1>
+                        </div>
+                    </div>
+                    <div id="competences_box_mini">
+                        <div id="sql" class="pourcentage">
+                            <h1>SQL</h1>
+                        </div>
+                    </div>
+                    <div id="competences_box_mini">
+                        <div id="php" class="pourcentage">
+                            <h1>PHP</h1>
+                        </div>
+                    </div>
+                </div>
+                <div id="competences_box">
+                    <p>Compétences en conception graphique</p>
+                    <div id="competences_box_mini">
+                        <div id="photoshop" class="pourcentage">
+                            <h1>Photoshop</h1>
+                        </div>
+                    </div>
+                    <div id="competences_box_mini">
+                        <div id="figma" class="pourcentage">
+                            <h1>Figma</h1>
+                        </div>
+                    </div>
+                    <div id="competences_box_mini">
+                        <div id="illustrator" class="pourcentage">
+                            <h1>Adobre Illustrator</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="diviseur_competences_contact"></div>
+        <div id="contact">
+            <h2>Contactez-<span>m</span><span>o</span><span>i</span></h2>
+            <div id="contact_box">
+                <div id="contact_box_dts">
+                    <div id="contact_box_mini">
+                        <img src="Icones/telephone.svg" width="50px">
+                        <div id="contact_box_mini_dts">
+                            <h1>Téléphone</h1>
+                            <p>06 43 30 94 52</p>
+                        </div>
+                    </div>
+                    <button id="button_style_1" onclick="copier_telephone()">Copier <img src="Icones/copier.svg" height="20px"></button>
+                </div>
+                <div id="contact_box_dts">
+                    <div id="contact_box_mini">
+                        <img src="Icones/mail.svg" width="50px">
+                        <div id="contact_box_mini_dts">
+                            <h1>Mail</h1>
+                            <p>Bastien.jamet92@gmail.com</p>
+                        </div>
+                    </div>
+                    <button id="button_style_1" onclick="copier_mail()">Copier <img src="Icones/copier.svg" height="20px"></button>
+                </div>
+            </div>
+            <div id="contact_box">
+                <div id="contact_box_dts">
+                    <div id="contact_box_mini">
+                        <img src="Icones/linkedin.svg" width="50px">
+                        <div id="contact_box_mini_dts">
+                            <h1>LinkedIn</h1>
+                            <p>Mon profil LinkedIn</p>
+                        </div>
+                    </div>
+                    <button id="button_style_1" onclick="ouvrir_likedin()">Voir <img src="Icones/voir.svg" height="20px"></button>
+                </div>
+                <div id="contact_box_dts">
+                    <div id="contact_box_mini">
+                        <img src="Icones/localisation.svg" width="50px">
+                        <div id="contact_box_mini_dts">
+                            <h1>Localisation</h1>
+                            <p>92500 Rueil-Malmaison</p>
+                        </div>
+                    </div>
+                    <button id="button_style_1" onclick="ouvrir_localisation()">Voir <img src="Icones/voir.svg" height="20px"></button>
+                </div>
+            </div>
+            <div id="contact_copier">
+                <a>Copié dans le presse papier</a>
+                <img src="Icones/fleche.png" height="20px">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="merci">
+            <ul id="merci_grp">
+                <li><a id="merci_lettre">M</a></li>
+                <li><a id="merci_lettre">e</a></li>
+                <li><a id="merci_lettre">r</a></li>
+                <li><a id="merci_lettre">c</a></li>
+                <li><a id="merci_lettre">i</a></li>
+            </ul>
+            <ul id="merci_grp">
+                <li><a id="merci_lettre">d</a></li>
+                <li><a id="merci_lettre">e</a></li>
+            </ul>
+            <ul id="merci_grp">
+                <li><a id="merci_lettre">v</a></li>
+                <li><a id="merci_lettre">o</a></li>
+                <li><a id="merci_lettre">t</a></li>
+                <li><a id="merci_lettre">r</a></li>
+                <li><a id="merci_lettre">e</a></li>
+            </ul>
+            <ul id="merci_grp">
+                <li><a id="merci_lettre">v</a></li>
+                <li><a id="merci_lettre">i</a></li>
+                <li><a id="merci_lettre">s</a></li>
+                <li><a id="merci_lettre">i</a></li>
+                <li><a id="merci_lettre">t</a></li>
+                <li><a id="merci_lettre">e</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
