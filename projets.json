@@ -1,0 +1,113 @@
+[
+    {
+      "id": "de_vinyles",
+      "title": "De Vinyles",
+      "description": "Magasin et service fictif de vinyles",
+      "languages": ["HTML", "CSS"],
+      "languages_pourcentage": ["38.8", "61.2"],
+      "languages_pourcentage_couleur": ["#1574BC", "#F35C2B"],
+      "tags": ["front-end", "UX-UI", "html", "css", "figma"],
+      "icone": ["Icones/vinyle.svg"],
+      "couverture": ["Images/De_vinyles.png"],
+      "images": [
+        "Images/De_vinyles_1.png",
+        "Images/De_vinyles_2.png",
+        "Images/De_vinyles_3.png",
+        "Images/De_vinyles_4.png",
+        "Images/De_vinyles_5.png"
+      ],
+      "description_det": [
+        "Mon premier projet final dans le cadre scolaire, De Vinyles qui est un site web interactif conçu pour une entreprise fictive de vente de disques vinyles. Le site contient quatre pages principales : une page d'accueil immersive, une boutique interactive, une page 'À propos' et une interface de connexion.",
+        "Ce projet met en valeur plusieurs compétences en développement web, notamment l’utilisation avancée de CSS pour intégrer des images, des gifs, des vidéos en arrière-plan et des animations. J'ai également conçu le logo de l'entreprise pour renforcer l'identité visuelle.",
+        "L’objectif était de proposer une expérience utilisateur dynamique et visuellement attrayante, tout en gérant efficacement les informations liées au service de vente et de gestion client. Ce projet m'a permis d'explorer des techniques de design web et de développer ma créativité."
+      ],
+      "Link":["https://www.figma.com/proto/qkA8rlELkQqzCuMI75jVUr/De-Vinyles?node-id=1001-2&p=f&t=Yk6ppiZWalTZTG7K-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1001%3A2"],
+      "Code":[""]
+    },
+    {
+      "id": "snakey",
+      "title": "Snakey",
+      "description": "Jeu de serpent",
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "languages_pourcentage": ["21.2", "11.9", "66.9"],
+      "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
+      "tags": ["front-end", "back-end", "UX-UI", "html", "css", "javascript"],
+      "icone": ["Icones/snakey.svg"],
+      "couverture": ["Images/Snakey.png"],
+      "images": [
+        "Images/Snakey_1.png",
+        "Images/Snakey_2.png",
+        "Images/Snakey_3.png",
+        "Images/Snakey_4.png",
+        "Images/Snakey_5.png"
+      ],
+      "description_det": [
+        "Snakey est un autre projet final de groupe que j'ai réalisé avec un camarde de classe lors de mon échange universitaire à l'étranger (en Lettonie).",
+        "Inspiré du jeu original Snake populaire des années 2000, ce site web est recréation du jeu de serpent qui est majoritairement codé en Javascript. L'objectif de ce projet était de créer un jeu sous forme de logiciel offrant à la fois un visuel attrayant et des bonnes performances de gameplay.",
+        "Entièrement animé et interactif, ce projet est en grande partie en back-end afin de s'assurer sur la fluidité du jeu permettant de le faire fonctionner sans aucun bug sur n'importe quel navigateur web. Le site web offre un visuel moderne du jeu original avec une possibilité de changer de thèmes et de pouvoir jouer en mode sombre grâce à des boutons se trouvant en dessous du jeu."
+      ],
+      "Link":["https://carlos75clc.github.io/DIP392-BCH92/snake.html"],
+      "Code":["https://github.com/Carlos75clc/DIP392-BCH92"]
+    },
+    {
+      "id": "portfolio",
+      "title": "Portfolio",
+      "description": "Vous êtes actuellement sur le site ;)",
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "languages_pourcentage": ["100", "100", "100"],
+      "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
+      "tags": ["front-end", "back-end", "UX-UI", "html", "css", "javascript", "responsive"],
+      "icone": ["Icones/B.svg"],
+      "couverture": ["Images/Portfolio.png"],
+      "images": [
+        "Images/Portfolio_1.png",
+        "Images/Portfolio_2.png"
+      ],
+      "description_det": [""],
+      "Link":[""],
+      "Code":["https://github.com/bastosjt/Portfolio"]
+    },
+    {
+        "id": "serveur_c2",
+        "title": "Serveur C2 custom",
+        "description": "Gestion des systèmes connectés",
+        "languages": ["Python"],
+        "languages_pourcentage": ["100"],
+        "languages_pourcentage_couleur": ["#1574BC"],
+        "tags": [""],
+        "icone": ["Icones/B.svg"],
+        "couverture": ["Images/De_vinyles.png"],
+        "images": [
+          "Images/De_vinyles_1.png",
+          "Images/De_vinyles_2.png",
+          "Images/De_vinyles_3.png",
+          "Images/De_vinyles_4.png",
+          "Images/De_vinyles_5.png"
+        ],
+        "description_det": [""],
+        "Link":[""],
+        "Code":[""]
+    },
+    {
+        "id": "kubernetes",
+        "title": "Kubernetes",
+        "description": "App web sur un cluster Kubernetes",
+        "languages": ["HTML", "Javascript", "YAML", "Dockerfile"],
+        "languages_pourcentage": ["100"],
+        "languages_pourcentage_couleur": ["#1574BC"],
+        "tags": [""],
+        "icone": ["Icones/B.svg"],
+        "couverture": ["Images/De_vinyles.png"],
+        "images": [
+          "Images/De_vinyles_1.png",
+          "Images/De_vinyles_2.png",
+          "Images/De_vinyles_3.png",
+          "Images/De_vinyles_4.png",
+          "Images/De_vinyles_5.png"
+        ],
+        "description_det": [""],
+        "Link":[""],
+        "Code":[""]
+    }
+  ]
+  
