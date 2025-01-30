@@ -15,10 +15,8 @@ fetch('projets.json')
       <div id="ligne"></div>
       <p>${projet.description}</p>
       <ul>
-        ${projet.languages.map(lang => `
-          <div class="lang_box" id="${lang.toLowerCase()}"></div>
-          <li>${lang}</li>
-        `).join('')}
+          <div class="lang_box" id="${projet.type}"></div>
+          <li>${projet.type}</li>
       </ul>
     </div>
   `).join('');
@@ -154,7 +152,7 @@ function showPopup(projet) {
   });
 }
 
-function ouvrir_likedin(){
+function ouvrir_linkedin(){
   window.open('https://www.linkedin.com/in/bastien-jamet/');
 }
 
