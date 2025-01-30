@@ -57,7 +57,7 @@
       "description": "Vous êtes actuellement sur le site ;)",
       "type": ["Développement-web"],
       "languages": ["HTML", "CSS", "Javascript"],
-      "languages_pourcentage": ["100", "100", "100"],
+      "languages_pourcentage": ["19.4", "59.3", "21.3"],
       "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
       "tags": ["Développement-web", "Front-end", "Back-end", "UX-UI", "HTML", "CSS", "JavaScript", "Responsive"],
       "icone": ["Icones/B.svg"],
