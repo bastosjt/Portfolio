@@ -130,8 +130,7 @@ header a:hover{
     display: flex;
 }
 
-#socials button, .view-projet, .view-code{
-    padding: 10px;
+#socials button, #socials a, .view-projet, .view-code{
     border-radius: 25px;
     border: #2AA4FE 2px solid;
     background-color: transparent;
@@ -143,9 +142,10 @@ header a:hover{
     align-items: center;
     justify-content: center;
     transition: 250ms;
+    text-decoration: none;
 }
 
-#socials button:hover, .view-projet:hover, .view-code:hover{
+#socials a:hover, #socials button:hover, .view-projet:hover, .view-code:hover{
     box-shadow: 0px 0px 15px 3px #2AA4FE;
     cursor: pointer;
     transition: 250ms;
@@ -155,7 +155,7 @@ header a:hover{
     width: 35px;
 }
 
-#socials button:first-child, .view-projet, .view-code{
+#socials a:first-child, .view-projet, .view-code{
     width: 175px;
     color: #222222;
     font-weight: 900;
@@ -281,33 +281,47 @@ header a:hover{
 
 /* LANGUAGES ET TAGS */
 
-#back-end{background-color: #6E5494;}
+#Back-end{background-color: #6E5494}
 
-#css{background-color: #F35C2B;}
+#C2{background-color: #800080}
 
-#dockerfile {background-color: #2496ED;}
+#CSS{background-color: #1574BC}
 
-#figma{background-color: #0ACF83;}
+#Cybersécurité{background-color: #0055A4}
 
-#front-end{background-color: #61DBFB;}
+#Développement-logiciel{background-color: #008080}
 
-#html{background-color: #1574BC}
+#Développement-web{background-color: #E34F26}
 
-#javascript{background-color: #FBB343;}
+#DevOps{background-color: #C9510C}
 
-#kubernetes {background-color: #326CE5;}
+#Dockerfile, #Docker{background-color: #2496ED}
 
-#minikube {background-color: #FFCC00;}
+#Figma{background-color: #0ACF83}
 
-#mysql {background-color: #4479A1;}
+#Front-end{background-color: #61DBFB}
 
-#nodejs {background-color: #43853D;}
+#HTML{background-color: #F35C2B}
 
-#python{background-color: #3776AB;}
+#JavaScript{background-color: #FBB343}
 
-#UX-UI{background-color: #FF6F61;}
+#Kubernetes {background-color: #326CE5}
 
-#yaml{background-color: #CB171E;;}
+#Linux{background-color: #FCC624}
+
+#Minikube {background-color: #FFCC00}
+
+#MySQL {background-color: #4479A1}
+
+#NodeJS {background-color: #43853D}
+
+#Python{background-color: #3776AB}
+
+#Responsive{background-color: #2D9CDB}
+
+#UX-UI{background-color: #FF6F61}
+
+#YAML{background-color: #CB171E}
 
 .projet ul li{
     margin-right: 5px;
@@ -666,7 +680,7 @@ header a:hover{
     width: 25px;
 }
 
-#contact_container_box button:hover{
+#contact_container_box:hover, #contact_container_box button:hover{
     cursor: pointer;
 }
 
