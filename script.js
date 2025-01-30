@@ -159,3 +159,15 @@ function ouvrir_linkedin(){
 function ouvrir_github(){
   window.open('https://github.com/bastosjt');
 }
+
+function ouvrir_localisation(){
+  window.open('https://www.google.com/maps/place/92500+Rueil-Malmaison/@48.8719115,2.1394266,13z/data=!3m1!4b1!4m6!3m5!1s0x47e6635a53a7872b:0x1c0b82c6e1d88110!8m2!3d48.8695678!4d2.1771764!16s%2Fm%2F09sqhf0?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D');
+}
+
+function copier_telephone() {
+  navigator.clipboard.writeText("0643309452");
+}
+
+function copier_mail() {
+  navigator.clipboard.writeText("bastien.jamet92@gmail.com");
+}
