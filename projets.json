@@ -3,10 +3,11 @@
       "id": "de_vinyles",
       "title": "De Vinyles",
       "description": "Magasin et service fictif de vinyles",
+      "type": ["Développement-web"],
       "languages": ["HTML", "CSS"],
       "languages_pourcentage": ["38.8", "61.2"],
       "languages_pourcentage_couleur": ["#1574BC", "#F35C2B"],
-      "tags": ["front-end", "UX-UI", "html", "css", "figma"],
+      "tags": ["Développement-web", "Front-end", "Figma", "HTML", "CSS"],
       "icone": ["Icones/vinyle.svg"],
       "couverture": ["Images/De_vinyles.png"],
       "images": [
@@ -28,10 +29,11 @@
       "id": "snakey",
       "title": "Snakey",
       "description": "Jeu de serpent",
+      "type": ["Développement-logiciel"],
       "languages": ["HTML", "CSS", "JavaScript"],
       "languages_pourcentage": ["21.2", "11.9", "66.9"],
       "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
-      "tags": ["front-end", "back-end", "UX-UI", "html", "css", "javascript"],
+      "tags": ["Développement-logiciel", "Front-end", "Back-end", "HTML", "CSS", "JavaScript"],
       "icone": ["Icones/snakey.svg"],
       "couverture": ["Images/Snakey.png"],
       "images": [
@@ -53,17 +55,23 @@
       "id": "portfolio",
       "title": "Portfolio",
       "description": "Vous êtes actuellement sur le site ;)",
-      "languages": ["HTML", "CSS", "JavaScript"],
+      "type": ["Développement-web"],
+      "languages": ["HTML", "CSS", "Javascript"],
       "languages_pourcentage": ["100", "100", "100"],
       "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
-      "tags": ["front-end", "back-end", "UX-UI", "html", "css", "javascript", "responsive"],
+      "tags": ["Développement-web", "Front-end", "Back-end", "UX-UI", "HTML", "CSS", "JavaScript", "Responsive"],
       "icone": ["Icones/B.svg"],
       "couverture": ["Images/Portfolio.png"],
       "images": [
         "Images/Portfolio_1.png",
         "Images/Portfolio_2.png"
       ],
-      "description_det": [""],
+      "description_det": [
+        "Mon portfolio présente mes projets de développement informatique de manière dynamique et optimisée.",
+        "Grâce à un fichier JSON, le code JavaScript génère automatiquement les encadré des projets et leurs popups, réduisant le code source et améliorant la performance du site. Cette approche permet de charger les projets efficacement tout en minimisant l’utilisation de mémoire, assurant ainsi une navigation fluide et rapide.",
+        "Ce projet regroupe mes compétences que j'ai acquis tout au long de ma formation à l'ESILV et des différents projets et stages, reflétant mon évolution dans le développement informatique.",
+        "Mon portfolio est en évolution constante, afin d’éviter tout bug, d’assurer une adaptation correcte des informations JSON et d'améliorer continuellement son efficacité."
+      ],
       "Link":[""],
       "Code":["https://github.com/bastosjt/Portfolio"]
     },
@@ -71,43 +79,55 @@
         "id": "serveur_c2",
         "title": "Serveur C2 custom",
         "description": "Gestion des systèmes connectés",
+        "type": ["Cybersécurité"],
         "languages": ["Python"],
         "languages_pourcentage": ["100"],
         "languages_pourcentage_couleur": ["#1574BC"],
-        "tags": [""],
-        "icone": ["Icones/B.svg"],
-        "couverture": ["Images/De_vinyles.png"],
+        "tags": ["Cybersécurité", "C2", "Python", "Linux"],
+        "icone": ["Icones/python.svg"],
+        "couverture": ["Images/C2.png"],
         "images": [
-          "Images/De_vinyles_1.png",
-          "Images/De_vinyles_2.png",
-          "Images/De_vinyles_3.png",
-          "Images/De_vinyles_4.png",
-          "Images/De_vinyles_5.png"
+          "Images/C2_1.png",
+          "Images/C2_2.png",
+          "Images/C2_3.png",
+          "Images/C2_4.png",
+          "Images/C2_5.png"
         ],
-        "description_det": [""],
+        "description_det": [
+          "Ce projet de groupe est un serveur C2 (Command & Control) simple et personnalisé développé en Python, permettant la gestion à distance d'un client Windows.",
+          "Il utilise un socket TCP pour établir une connexion entre un serveur sur une VM Kali et un client sur un terminal Windows.",
+          "Les fonctionnalités incluent l'exécution de commandes système, un keylogger intégré, la prise de captures d'écran et un scanner de ports distant. Le serveur offre une interface interactive permettant de gérer les connexions et d'exécuter différentes tâches sur le client compromis.",
+          "Ce projet m'a permis d'explorer la communication réseau en Python et les aspects liés à la cybersécurité offensive."
+        ],
         "Link":[""],
-        "Code":[""]
+        "Code":["https://github.com/Carlos75clc/C2-in-python"]
     },
     {
         "id": "kubernetes",
         "title": "Kubernetes",
         "description": "App web sur un cluster Kubernetes",
+        "type": ["DevOps"],
         "languages": ["HTML", "Javascript", "YAML", "Dockerfile"],
-        "languages_pourcentage": ["100"],
-        "languages_pourcentage_couleur": ["#1574BC"],
-        "tags": [""],
-        "icone": ["Icones/B.svg"],
-        "couverture": ["Images/De_vinyles.png"],
+        "languages_pourcentage": [],
+        "languages_pourcentage_couleur": ["#1574BC", "#FBB343"],
+        "tags": ["DevOps", "Kubernetes", "Docker", "NodeJS", "MySQL"],
+        "icone": ["Icones/kubernetes.svg"],
+        "couverture": ["Images/Kubernetes.png"],
         "images": [
-          "Images/De_vinyles_1.png",
-          "Images/De_vinyles_2.png",
-          "Images/De_vinyles_3.png",
-          "Images/De_vinyles_4.png",
-          "Images/De_vinyles_5.png"
+          "Images/Kubernetes_1.png",
+          "Images/Kubernetes_2.png",
+          "Images/Kubernetes_3.png",
+          "Images/Kubernetes_4.png",
+          "Images/Kubernetes_5.png"
         ],
-        "description_det": [""],
+        "description_det": [
+          "Ce projet consiste en le déploiement d'une application web sur un cluster Kubernetes à l'aide de Minikube.",
+          "L'application utilise Node.js pour le backend et MySQL comme base de données. L'ensemble des services est conteneurisé avec Docker, puis orchestré via Kubernetes, garantissant ainsi la scalabilité, la sécurité et la résilience de l'application.",
+          "Je vous invite à jeter un œil au code complet sur mon GitHub pour plus de détails sur la configuration, l'architecture et le déploiement de cette application.",
+          "Ce projet démontre mes compétences en déploiement cloud et gestion d'infrastructure avec Kubernetes et Docker, en plus de l'intégration de services web et de bases de données."
+        ],
         "Link":[""],
-        "Code":[""]
+        "Code":["https://github.com/bastosjt/Projet-kubernetes"]
     }
   ]
   
