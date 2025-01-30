@@ -16,7 +16,7 @@ body{
     --c: #222222;
     --_s: calc(2* var(--s)) calc(2* var(--s));
     --_g: 35.36% 35.36% at;
-    --_c: #0000 66%, rgba(42, 164, 254, 0.025) 68% 70%, #0000 72%;
+    --_c: #0000 66%, rgba(42, 164, 254, 0.035) 68% 70%, #0000 72%;
     background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s) / var(--_s), radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s) / var(--_s), radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0 / var(--_s), radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0 / var(--_s), repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0 / var(--_s), radial-gradient(var(--_c)) 0 calc(var(--s) / 2) / var(--s) var(--s) var(--c);
     background-attachment: fixed;
 }
@@ -96,14 +96,13 @@ header a:hover{
 
 #me{
     height: 515px;
-    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #me_left{
-    width: 55%;
+    width: 600px;
 }
 
 #me_left h1{
@@ -178,8 +177,8 @@ header a:hover{
     width: 275px;
     height: 275px;
     border-radius: 100%;
-    border: #2AA4FE 3px solid;
-    box-shadow: 0px 0px 15px 3px #2AA4FE;
+    border: #3C3C3C 3px solid;
+    box-shadow: 0px 0px 15px 3px #3C3C3C;
     margin-left: 15px;
     background-color: #222222;
 }
@@ -386,7 +385,7 @@ header a:hover{
     width: 100%;
     position: relative;
     color: #ffffff;
-    height: 80vh;
+    max-height: 80vh;
     transform: scale(1);
     transition: transform 0.3s ease;
 }
@@ -667,6 +666,8 @@ header a:hover{
     font-weight: 500;
     font-family: 'Comfortaa', cursive;
     font-size: 1rem;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 #contact_container_box button{
@@ -687,4 +688,92 @@ header a:hover{
 #contact_container_box:hover{
     box-shadow: 0px 0px 15px 3px #2AA4FE;
     transition: 250ms;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1250px){
+    .popup-detail-img{margin-left: 20px;}
+    .popup-detail-desc{width: 350px;margin-left: 40px;}
+
+}
+
+@media(max-width: 1195px){
+    #projet_container{width: 770px;}
+}
+
+@media(max-width: 1050px){
+    .popup-tags{flex-wrap: wrap; margin: 10px;}
+    .popup-tags p{margin: 5px;}
+    .popup-detail-inner {display: flex;flex-direction: column;}
+    .popup-detail-img{width: auto;margin: 0;}
+    .popup-main-image{margin: 0;}
+    .popup-detail-desc{width: auto; margin: 0 15px;}
+}
+
+@media(max-width: 1020px){
+    #me_left {width: 450px;}
+}
+
+@media(max-width: 832px){
+    #me{flex-direction: column-reverse;height: 750px;}
+    #me_right{height: 295px;width: 295px;margin: 60px 0 0 0;}
+    #me_right img{margin: 0;}
+    #me_left{text-align: center;}
+    #me_left p{padding: 20px 0;}
+    #socials{justify-content: center;}
+    #projet_container{width: 385px;gap: 55px;}
+}
+
+@media(max-width: 700px){
+    .popup-main-image{width: 80%}
+}
+
+@media(max-width: 700px){
+    .popup-detail-lang{gap: 0px;margin: 30px 0;}
+    .popup-detail-lang p{width: 90px;}
+}
+
+@media(max-width: 550px){
+    #header_group{margin-right: 0;}
+    #header_group h1{opacity: 0; width: 0; height: 0;}
+    #header_group img{position: absolute;}
+    header ul{position: fixed;left: calc(25% - 15px);}
+
+    #me{height: 650px;}
+    #me_right{width: 200px;height: 250px;margin: 50px 0 0 0;}
+    #me_right img{width: 200px;height: 200px;}
+    #me_left{width: 350px;}
+    #me_left h1{font-size: 1.5rem;}
+    #me_left p{width: 350px;font-size: 0.8rem;}
+
+    #socials a:first-child{width: 150px;}
+    #socials button, #socials a{height: 35px; font-size: 0.9rem;}
+    #socials button:last-child, #socials button:nth-child(2){width: 35px;}
+    #socials button img{width: 25px;height: 25px;}
+
+    #projets h1{font-size: 1.5rem;}
+    #projet_container h1{font-size: 1.75rem;}
+
+    .close-btn {width: 40px;height: 40px;}
+    .popup-content p{text-align: left;}
+    .popup-tags p{font-size: 0.8rem;}
+    .language_projet p{text-align: center;}
+
+    #contact_container_box{width: 300px;}
+    #contact_container_box img{width: 35px;height: 35px;}
+    #contact_container_box h2{font-size: 1rem;}
+    #contact_container_box p{font-size: 0.8rem;}
+    #contact_container_box button img {width: 20px;}
+}
+
+@media(max-width: 465px){
+    #projets h1{font-size: 1.1rem;width: 300px;text-align: center;margin: 25px 0 10px 0;}
+    #projet_container h1{font-size: 1.75rem;width: auto;text-align: left;margin:0;}
+
+    .popup-content{max-height: 90vh;}
+}
+
+@media(max-width: 420px){
+    .popup-detail-lang{width: 100%;}
 }
