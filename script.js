@@ -121,6 +121,19 @@ function showPopup(projet) {
       e.target.style.borderRadius = '10px';
     });
   });
+
+  document.querySelector('.popup-main-image').addEventListener('click', (e) => {
+    if (e.target.requestFullscreen) {
+      e.target.requestFullscreen();
+    } else if (e.target.mozRequestFullScreen) { // Firefox
+      e.target.mozRequestFullScreen();
+    } else if (e.target.webkitRequestFullscreen) { // Chrome, Safari, Opera
+      e.target.webkitRequestFullscreen();
+    } else if (e.target.msRequestFullscreen) { // IE/Edge
+      e.target.msRequestFullscreen();
+    }
+  });
+  
   
   requestAnimationFrame(() => {
     popupBackground.classList.add('show');
