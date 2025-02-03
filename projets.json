@@ -57,14 +57,16 @@
       "description": "Vous êtes actuellement sur le site ;)",
       "type": ["Développement-web"],
       "languages": ["HTML", "CSS", "Javascript"],
-      "languages_pourcentage": ["19.4", "59.3", "21.3"],
+      "languages_pourcentage": ["100", "100", "100"],
       "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
       "tags": ["Développement-web", "Front-end", "Back-end", "UX-UI", "HTML", "CSS", "JavaScript", "Responsive"],
       "icone": ["Icones/B.svg"],
       "couverture": ["Images/Portfolio.png"],
       "images": [
         "Images/Portfolio_1.png",
-        "Images/Portfolio_2.png"
+        "Images/Portfolio_2.png",
+        "Images/Portfolio_3.png",
+        "Images/Portfolio_4.png"
       ],
       "description_det": [
         "Mon portfolio présente mes projets de développement informatique de manière dynamique et optimisée.",
@@ -90,8 +92,7 @@
           "Images/C2_1.png",
           "Images/C2_2.png",
           "Images/C2_3.png",
-          "Images/C2_4.png",
-          "Images/C2_5.png"
+          "Images/C2_4.png"
         ],
         "description_det": [
           "Ce projet de groupe est un serveur C2 (Command & Control) simple et personnalisé développé en Python, permettant la gestion à distance d'un client Windows.",
@@ -107,9 +108,9 @@
         "title": "Kubernetes",
         "description": "App web sur un cluster Kubernetes",
         "type": ["DevOps"],
-        "languages": ["HTML", "Javascript", "YAML", "Dockerfile"],
-        "languages_pourcentage": [],
-        "languages_pourcentage_couleur": ["#1574BC", "#FBB343"],
+        "languages": ["HTML", "Javascript", "Dockerfile"],
+        "languages_pourcentage": ["65.6", "33", "1.4"],
+        "languages_pourcentage_couleur": ["#1574BC", "#FBB343", "#2496ED"],
         "tags": ["DevOps", "Kubernetes", "Docker", "NodeJS", "MySQL"],
         "icone": ["Icones/kubernetes.svg"],
         "couverture": ["Images/Kubernetes.png"],
