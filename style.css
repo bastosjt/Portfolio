@@ -252,6 +252,7 @@ body{
     transition: 500ms;
     width: 345px;
     height: 300px;
+    margin-bottom: 50px;
 }
 
 .projet img{
@@ -310,6 +311,8 @@ body{
 #CSS{background-color: #1574BC}
 
 #Cybersécurité{background-color: #0055A4}
+
+#Data-visualization{background-color: #6A0DAD}
 
 #Développement-logiciel{background-color: #008080}
 
@@ -486,7 +489,7 @@ body{
 
 .popup-tags{
     display: flex;
-    margin: 10px 10px 0 10px;
+    margin: 15px;
 }
 
 .popup-tags p{
