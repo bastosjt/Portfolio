@@ -184,3 +184,19 @@ function copier_telephone() {
 function copier_mail() {
   navigator.clipboard.writeText("bastien.jamet92@gmail.com");
 }
+
+window.addEventListener('scroll', function() {
+  const header = document.getElementById('header');
+  const header_group_img = document.getElementById('header_group_img');
+  const header_group_h1 = document.getElementById('header_group_h1');
+
+  if (window.scrollY > 175) {
+      header.classList.add('shrink');
+      header_group_img.classList.add('shrink');
+      header_group_h1.classList.add('shrink');
+  } else {
+      header.classList.remove('shrink');
+      header_group_img.classList.remove('shrink');
+      header_group_h1.classList.remove('shrink');
+  }
+});

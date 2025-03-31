@@ -23,7 +23,7 @@ body{
 
 /* HEADER */
 
-header{
+#header{
     background-color: #3C3C3C;
     box-shadow: 0px 6px 10px 5px rgba(0,0,0,0.35);
     height: 75px;
@@ -34,6 +34,18 @@ header{
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    transition: all 0.2s ease;
+}
+
+#header.shrink{
+    background-color: #3c3c3cba;
+    box-shadow: 0px 6px 10px 5px rgba(0,0,0,0.4);
+    height: 55px;
+}
+
+#header.shrink:hover{
+    background-color: #3C3C3C;
+    box-shadow: 0px 6px 10px 5px rgba(0,0,0,0.35);
 }
 
 #header_group{
@@ -43,28 +55,39 @@ header{
     margin: 0 20px;
 }
 
-#header_group img{
+#header_group_img{
     width: 50px;
     height: 50px;
+    transition: all 0.2s ease;
 }
 
-#header_group h1{
+#header_group_img.shrink{
+    width: 35px;
+    height: 35px;
+}
+
+#header_group_h1{
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0 15px;
+    transition: all 0.2s ease;
 }
 
-header ul{
+#header_group_h1.shrink{
+    font-size: 1rem;
+}
+
+#header ul{
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
-header li{
+#header li{
     margin: 10px;
 }
 
-header a{
+#header a{
     border: 2px solid transparent;
     color: #ffffff;
     margin: 10px;
@@ -74,7 +97,7 @@ header a{
     font-size: 1rem;
 }
 
-header a:hover{
+#header a:hover{
     border-bottom: 2px solid #2AA4FE;
     color: #2AA4FE;
     transition: 200ms;
