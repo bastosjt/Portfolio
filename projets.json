@@ -52,6 +52,33 @@
       "Code":["https://github.com/Carlos75clc/DIP392-BCH92"]
     },
     {
+      "id": "asmasse",
+      "title": "ASMASSE",
+      "description": "Cabinet de massages et bien-être",
+      "type": ["Développement-web"],
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "languages_pourcentage": ["", "", ""],
+      "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
+      "tags": ["Développement-web", "Front-end", "Back-end", "Figma", "UX-UI", "HTML", "CSS", "JavaScript", "Responsive"],
+      "icone": ["Icones/asmasse.svg"],
+      "couverture": ["Images/asmasse.png"],
+      "images": [
+        "Images/asmasse_1.png",
+        "Images/asmasse_2.png",
+        "Images/asmasse_3.png",
+        "Images/asmasse_4.png",
+        "Images/asmasse_5.png"
+      ],
+      "description_det": [
+        "Lors de mon stage de développement web d’un mois chez ASMASSE, j'ai participé à la reconstruction complète du site internet de l’entreprise spécialisée dans le bien-être.",
+        "Mon travail a été divisé en trois phases principales : la phase de conception du design avec Figma, la phase de développement du site en HTML, CSS et JavaScript, puis la phase de déploiement et de mise en production.",
+        "J’ai collaboré avec l’équipe pour définir un design moderne, centré sur l’expérience utilisateur, et j’ai assuré le déploiement du site tout en corrigeant les bugs et en réalisant des tests.",
+        "Ce stage m'a permis de renforcer mes compétences en développement web, en design d’interfaces et en gestion de projet, tout en me préparant à des défis professionnels dans le domaine du développement web."
+      ],
+      "Link":["http://www.asmasse.eu/"],
+      "Code":[""]
+    },
+    {
       "id": "portfolio",
       "title": "Portfolio",
       "description": "Vous êtes actuellement sur le site ;)",
@@ -129,6 +156,32 @@
         ],
         "Link":[""],
         "Code":["https://github.com/bastosjt/Projet-kubernetes"]
+    },
+    {
+      "id": "data_visualisation",
+      "title": "Visualisation de datas",
+      "description": "Analyse des attaques APT",
+      "type": ["Data-visualization"],
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "languages_pourcentage": ["10.1", "12.7", "77.2"],
+      "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
+      "tags": ["Data Visualization", "Cybersécurité", "HTML", "CSS", "JavaScript", "D3.js"],
+      "icone": ["Icones/DataViz.svg"],
+      "couverture": ["Images/DataViz.png"],
+      "images": [
+        "Images/DataViz_1.png",
+        "Images/DataViz_2.png",
+        "Images/DataViz_3.png"
+      ],
+      "description_det": [
+        "Ce projet consiste en la création d'un dashboard interactif permettant d'explorer et d'analyser les données des attaques APT en 2023-2024.",
+        "Les données sont manipulées et préparées à l'aide de Python avant d'être intégrées et affichées via D3.js sous forme de graphiques interactifs : camemberts, donuts, courbes et cartes.",
+        "Le dashboard offre la possibilité de filtrer les attaques selon leur type. Selon le type d'attaque sélectionné, les données affichées s'ajustent automatiquement pour fournir des informations pertinentes sur les différents types de menaces.",
+        "Le projet est développé avec HTML, CSS et JavaScript, et la visualisation des données est entièrement gérée par la bibliothèque D3.js, offrant ainsi une expérience utilisateur fluide et interactive.",
+        "Ce projet m'a permis de renforcer mes compétences en manipulation des données, en data visualization, et en développement web interactif dans le cadre de la cybersécurité."
+      ],
+      "Link": [""],
+      "Code": ["https://github.com/bastosjt/Data-Visulation"]
     }
   ]
   
