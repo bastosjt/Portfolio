@@ -154,7 +154,7 @@ body{
 
 #socials button, #socials a, .view-projet, .view-code{
     border-radius: 25px;
-    border: #2AA4FE 2px solid;
+    border: #2AA4FE 3px solid;
     background-color: transparent;
     font-family: 'Comfortaa', cursive;
     font-size: 1rem;
@@ -179,6 +179,7 @@ body{
 
 #socials a:first-child, .view-projet, .view-code{
     width: 175px;
+    height: 45px;
     color: #222222;
     font-weight: 900;
     background-color: #2AA4FE;
@@ -295,58 +296,65 @@ body{
     font-weight: 500;
 }
 
-.lang_box{
-    height: 10px;
-    width: 10px;
-    border-radius: 90%;
-    margin: 0 5px;
+.projet_type, .projet_contexte{
+    padding: 5px 10px;
+    border-radius: 125px;
+    font-size: 0.85rem;
+    font-weight: 400;
+    display: inline-block;
 }
 
 /* LANGUAGES ET TAGS */
 
-#Back-end{background-color: #6E5494}
+#Back-end{border: 3px solid #6E5494}
 
-#C2{background-color: #800080}
+#C2{border: 3px solid #800080}
 
-#CSS{background-color: #1574BC}
+#CSS{border: 3px solid #1574BC}
 
-#Cybersécurité{background-color: #0055A4}
+#Cybersécurité{border: 3px solid #1c73ff}
 
-#Data-visualization{background-color: #6A0DAD}
+#Data-visualization{border: 3px solid #38bdf8}
 
-#Développement-logiciel{background-color: #008080}
+#Développement-logiciel{border: 3px solid #f97316}
 
-#Développement-web{background-color: #E34F26}
+#Développement-web{border: 3px solid #aa86ff}
 
-#DevOps{background-color: #C9510C}
+#DevSecOps{border: 3px solid #C9510C}
 
-#Dockerfile, #Docker{background-color: #2496ED}
+#Dockerfile, #Docker{border: 3px solid #2496ED}
 
-#Figma{background-color: #0ACF83}
+#Figma{border: 3px solid #0ACF83}
 
-#Front-end{background-color: #61DBFB}
+#Front-end{border: 3px solid #61DBFB}
 
-#HTML{background-color: #F35C2B}
+#HTML{border: 3px solid #F35C2B}
 
-#JavaScript{background-color: #FBB343}
+#JavaScript{border: 3px solid #FBB343}
 
-#Kubernetes {background-color: #326CE5}
+#Kubernetes {border: 3px solid #326CE5}
 
-#Linux{background-color: #FCC624}
+#Linux{border: 3px solid #FCC624}
 
-#Minikube {background-color: #FFCC00}
+#Minikube {border: 3px solid #FFCC00}
 
-#MySQL {background-color: #4479A1}
+#MySQL {border: 3px solid #4479A1}
 
-#NodeJS {background-color: #43853D}
+#NodeJS {border: 3px solid #43853D}
 
-#Python{background-color: #3776AB}
+#Projet{border: 3px solid #22c55e;}
 
-#Responsive{background-color: #2D9CDB}
+#Python{border: 3px solid #3776AB}
 
-#UX-UI{background-color: #FF6F61}
+#Responsive{border: 3px solid #2D9CDB}
 
-#YAML{background-color: #CB171E}
+#Stage{border: 3px solid #9ca3af;}
+
+#undefined{opacity: 0;}
+
+#UX-UI{border: 3px solid #FF6F61}
+
+#YAML{border: 3px solid #CB171E}
 
 .projet ul li{
     margin-right: 5px;
@@ -671,7 +679,7 @@ body{
 }
 
 #contact_container_box{
-    border: #2AA4FE 2px solid;
+    border: #2AA4FE 3px solid;
     background-color: #222222;
     width: 350px;
     height: 50px;

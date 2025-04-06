@@ -15,8 +15,8 @@ fetch('projets.json')
       <div id="ligne"></div>
       <p>${projet.description}</p>
       <ul>
-          <div class="lang_box" id="${projet.type}"></div>
-          <li>${projet.type}</li>
+          <li class="projet_type" id="${projet.type}">${projet.titre_type}</li>
+          <li class="projet_contexte" id="${projet.contexte}">${projet.titre_contexte}</li>
       </ul>
     </div>
   `).join('');
