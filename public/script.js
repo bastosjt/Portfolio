@@ -189,14 +189,23 @@ window.addEventListener('scroll', function() {
   const header = document.getElementById('header');
   const header_group_img = document.getElementById('header_group_img');
   const header_group_h1 = document.getElementById('header_group_h1');
+  const header_a1 = document.getElementById('header_a1');
+  const header_a2 = document.getElementById('header_a2');
+  const header_a3 = document.getElementById('header_a3');
 
   if (window.scrollY > 175) {
       header.classList.add('shrink');
       header_group_img.classList.add('shrink');
       header_group_h1.classList.add('shrink');
+      header_a1.classList.add('shrink');
+      header_a2.classList.add('shrink');
+      header_a3.classList.add('shrink');
   } else {
       header.classList.remove('shrink');
       header_group_img.classList.remove('shrink');
       header_group_h1.classList.remove('shrink');
+      header_a1.classList.remove('shrink');
+      header_a2.classList.remove('shrink');
+      header_a3.classList.remove('shrink');
   }
 });
