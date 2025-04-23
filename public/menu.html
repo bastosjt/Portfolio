@@ -27,27 +27,26 @@
             <a id="header_a1" href="#galerie">Menu</a>
             <a id="header_a2" href="#projets">Projets</a>
             <a id="header_a3" href="#contact">Contact</a>
+            <div id="hover_square"></div>
         </ul>
     </div>
     <div id="galerie">
         <div id="me">
             <div id="me_left">
                 <h1>Bastien JAMET</h1>
-                <h3>Etudiant en cybsersécurité</h3>
-                <p>En troisième année Bachelor Ingénierie Numérique à l’ESILV (école d'ingénieurs) avec une spécialisation en cybsersécurité. Passionné par la cybersécurité, je développe mes compétences à travers des projets, des challenges CTF et des certifications.</p>
+                <h3>Etudiant en développement informatique</h3>
+                <p>Bientôt diplômé du Bachelor Ingénierie Numérique à l’ESILV (école d'ingénieurs) avec une spécialisation en cybsersécurité. Passionné par le développement web et application, je développe mes compétences à travers des projets et stages.</p>
                 <div id="socials">
                     <a href="#contact">Contactez-moi</a>
-                    <button onclick="ouvrir_linkedin()"><img src="Icones/linkedin.svg"></button>
-                    <button onclick="ouvrir_github()"><img src="Icones/github.svg"></button>
+                    <button id="linkedin_svg" onclick="ouvrir_linkedin()"></button>
+                    <button id="github_svg" onclick="ouvrir_github()"></button>
                 </div>
             </div>
-            <div id="me_right">
-                <img src="Images/moi.jpg">
-            </div>
+            <div id="me_right"></div>
         </div>
     </div>
     <div id="projets">
-        <h1>Les projets sur lesquels j'ai travaillé</h1>
+        <h1>Mes projets réalisés</h1>
         <div id="projet_container_box">
             <div id="projet_container">
             </div>
@@ -58,7 +57,7 @@
             <h1>Contactez-moi</h1>
             <div id="contact_container">
                 <div id="contact_container_box" onclick="copier_telephone()">
-                    <img src="Icones/telephone.svg">
+                    <div class="contact_container_img" id="contact_container_telephone"></div>
                     <div id="contact_det">
                         <h2>Téléphone</h2>
                         <p>06 43 30 94 52</p>
@@ -66,7 +65,7 @@
                     <button><img src="Icones/copier.svg"></button>
                 </div>
                 <div id="contact_container_box" onclick="copier_mail()">
-                    <img src="Icones/mail.svg">
+                    <div class="contact_container_img" id="contact_container_mail"></div>
                     <div id="contact_det">
                         <h2>Adresse mail</h2>
                         <p>bastien.jamet92@gmail.com</p>
@@ -74,7 +73,7 @@
                     <button><img src="Icones/copier.svg"></button>
                 </div>
                 <div id="contact_container_box" onclick="ouvrir_localisation()"">
-                    <img src="Icones/localisation.svg">
+                    <div class="contact_container_img" id="contact_container_localisation"></div>
                     <div id="contact_det">
                         <h2>Localisation</h2>
                         <p>92500 Rueil-Malmaison</p>
@@ -82,7 +81,7 @@
                     <button><img src="Icones/voir.svg"></button>
                 </div>
                 <div id="contact_container_box" onclick="ouvrir_linkedin()">
-                    <img src="Icones/linkedin.svg">
+                    <div class="contact_container_img" id="contact_container_linkedin"></div>
                     <div id="contact_det">
                         <h2>LinkedIn</h2>
                         <p>Mon profil LinkedIn</p>
@@ -90,7 +89,7 @@
                     <button><img src="Icones/voir.svg"></button>
                 </div>
                 <div id="contact_container_box" onclick="ouvrir_github()">
-                    <img src="Icones/github.svg">
+                    <div class="contact_container_img" id="contact_container_github"></div>
                     <div id="contact_det">
                         <h2>Github</h2>
                         <p>Mon profil Github</p>

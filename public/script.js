@@ -192,6 +192,7 @@ window.addEventListener('scroll', function() {
   const header_a1 = document.getElementById('header_a1');
   const header_a2 = document.getElementById('header_a2');
   const header_a3 = document.getElementById('header_a3');
+  const hover_square = document.getElementById('hover_square');
 
   if (window.scrollY > 175) {
       header.classList.add('shrink');
@@ -200,6 +201,7 @@ window.addEventListener('scroll', function() {
       header_a1.classList.add('shrink');
       header_a2.classList.add('shrink');
       header_a3.classList.add('shrink');
+      hover_square.classList.add('shrink');
   } else {
       header.classList.remove('shrink');
       header_group_img.classList.remove('shrink');
@@ -207,5 +209,6 @@ window.addEventListener('scroll', function() {
       header_a1.classList.remove('shrink');
       header_a2.classList.remove('shrink');
       header_a3.classList.remove('shrink');
+      hover_square.classList.remove('shrink');
   }
 });

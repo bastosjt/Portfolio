@@ -87,6 +87,21 @@ body{
     border-radius: 15px;
 }
 
+#hover_square{
+    z-index: 0;
+    position: absolute;
+    width: 134px;
+    height: 54px;
+    background-color: transparent;
+    border-radius: 15px;
+    transform: translateX(0);
+    transition: 250ms;
+}
+
+#hover_square.shrink{
+    height: 44px;
+}
+
 #header a{
     border: 2px solid transparent;
     color: #ffffff;
@@ -94,13 +109,28 @@ body{
     transition: 200ms;
     font-size: 1rem;
     padding: 15px 25px;
-    background-color: transparent;
     border-radius: 15px;
+    width: 80px;
+    text-align: center;
+    z-index: 1;
+    text-transform: uppercase;
 }
 
 #header a:hover{
     transition: 250ms;
+    color: #ffffff;
+}
+
+#header a:hover ~ #hover_square{
     background-color: #2AA4FE;
+}
+
+#header_a1:hover ~ #hover_square{
+    transform: translateX(-134px);
+}
+
+#header_a3:hover ~ #hover_square{
+    transform: translateX(134px);
 }
 
 #header_a1.shrink, #header_a2.shrink, #header_a3.shrink{
@@ -146,10 +176,11 @@ body{
 }
 
 #me_left p{
-    padding: 20px 15px 20px 0 ;
+    padding: 40px 15px 40px 0 ;
     font-family: 'Comfortaa', cursive;
     font-size: 1rem;
     font-weight: 400;
+    line-height : 1.5;
 }
 
 #socials{
@@ -157,7 +188,7 @@ body{
 }
 
 #socials button, #socials a, .view-projet, .view-code{
-    border-radius: 25px;
+    border-radius: 15px;
     border: #2AA4FE 3px solid;
     background-color: transparent;
     font-family: 'Comfortaa', cursive;
@@ -171,37 +202,42 @@ body{
     text-decoration: none;
 }
 
-#socials a:hover, #socials button:hover, .view-projet:hover, .view-code:hover{
-    box-shadow: 0px 0px 15px 3px #2AA4FE;
-    cursor: pointer;
-    transition: 250ms;
-}
-
-#socials button img{
-    width: 35px;
-}
-
 #socials a:first-child, .view-projet, .view-code{
-    width: 175px;
+    width: 225px;
     height: 45px;
-    color: #222222;
+    color: #2AA4FE;
     font-weight: 900;
-    background-color: #2AA4FE;
+    font-size: 1.1rem;
 }
 
-#socials button:last-child, #socials button:nth-child(2){
+#linkedin_svg{
     width: 50px;
     margin-left: 15px;
+    background-image: url(Icones/linkedin.svg);
+}
+
+#linkedin_svg:hover{
+    background-image: url(Icones/linkedin_hover.svg);
+}
+
+#github_svg{
+    width: 50px;
+    margin-left: 15px;
+    background-image: url(Icones/github.svg);
+}
+
+#github_svg:hover{
+    background-image: url(Icones/github_hover.svg);
+}
+
+#socials a:hover, #socials button:hover, .view-projet:hover, .view-code:hover{
+    cursor: pointer;
+    transition: 250ms;
+    background-color: #2AA4FE;
+    color: #2c2c2c;
 }
 
 #me_right{
-    height: 75%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#me_right img{
     width: 275px;
     height: 275px;
     border-radius: 100%;
@@ -209,6 +245,9 @@ body{
     box-shadow: 0px 0px 15px 3px #3C3C3C;
     margin-left: 15px;
     background-color: #222222;
+    background-image: url(Images/moi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* PROJETS */
@@ -220,6 +259,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0 0 40px 0;
+    border-radius: 25px;
 }
 
 #projets h1{
@@ -228,6 +268,7 @@ body{
     font-style: normal;
     font-weight: 500;
     margin: 25px 0;
+    text-transform: uppercase;
 }
 
 #projet_container_box{
@@ -689,15 +730,44 @@ body{
     height: 50px;
     margin: 15px;
     padding: 5px 10px 5px 15px;
-    border-radius: 25px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     transition: 250ms;
 }
 
-#contact_container_box img{
-    width: 45px;
+#contact_container_box:hover{
+    background-color: #2AA4FE;
+    color: #2C2C2C;
 }
+
+#contact_container_box:hover #contact_det p{
+    color: #2C2C2C;
+}
+
+.contact_container_img{
+    width: 45px;
+    height: 45px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 250ms;
+}
+
+#contact_container_telephone{background-image: url(Icones/telephone.svg);}
+#contact_container_box:nth-child(1):hover #contact_container_telephone {background-image: url('Icones/telephone_hover.svg');}
+
+#contact_container_mail{background-image: url(Icones/mail.svg);}
+#contact_container_box:nth-child(2):hover #contact_container_mail {background-image: url('Icones/mail_hover.svg');}
+
+#contact_container_localisation{background-image: url(Icones/localisation.svg);}
+#contact_container_box:nth-child(3):hover #contact_container_localisation {background-image: url('Icones/localisation_hover.svg');}
+
+#contact_container_linkedin{background-image: url(Icones/linkedin.svg);}
+#contact_container_box:nth-child(4):hover #contact_container_linkedin {background-image: url('Icones/linkedin_hover.svg');}
+
+#contact_container_github{background-image: url(Icones/github.svg);}
+#contact_container_box:nth-child(5):hover #contact_container_github {background-image: url('Icones/github_hover.svg');}
 
 #contact_det{
     margin-left: 15px;
@@ -716,6 +786,7 @@ body{
     font-size: 1rem;
     color: #ffffff;
     text-decoration: none;
+    transition: 250ms;
 }
 
 #contact_container_box button{
@@ -731,11 +802,6 @@ body{
 
 #contact_container_box:hover, #contact_container_box button:hover{
     cursor: pointer;
-}
-
-#contact_container_box:hover{
-    box-shadow: 0px 0px 15px 3px #2AA4FE;
-    transition: 250ms;
 }
 
 /* RESPONSIVE */
@@ -773,6 +839,15 @@ body{
     #projet_container{width: 385px;gap: 55px;}
 }
 
+@media(max-width: 750px){
+    #header a{width: 60px;font-size: 0.8rem;padding: 15px;}
+    #header_a1.shrink, #header_a2.shrink, #header_a3.shrink{padding: 10px 15px;}
+    #hover_square{width: 94px;height: 49px;}
+    #hover_square.shrink{height: 39px;}
+    #header_a1:hover ~ #hover_square{transform: translateX(-94px);}
+    #header_a3:hover ~ #hover_square{transform: translateX(94px);}
+}
+
 @media(max-width: 700px){
     .popup-main-image{width: 80%}
 }
@@ -785,19 +860,23 @@ body{
 @media(max-width: 550px){
     #header_group{margin-right: 0;}
     #header_group h1{opacity: 0; width: 0; height: 0;}
-    #header_group img{position: absolute;}
+    #header_group img{position: absolute;left: 20px;}
     header ul{position: fixed;left: calc(25% - 15px);}
+    #header_group_img{width: 35px;height: 35px;}
+    #header{height: 55px;}
+
+    #header a{padding: 10px 15px;}
+    #hover_square{height: 39px;}
 
     #me{height: 650px;}
-    #me_right{width: 200px;height: 250px;margin: 50px 0 0 0;}
-    #me_right img{width: 200px;height: 200px;}
+    #me_right{width: 200px;height: 200px;margin: 50px 0 0 0;}
     #me_left{width: 350px;}
     #me_left h1{font-size: 1.5rem;}
     #me_left p{width: 350px;font-size: 0.8rem;}
 
     #socials a:first-child{width: 150px;}
-    #socials button, #socials a{height: 35px; font-size: 0.9rem;}
-    #socials button:last-child, #socials button:nth-child(2){width: 35px;}
+    #socials button, #socials a{height: 50px; font-size: 0.9rem;}
+    #socials button:last-child, #socials button:nth-child(2){width: 50px;}
     #socials button img{width: 25px;height: 25px;}
 
     #projets h1{font-size: 1.5rem;}
