@@ -7,18 +7,7 @@
 }
 body{
     background-color: #222222;
-    margin: 1%;
     color: #ffffff;
-}
-
-.fond_pattern_1{
-    --s: 50px;
-    --c: #222222;
-    --_s: calc(2* var(--s)) calc(2* var(--s));
-    --_g: 35.36% 35.36% at;
-    --_c: #0000 66%, rgba(42, 164, 254, 0.035) 68% 70%, #0000 72%;
-    background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s) / var(--_s), radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s) / var(--_s), radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0 / var(--_s), radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0 / var(--_s), repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0 / var(--_s), radial-gradient(var(--_c)) 0 calc(var(--s) / 2) / var(--s) var(--s) var(--c);
-    background-attachment: fixed;
 }
 
 /* HEADER */
@@ -36,6 +25,8 @@ body{
     position: fixed;
     transition: all 0.2s ease;
     border-radius: 25px;
+    margin: 1%;
+    z-index: 2;
 }
 
 #header.shrink{
@@ -145,14 +136,19 @@ body{
 
 #galerie{
     width: auto;
-    min-height: 600px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    background-image: url(Images/waves.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
 #me{
-    height: 515px;
+    margin-top: 50px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,23 +160,35 @@ body{
 
 #me_left h1{
     font-family: Inter;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight:500;
+    text-shadow: 1px 1px 0 #4C4C4C, 2px 2px 0 #4C4C4C, 3px 3px 0 #4C4C4C, 4px 4px 0 #4C4C4C, 5px 5px 0 #4C4C4C;
 }
 
 #me_left h3{
-    font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.15rem;
     color: #2AA4FE;
+    text-shadow: 1px 1px 0 #4C4C4C, 2px 2px 0 #4C4C4C, 3px 3px 0 #4C4C4C;
 }
 
 #me_left p{
-    padding: 40px 15px 40px 0 ;
+    margin: 30px 15px 30px 0 ;
     font-family: 'Comfortaa', cursive;
     font-size: 1rem;
     font-weight: 400;
     line-height : 1.5;
+    background-color: #2C2C2C;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 
+        1px 1px 0 #4C4C4C,
+        0px -4px 10px 0px #00000040;
+    color: #ffffff;
+    width: 525px;
 }
 
 #socials{
@@ -195,11 +203,17 @@ body{
     font-size: 1rem;
     height: 50px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: 250ms;
     text-decoration: none;
+    box-shadow: 
+        1px 1px 0 #4C4C4C, 
+        2px 2px 0 #4C4C4C, 
+        3px 3px 0 #4C4C4C, 
+        4px 4px 0 #4C4C4C, 
+        5px 5px 0 #4C4C4C,
+        0px -4px 10px 0px #00000040;
 }
 
 #socials a:first-child, .view-projet, .view-code{
@@ -210,14 +224,21 @@ body{
     font-size: 1.1rem;
 }
 
+#socials a img{
+    width: 20px;
+    transform: rotate(-90deg);
+    transition: 250ms;
+    margin-left: 5px;
+}
+
+#socials a:hover img{
+    margin-left: 15px;
+}
+
 #linkedin_svg{
     width: 50px;
     margin-left: 15px;
     background-image: url(Icones/linkedin.svg);
-}
-
-#linkedin_svg:hover{
-    background-image: url(Icones/linkedin_hover.svg);
 }
 
 #github_svg{
@@ -226,53 +247,50 @@ body{
     background-image: url(Icones/github.svg);
 }
 
-#github_svg:hover{
-    background-image: url(Icones/github_hover.svg);
-}
-
 #socials a:hover, #socials button:hover, .view-projet:hover, .view-code:hover{
     cursor: pointer;
     transition: 250ms;
-    background-color: #2AA4FE;
-    color: #2c2c2c;
+    background-color: #2C2C2C;
+    color: #2AA4FE;
+    border: #2C2C2C 3px solid;
 }
 
 #me_right{
     width: 275px;
     height: 275px;
-    border-radius: 100%;
-    border: #3C3C3C 3px solid;
-    box-shadow: 0px 0px 15px 3px #3C3C3C;
+    border-radius: 50%;
     margin-left: 15px;
+    border: 3px solid #2C2C2C;
     background-color: #222222;
     background-image: url(Images/moi.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 1px 1px 0 #4C4C4C, 2px 2px 0 #4C4C4C, 3px 3px 0 #4C4C4C, 4px 4px 0 #4C4C4C, 5px 5px 0 #4C4C4C;
 }
 
 /* PROJETS */
 
 #projets{
-    background-color: #3c3c3c;
+    background-color: #2C2C2C;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 0 40px 0;
-    border-radius: 25px;
 }
 
 #projets h1{
     font-family: 'Inter', sans-serif;
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    margin: 25px 0;
+    margin: 45px 0;
     text-transform: uppercase;
+    text-shadow: 1px 1px 0 #4C4C4C, 2px 2px 0 #4C4C4C, 3px 3px 0 #4C4C4C, 4px 4px 0 #4C4C4C;
 }
 
 #projet_container_box{
-    margin: 15px 0;
+    margin: 15px 0 0 0;
 }
 
 #projet_container {
@@ -292,34 +310,30 @@ body{
 .projet{
     background-color: #4E4E4E;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.25);
     cursor: pointer;
-    transition: 500ms;
+    transition: 150ms;
     width: 345px;
-    height: 300px;
-    margin-bottom: 50px;
+    height: 330px;
+}
+
+.projet:hover{
+    transform: scale(1.05);
 }
 
 .projet img{
-    width: 345px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    width: 335px;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 #projet_container h1{
     font-family: 'Maven Pro', sans-serif;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 400;
     margin: 0;
     padding: 0px 20px;
-}
-
-#ligne{
-    height: 3px;
-    width: 50%;
-    background-color: #ffffff;
-    margin: 7.5px 20px;
 }
 
 .projet p{
@@ -334,7 +348,7 @@ body{
     list-style: none;
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    justify-content: center;
     margin-top: 15px;
     font-family: Inter;
     font-size: 0.9rem;
@@ -347,6 +361,7 @@ body{
     font-size: 0.85rem;
     font-weight: 400;
     display: inline-block;
+    background-color: #2C2C2C;
 }
 
 /* LANGUAGES ET TAGS */
@@ -359,9 +374,9 @@ body{
 
 #Cybersécurité{border: 3px solid #1c73ff}
 
-#Data-visualization{border: 3px solid #38bdf8}
+#D3JS{border: 3px solid #f69c4d;}
 
-#Développement-logiciel{border: 3px solid #f97316}
+#Développement-app{border: 3px solid #f97316}
 
 #Développement-web{border: 3px solid #aa86ff}
 
@@ -372,6 +387,8 @@ body{
 #Figma{border: 3px solid #0ACF83}
 
 #Front-end{border: 3px solid #61DBFB}
+
+#FullStack{border: 3px solid #67B1D9;}
 
 #HTML{border: 3px solid #F35C2B}
 
@@ -398,6 +415,8 @@ body{
 #undefined{opacity: 0;}
 
 #UX-UI{border: 3px solid #FF6F61}
+
+#Visualisation-Data{border: 3px solid #38bdf8;}
 
 #YAML{border: 3px solid #CB171E}
 
@@ -698,8 +717,12 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 1200px;
     margin: auto;
+    min-height: 100vh;
+    background-image: url(Images/waves2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 
 #contact_box{
@@ -707,14 +730,17 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 1200px;
 }
 
 #contact h1{
     font-family: 'Inter', sans-serif;
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
-    margin: 25px 0;
+    margin: 75px 0;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #4C4C4C, 2px 2px 0 #4C4C4C, 3px 3px 0 #4C4C4C, 4px 4px 0 #4C4C4C;
 }
 
 #contact_container{
@@ -725,7 +751,7 @@ body{
 
 #contact_container_box{
     border: #2AA4FE 3px solid;
-    background-color: #222222;
+    background-color: #4C4C4C;
     width: 350px;
     height: 50px;
     margin: 15px;
@@ -734,15 +760,23 @@ body{
     display: flex;
     align-items: center;
     transition: 250ms;
+    box-shadow: 
+        1px 1px 0 #4C4C4C, 
+        2px 2px 0 #4C4C4C, 
+        3px 3px 0 #4C4C4C, 
+        4px 4px 0 #4C4C4C, 
+        5px 5px 0 #4C4C4C,
+        0px -4px 10px 0px #00000050;
 }
 
 #contact_container_box:hover{
-    background-color: #2AA4FE;
-    color: #2C2C2C;
+    background-color: #2C2C2C;
+    color: #2AA4FE;
+    border: #2C2C2C 3px solid;
 }
 
 #contact_container_box:hover #contact_det p{
-    color: #2C2C2C;
+    color: #2AA4FE;
 }
 
 .contact_container_img{
@@ -755,19 +789,14 @@ body{
 }
 
 #contact_container_telephone{background-image: url(Icones/telephone.svg);}
-#contact_container_box:nth-child(1):hover #contact_container_telephone {background-image: url('Icones/telephone_hover.svg');}
 
 #contact_container_mail{background-image: url(Icones/mail.svg);}
-#contact_container_box:nth-child(2):hover #contact_container_mail {background-image: url('Icones/mail_hover.svg');}
 
 #contact_container_localisation{background-image: url(Icones/localisation.svg);}
-#contact_container_box:nth-child(3):hover #contact_container_localisation {background-image: url('Icones/localisation_hover.svg');}
 
 #contact_container_linkedin{background-image: url(Icones/linkedin.svg);}
-#contact_container_box:nth-child(4):hover #contact_container_linkedin {background-image: url('Icones/linkedin_hover.svg');}
 
 #contact_container_github{background-image: url(Icones/github.svg);}
-#contact_container_box:nth-child(5):hover #contact_container_github {background-image: url('Icones/github_hover.svg');}
 
 #contact_det{
     margin-left: 15px;
@@ -804,6 +833,14 @@ body{
     cursor: pointer;
 }
 
+#version p{
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
 /* RESPONSIVE */
 
 @media(max-width: 1250px){
@@ -827,14 +864,14 @@ body{
 
 @media(max-width: 1020px){
     #me_left {width: 450px;}
+    #me_left p{width: 400px;}
 }
 
 @media(max-width: 832px){
     #me{flex-direction: column-reverse;height: 750px;}
-    #me_right{height: 295px;width: 295px;margin: 60px 0 0 0;}
-    #me_right img{margin: 0;}
+    #me_right{height: 295px;width: 295px;margin: 60px 0 50px 0;}
     #me_left{text-align: center;}
-    #me_left p{padding: 20px 0;}
+    #me_left p{padding: 15px;width: 415px;}
     #socials{justify-content: center;}
     #projet_container{width: 385px;gap: 55px;}
 }
@@ -868,40 +905,42 @@ body{
     #header a{padding: 10px 15px;}
     #hover_square{height: 39px;}
 
-    #me{height: 650px;}
-    #me_right{width: 200px;height: 200px;margin: 50px 0 0 0;}
+    #me{height: 650px;margin-top: 0px;}
+    #me_right{width: 200px;height: 200px;margin: 50px 0 50px 0;}
     #me_left{width: 350px;}
-    #me_left h1{font-size: 1.5rem;}
-    #me_left p{width: 350px;font-size: 0.8rem;}
+    #me_left h1{font-size: 2.5rem;}
+    #me_left p{width: 315px;font-size: 0.8rem;}
 
-    #socials a:first-child{width: 150px;}
-    #socials button, #socials a{height: 50px; font-size: 0.9rem;}
-    #socials button:last-child, #socials button:nth-child(2){width: 50px;}
-    #socials button img{width: 25px;height: 25px;}
+    #socials a:first-child, .view-projet, .view-code{width: 160px; font-size: 0.9rem;height: 35px;border: #2AA4FE 2px solid;}
+    #socials button, #socials a{height: 40px; font-size: 0.9rem;}
+    #socials button:last-child, #socials button:nth-child(2){width: 40px;height: 40px;}
 
-    #projets h1{font-size: 1.5rem;}
-    #projet_container h1{font-size: 1.75rem;}
+    #projets h1{font-size: 1.75rem;}
+    #projet_container h1{font-size: 1.2rem;}
 
-    .close-btn {width: 40px;height: 40px;}
+    .close-btn {width: 40px;height: 40px;margin-top: 20px;}
+    .popup-content{max-height: 100vh;height: 100vh;}
+    .popup-header{margin-top: 20px;}
+    .popup-detail{max-height: 85vh;}
     .popup-content p{text-align: left;}
     .popup-tags p{font-size: 0.8rem;}
     .language_projet p{text-align: center;}
     .buttons-footer{flex-direction: column;}
 
+    #contact h1{font-size: 1.75rem;}
     #contact_container_box{width: 300px;}
-    #contact_container_box img{width: 35px;height: 35px;}
+    .contact_container_img{width: 50px;height: 35px;}
     #contact_container_box h2{font-size: 1rem;}
     #contact_container_box p{font-size: 0.8rem;}
     #contact_container_box button img {width: 20px;}
 }
 
 @media(max-width: 465px){
-    #projets h1{font-size: 1.1rem;width: 300px;text-align: center;margin: 25px 0 10px 0;}
-    #projet_container h1{font-size: 1.75rem;width: auto;text-align: left;margin:0;}
-
-    .popup-content{max-height: 90vh;}
+    #projets h1{width: 300px;text-align: center;}
+    #projet_container h1{font-size: 1.2rem;width: auto;text-align: left;margin:0;}
 }
 
 @media(max-width: 420px){
     .popup-detail-lang{width: 100%;flex-direction: column;}
+    .language_projet{margin: 10px 0;}
 }
