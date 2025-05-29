@@ -404,6 +404,8 @@ body{
 
 #NodeJS {border: 3px solid #43853D}
 
+#PHP{border: 3px solid #807cb4;}
+
 #Projet{border: 3px solid #22c55e;}
 
 #Python{border: 3px solid #3776AB}
@@ -411,6 +413,8 @@ body{
 #Responsive{border: 3px solid #2D9CDB}
 
 #Stage{border: 3px solid #9ca3af;}
+
+#SQL{border: 3px solid #08bcf4;}
 
 #undefined{opacity: 0;}
 
@@ -919,9 +923,9 @@ body{
     #projet_container h1{font-size: 1.2rem;}
 
     .close-btn {width: 40px;height: 40px;margin-top: 20px;}
-    .popup-content{max-height: 100vh;height: 100vh;}
+    .popup-content{max-height: 80vh;height: 800vh;}
     .popup-header{margin-top: 20px;}
-    .popup-detail{max-height: 85vh;}
+    .popup-detail{max-height: calc(82vh - 115px);}
     .popup-content p{text-align: left;}
     .popup-tags p{font-size: 0.8rem;}
     .language_projet p{text-align: center;}
@@ -941,6 +945,7 @@ body{
 }
 
 @media(max-width: 420px){
+    .popup-detail{max-height: calc(82vh - 130px);}
     .popup-detail-lang{width: 100%;flex-direction: column;}
     .language_projet{margin: 10px 0;}
 }
