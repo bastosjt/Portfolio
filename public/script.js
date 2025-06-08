@@ -15,6 +15,9 @@ fetch('data/projets.json')
         <h1>${projet.title}</h1>
         <div id="ligne"></div>
         <p>${projet.description}</p>
+        <div class="projet_view">
+          <p>cliquer pour visualiser</p>
+        </div>
       </div>
       <div class="projet_desc">
         ${projet.languages.map((lang, index) => `

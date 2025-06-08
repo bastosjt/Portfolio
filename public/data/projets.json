@@ -190,5 +190,30 @@
     ],
     "Link":["http://www.asmasse.eu/"],
     "Code":[""]
+  },
+  {
+    "id": "cocktails",
+    "title": "Bastos cocktails",
+    "description": "Bar virtuel et recettes de cocktails",
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "languages_pourcentage": ["undefined ", "undefined ", "undefined "],
+    "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
+    "tags": ["Développement web", "Projet personnel","Full Stack", "Responsive", "IA"],
+    "tags_context": ["Developpement-web", "Projet", "FullStack" , "Responsive", "IA"],
+    "icone": ["Icones/cocktails.svg"],
+    "couverture": ["Images/bastos_cocktails.png"],
+    "images": [
+      "Images/bastos_cocktails.png",
+      "Images/bastos_cocktails_1.png",
+      "Images/bastos_cocktails_2.png",
+      "Images/bastos_cocktails_3.png"
+    ],
+    "description_det": [
+      "Projet en cours de réalisation.",
+      "Ce projet consiste à présenter un bar virtuel sous forme d'un site entièrement dynamisé en JavaScript.",
+      "Objectifs du projet : Présenter les différentes recettes des cocktails et mocktails du bar, pouvoir accèder à la recette et à sa réalisation. Intégrer l'IA pour créer des recettes personnalisées."
+    ],
+    "Link":["https://bastosjt.github.io/Cocktails/"],
+    "Code":["https://github.com/bastosjt/Cocktails"]
   }
 ]
