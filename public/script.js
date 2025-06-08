@@ -9,15 +9,19 @@ fetch('data/projets.json')
   }
 
   container.innerHTML = data.map(projet => `
-    <div class="projet" data-id="${projet.id}">
-      <img src="${projet.couverture}" alt="${projet.title}">
-      <h1>${projet.title}</h1>
-      <div id="ligne"></div>
-      <p>${projet.description}</p>
-      <ul>
-          <li class="projet_type" id="${projet.type}">${projet.titre_type}</li>
-          <li class="projet_contexte" id="${projet.contexte}">${projet.titre_contexte}</li>
-      </ul>
+    <div class="projet_box">
+      <div class="projet" data-id="${projet.id}">
+        <img src="${projet.couverture}" alt="${projet.title}">
+        <h1>${projet.title}</h1>
+        <div id="ligne"></div>
+        <p>${projet.description}</p>
+      </div>
+      <div class="projet_desc">
+        ${projet.languages.map((lang, index) => `
+          <div class="lang_box_circle" id="${lang}_box_circle" style="border: 3px solid ${projet.languages_pourcentage_couleur[index]};border-radius:5px;"></div>
+          <p>${lang}</p>
+        `).join('')}
+      </div>
     </div>
   `).join('');
 
@@ -42,6 +46,11 @@ fetch('data/projets.json')
 function showPopup(projet) {
   const popupBackground = document.createElement('div');
   popupBackground.classList.add('popup-background');
+  const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+  if (scrollbarWidth > 0) {
+    document.body.style.paddingRight = scrollbarWidth + 'px';
+  }
 
   const popup = document.createElement('div');
   popup.classList.add('popup');
@@ -58,7 +67,7 @@ function showPopup(projet) {
       </div>
       <div class="popup-detail">
         <div class="popup-tags">
-        ${projet.tags.map(tag => `<p id="${tag}">${tag}</p>`).join('')}
+        ${projet.tags.map((tag, i) => `<p id="${projet.tags_context[i]}">${tag}</p>`).join('')}
         </div>
         <div class="popup-detail-inner">
           <div class="popup-detail-img">
@@ -145,6 +154,7 @@ function showPopup(projet) {
     setTimeout(() => {
       popup.remove();
       document.body.classList.remove('no-scroll');
+      document.body.style.paddingRight = '';
     }, 200);
     popupBackground.remove();
   }

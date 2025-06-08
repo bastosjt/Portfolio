@@ -8,6 +8,7 @@
 body{
     background-color: #222222;
     color: #ffffff;
+    overflow-y: scroll;
 }
 
 /* HEADER */
@@ -315,7 +316,7 @@ body{
     cursor: pointer;
     transition: 150ms;
     width: 345px;
-    height: 330px;
+    height: 290px;
 }
 
 .projet:hover{
@@ -364,6 +365,25 @@ body{
     background-color: #2C2C2C;
 }
 
+.projet_desc{
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.lang_box_circle{
+    width: 5px;
+    height: 5px;
+}
+
+.projet_desc p{margin-right: 10px;}
+
 /* LANGUAGES ET TAGS */
 
 #Back-end{border: 3px solid #6E5494}
@@ -376,9 +396,9 @@ body{
 
 #D3JS{border: 3px solid #f69c4d;}
 
-#Développement-app{border: 3px solid #f97316}
+#Developpement-app{border: 3px solid #f97316}
 
-#Développement-web{border: 3px solid #aa86ff}
+#Developpement-web{border: 3px solid #aa86ff}
 
 #DevSecOps{border: 3px solid #C9510C}
 
@@ -430,9 +450,8 @@ body{
 
 /* POPUP PROJETS BOX */
 
-.no-scroll {
+.no-scroll{
     overflow: hidden;
-    padding-right: 17px;
 }
 
 .popup-background {
@@ -781,6 +800,7 @@ body{
 
 #contact_container_box:hover #contact_det p{
     color: #2AA4FE;
+    text-decoration: none;
 }
 
 .contact_container_img{
@@ -877,7 +897,18 @@ body{
     #me_left{text-align: center;}
     #me_left p{padding: 15px;width: 415px;}
     #socials{justify-content: center;}
-    #projet_container{width: 385px;gap: 55px;}
+
+}
+
+@media(max-width: 800px){
+    #projet_container{width: 600px;}
+    .projet{width: 245px;height: auto;max-height: 350px}
+    .projet img{width: 235px;}
+    #projet_container h1{font-size: 1.25rem;}
+    .projet ul{flex-direction: column;}
+    .projet ul li{margin-left: 0px;margin-bottom: 10px;}
+    .projet ul li:last-child{visibility: hidden;position: absolute;}
+    .projet p{padding-bottom: 10px;height: 36px;}
 }
 
 @media(max-width: 750px){
@@ -891,11 +922,24 @@ body{
 
 @media(max-width: 700px){
     .popup-main-image{width: 80%}
-}
-
-@media(max-width: 700px){
     .popup-detail-lang{gap: 0px;margin: 30px 0;}
     .popup-detail-lang p{width: 90px;}
+}
+
+@media(max-width: 600px){
+    #projet_container{width: 290px;}
+    .projet{width: 245px;height: auto;max-height: 350px}
+    .projet img{width: 235px;}
+    #projet_container h1{font-size: 1.25rem;}
+    .projet ul{flex-direction: column;}
+    .projet ul li{margin-left: 0px;margin-bottom: 10px;}
+    .projet ul li:last-child{visibility: hidden;position: absolute;}
+    .popup-header{flex-direction: column;align-items: center;justify-content: center;}
+    .popup-content-icone{margin-bottom: 15px;}
+    .popup-header-title{display: flex;align-items: center;}
+    .popup-detail{max-height: calc(82vh - 180px);}
+    .close-btn{margin-top: 0px;}
+    .projet p{padding-bottom: 10px;height: auto;}
 }
 
 @media(max-width: 550px){
@@ -911,8 +955,9 @@ body{
 
     #me{height: 650px;margin-top: 0px;}
     #me_right{width: 200px;height: 200px;margin: 50px 0 50px 0;}
-    #me_left{width: 350px;}
+    #me_left{width: 350px;display: flex;flex-direction: column;align-items: center;}
     #me_left h1{font-size: 2.5rem;}
+    #me_left h3{width: 300px;}
     #me_left p{width: 315px;font-size: 0.8rem;}
 
     #socials a:first-child, .view-projet, .view-code{width: 160px; font-size: 0.9rem;height: 35px;border: #2AA4FE 2px solid;}
@@ -922,10 +967,9 @@ body{
     #projets h1{font-size: 1.75rem;}
     #projet_container h1{font-size: 1.2rem;}
 
-    .close-btn {width: 40px;height: 40px;margin-top: 20px;}
     .popup-content{max-height: 80vh;height: 800vh;}
     .popup-header{margin-top: 20px;}
-    .popup-detail{max-height: calc(82vh - 115px);}
+    .popup-detail{max-height: calc(82vh - 200px);}
     .popup-content p{text-align: left;}
     .popup-tags p{font-size: 0.8rem;}
     .language_projet p{text-align: center;}
@@ -945,7 +989,7 @@ body{
 }
 
 @media(max-width: 420px){
-    .popup-detail{max-height: calc(82vh - 130px);}
+    .popup-detail{max-height: calc(82vh - 200px);}
     .popup-detail-lang{width: 100%;flex-direction: column;}
     .language_projet{margin: 10px 0;}
 }

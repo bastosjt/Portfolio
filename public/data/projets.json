@@ -1,214 +1,194 @@
 [
-    {
-      "id": "de_vinyles",
-      "title": "De Vinyles",
-      "description": "Magasin et service fictif de vinyles",
-      "type": ["Développement-web"],
-      "titre_type": ["Développement web"],
-      "contexte": ["Projet"],
-      "titre_contexte": ["Projet scolaire"],
-      "languages": ["HTML", "CSS"],
-      "languages_pourcentage": ["38.8", "61.2"],
-      "languages_pourcentage_couleur": ["#1574BC", "#F35C2B"],
-      "tags": ["Développement-web", "Front-end", "Figma", "HTML", "CSS"],
-      "icone": ["Icones/vinyle.svg"],
-      "couverture": ["Images/De_vinyles.png"],
-      "images": [
-        "Images/De_vinyles.png",
-        "Images/De_vinyles_1.png",
-        "Images/De_vinyles_2.png",
-        "Images/De_vinyles_3.png",
-        "Images/De_vinyles_4.png",
-        "Images/De_vinyles_5.png"
-      ],
-      "description_det": [
-        "Dans le cadre de mon projet final de 1ère année, j'ai réalisé un site web vitrine pour une entreprise fictive spécialisée dans la vente de platines, de vinyles de musique et de vinyles personnalisés.",
-        " J'ai d'abord conçu l'ensemble du design sur Figma, en définissant l'identité visuelle et la structure du site. Ensuite, j'ai développé le site entièrement en HTML et CSS en me basant sur la maquette.",
-        "Le site est composé de quatre pages principales : une page d’accueil immersive, une boutique, une page 'À propos' et une page de connexion.",
-        "Ce projet m'a permis de mettre en pratique des techniques avancées d'intégration web, notamment l'ajout de vidéos en arrière-plan, d'animations CSS et d'éléments interactifs."
-      ],
-      "Link":["https://www.figma.com/proto/qkA8rlELkQqzCuMI75jVUr/De-Vinyles?node-id=1001-2&p=f&t=Yk6ppiZWalTZTG7K-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1001%3A2"],
-      "Code":[""]
-    },
-    {
-      "id": "snakey",
-      "title": "Snakey",
-      "description": "Jeu de serpent",
-      "type": ["Développement-app"],
-      "titre_type": ["Développement app"],
-      "titre_contexte": ["Projet scolaire"],
-      "contexte": ["Projet"],
-      "languages": ["HTML", "CSS", "JavaScript"],
-      "languages_pourcentage": ["21.2", "11.9", "66.9"],
-      "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
-      "tags": ["Développement-app", "FullStack", "HTML", "CSS", "JavaScript"],
-      "icone": ["Icones/snakey.svg"],
-      "couverture": ["Images/Snakey.png"],
-      "images": [
-        "Images/Snakey.png",
-        "Images/Snakey_1.png",
-        "Images/Snakey_2.png",
-        "Images/Snakey_3.png",
-        "Images/Snakey_4.png",
-        "Images/Snakey_5.png"
-      ],
-      "description_det": [
-        "Dans le cadre d'un projet final en groupe réalisé avec un camarade lors de mon échange universitaire en Lettonie, j'ai développé une version moderne du jeu Snake, codée en HTML, CSS et JavaScript.",
-        "L'objectif était de concevoir un jeu fluide, interactif et visuellement attrayant, tout en garantissant de bonnes performances sur tous les navigateurs web.",
-        "Le site propose un design moderne du jeu original avec des fonctionnalités comme le changement de thème et un mode sombre activable via des boutons sous le jeu.",
-        "Ce projet m'a permis de renforcer mes compétences en JavaScript, notamment sur la gestion d'animations, la logique de jeu et l’optimisation des performances."
-      ],
-      "Link":["https://carlos75clc.github.io/DIP392-BCH92/snake.html"],
-      "Code":["https://github.com/Carlos75clc/DIP392-BCH92"]
-    },
-    {
-      "id": "asmasse",
-      "title": "ASMASSE",
-      "description": "Cabinet de massages et bien-être",
-      "type": ["Développement-web"],
-      "titre_type": ["Développement web"],
-      "contexte": ["Stage"],
-      "titre_contexte": ["Stage"],
-      "languages": ["HTML", "CSS", "JavaScript"],
-      "languages_pourcentage": ["14.6", "79.6", "5.8"],
-      "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
-      "tags": ["Développement-web", "Front-end", "Figma", "UX-UI", "HTML", "CSS", "JavaScript", "Responsive"],
-      "icone": ["Icones/asmasse.svg"],
-      "couverture": ["Images/asmasse.png"],
-      "images": [
-        "Images/asmasse.png",
-        "Images/asmasse_1.png",
-        "Images/asmasse_2.png",
-        "Images/asmasse_3.png",
-        "Images/asmasse_4.png",
-        "Images/asmasse_5.png"
-      ],
-      "description_det": [
-        "Lors de mon stage chez ASMASSE, j'ai reconstruit complètement le site internet de l’entreprise spécialisée dans le bien-être.",
-        "Mon travail s'est divisé en trois étapes : la conception du design avec Figma, le développement en HTML, CSS et JavaScript, et le déploiement du site.",
-        "J'ai collaboré avec l’équipe pour créer une interface moderne, axée sur l’expérience utilisateur et responsive. J'ai également assuré la mise en production en corrigeant des bugs et en effectuant des tests.",
-        "Ce stage m'a permis de renforcer mes compétences en développement web et en UX/UI design dans un contexte réel."
-      ],
-      "Link":["http://www.asmasse.eu/"],
-      "Code":[""]
-    },
-    {
-      "id": "portfolio",
-      "title": "Portfolio",
-      "description": "Vous êtes actuellement sur le site :)",
-      "type": ["Développement-web"],
-      "titre_type": ["Développement web"],
-      "contexte": ["Projet"],
-      "titre_contexte": ["Projet personnel"],
-      "languages": ["HTML", "CSS", "Javascript"],
-      "languages_pourcentage": ["17", "59.7", "23.3"],
-      "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
-      "tags": ["Développement-web", "FullStack", "UX-UI", "HTML", "CSS", "JavaScript", "Responsive", "NodeJS"],
-      "icone": ["Icones/B.svg"],
-      "couverture": ["Images/Portfolio.png"],
-      "images": [
-        "Images/Portfolio.png",
-        "Images/Portfolio_1.png",
-        "Images/Portfolio_2.png",
-        "Images/Portfolio_3.png",
-        "Images/Portfolio_4.png"
-      ],
-      "description_det": [
-        "Mon portfolio présente mes projets de développement informatique de manière dynamique et optimisée.",
-        "Grâce à un fichier JSON, le code JavaScript génère automatiquement les encadrés des projets et leurs popups, réduisant ainsi le code source et améliorant la performance du site.",
-        "Ce projet met en valeur mes compétences en développement web (HTML, CSS, JavaScript) et FullStack, tout en offrant une navigation fluide et rapide grâce à une gestion optimisée des données.",
-        "Mon portfolio est constamment mis à jour pour améliorer son efficacité et garantir une expérience utilisateur optimale."
-      ],
-      "Link":[""],
-      "Code":["https://github.com/bastosjt/Portfolio"]
-    },
-    {
-        "id": "kubernetes",
-        "title": "Kubernetes",
-        "description": "App web sur un cluster Kubernetes",
-        "type": ["DevSecOps"],
-        "titre_type": ["DevSecOps"],
-        "contexte": ["Projet"],
-        "titre_contexte": ["Projet scolaire"],
-        "languages": ["HTML", "Javascript", "Dockerfile"],
-        "languages_pourcentage": ["65.6", "33", "1.4"],
-        "languages_pourcentage_couleur": ["#1574BC", "#FBB343", "#2496ED"],
-        "tags": ["DevSecOps", "Kubernetes", "Docker", "NodeJS", "MySQL"],
-        "icone": ["Icones/kubernetes.svg"],
-        "couverture": ["Images/Kubernetes.png"],
-        "images": [
-          "Images/Kubernetes.png",
-          "Images/Kubernetes_1.png",
-          "Images/Kubernetes_2.png",
-          "Images/Kubernetes_3.png",
-          "Images/Kubernetes_4.png",
-          "Images/Kubernetes_5.png"
-        ],
-        "description_det": [
-          "Ce projet consiste en le déploiement d'une application web utilisant Node.js pour le backend et MySQL pour la base de données, sur un cluster Kubernetes via Minikube.",
-          "L'application utilise Node.js pour le backend et MySQL comme base de données. L'ensemble des services est conteneurisé avec Docker, puis orchestré via Kubernetes, garantissant ainsi la scalabilité, la sécurité et la résilience de l'application.",
-          "Ce projet met en valeur mes compétences en DevSecOps, notamment dans la gestion d'infrastructure cloud, le déploiement d'applications conteneurisées et l'orchestration avec Kubernetes et Docker.",
-          "Pour plus de détails sur la configuration et l'architecture, vous pouvez consulter le code complet sur mon GitHub."
-        ],
-        "Link":[""],
-        "Code":["https://github.com/bastosjt/Projet-kubernetes"]
-    },
-    {
-      "id": "data_visualisation",
-      "title": "Visualisation de datas",
-      "description": "Analyse des attaques APT",
-      "type": ["Visualisation-Data"],
-      "titre_type": ["Visualisation Data"],
-      "contexte": ["Projet"],
-        "titre_contexte": ["Projet scolaire"],
-      "languages": ["HTML", "CSS", "JavaScript"],
-      "languages_pourcentage": ["10.0", "12.6", "77.4"],
-      "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
-      "tags": ["Visualisation-Data", "Cybersécurité", "FullStack", "HTML", "CSS", "JavaScript", "D3JS"],
-      "icone": ["Icones/DataViz.svg"],
-      "couverture": ["Images/DataViz.png"],
-      "images": [
-        "Images/DataViz.png",
-        "Images/DataViz_1.png",
-        "Images/DataViz_2.png"
-      ],
-      "description_det": [
-        "Ce projet consiste en la création d'un dashboard interactif permettant d'explorer et d'analyser les données relatives aux attaques APT survenues en 2023-2024.",
-        "Les données sont d'abord manipulées avec Python avant d'être intégrées et visualisées sous forme de graphiques interactifs (camemberts, donuts, courbes, cartes) via D3.js.",
-        "Le dashboard permet aux utilisateurs de filtrer les attaques selon leur type, avec des graphiques qui s'ajustent dynamiquement pour offrir des informations pertinentes sur chaque type de menace.",
-        "Ce projet renforce mes compétences en visualisation data, en développement web interactif et en cybersécurité, tout en offrant une expérience utilisateur fluide et engageante."
-      ],
-      "Link": ["https://bastosjt.github.io/Data-Visulation/"],
-      "Code": ["https://github.com/bastosjt/Data-Visulation"]
-    },
-    {
-      "id": "asmasse_php",
-      "title": "ASMASSE - PHP",
-      "description": "Cabinet de massages et bien-être",
-      "type": ["Développement-web"],
-      "titre_type": ["Développement web"],
-      "contexte": ["Stage"],
-      "titre_contexte": ["Stage"],
-      "languages": ["HTML", "PHP", "SQL"],
-      "languages_pourcentage": ["", "", ""],
-      "languages_pourcentage_couleur": ["#1574BC", "#807cb4", "#08bcf4"],
-      "tags": ["Développement-web", "Cybersécurité","Back-end", "HTML", "PHP", "MySQL", "Responsive"],
-      "icone": ["Icones/asmasse.svg"],
-      "couverture": ["Images/asmasse.png"],
-      "images": [
-        "Images/asmasse.png",
-        "Images/asmasse_1.png",
-        "Images/asmasse_2.png",
-        "Images/asmasse_3.png",
-        "Images/asmasse_4.png",
-        "Images/asmasse_5.png"
-      ],
-      "description_det": [
-        "Projet en cours de réalisation durant mon stage cybersécurité SSI du 05/2025 au 09/2025.",
-        "Ce projet consiste à reprendre un site vitrine statique développé en 2024 pour le rendre dynamique et sécurisé.",
-        "Objectifs du projet : Migration d’un site statique vers une architecture dynamique (PHP/MySQL), Structuration et sécurisation d’une base de données SQL"
-      ],
-      "Link":["http://www.asmasse.eu/"],
-      "Code":[""]
-    }
-  ]
+  {
+    "id": "de_vinyles",
+    "title": "De Vinyles",
+    "description": "Magasin et service fictif de vinyles",
+    "titre_contexte": ["Projet scolaire"],
+    "languages": ["HTML", "CSS"],
+    "languages_pourcentage": ["38.8", "61.2"],
+    "languages_pourcentage_couleur": ["#1574BC", "#F35C2B"],
+    "tags": ["Développement web", "Projet scolaire", "Front end", "Figma"],
+    "tags_context": ["Developpement-web", "Projet", "Front-end", "Figma"],
+    "icone": ["Icones/vinyle.svg"],
+    "couverture": ["Images/De_vinyles.png"],
+    "images": [
+      "Images/De_vinyles.png",
+      "Images/De_vinyles_1.png",
+      "Images/De_vinyles_2.png",
+      "Images/De_vinyles_3.png",
+      "Images/De_vinyles_4.png",
+      "Images/De_vinyles_5.png"
+    ],
+    "description_det": [
+      "Dans le cadre de mon projet final de 1ère année, j'ai réalisé un site web vitrine pour une entreprise fictive spécialisée dans la vente de platines, de vinyles de musique et de vinyles personnalisés.",
+      " J'ai d'abord conçu l'ensemble du design sur Figma, en définissant l'identité visuelle et la structure du site. Ensuite, j'ai développé le site entièrement en HTML et CSS en me basant sur la maquette.",
+      "Le site est composé de quatre pages principales : une page d’accueil immersive, une boutique, une page 'À propos' et une page de connexion.",
+      "Ce projet m'a permis de mettre en pratique des techniques avancées d'intégration web, notamment l'ajout de vidéos en arrière-plan, d'animations CSS et d'éléments interactifs."
+    ],
+    "Link":["https://www.figma.com/proto/qkA8rlELkQqzCuMI75jVUr/De-Vinyles?node-id=1001-2&p=f&t=Yk6ppiZWalTZTG7K-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1001%3A2"],
+    "Code":[""]
+  },
+  {
+    "id": "snakey",
+    "title": "Snakey",
+    "description": "Jeu de serpent",
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "languages_pourcentage": ["21.2", "11.9", "66.9"],
+    "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
+    "tags": ["Développement-app", "Projet scolaire", "Full Stack"],
+    "tags_context": ["Developpement-app", "Projet", "FullStack", "Figma"],
+    "icone": ["Icones/snakey.svg"],
+    "couverture": ["Images/Snakey.png"],
+    "images": [
+      "Images/Snakey.png",
+      "Images/Snakey_1.png",
+      "Images/Snakey_2.png",
+      "Images/Snakey_3.png",
+      "Images/Snakey_4.png",
+      "Images/Snakey_5.png"
+    ],
+    "description_det": [
+      "Dans le cadre d'un projet final en groupe réalisé avec un camarade lors de mon échange universitaire en Lettonie, j'ai développé une version moderne du jeu Snake, codée en HTML, CSS et JavaScript.",
+      "L'objectif était de concevoir un jeu fluide, interactif et visuellement attrayant, tout en garantissant de bonnes performances sur tous les navigateurs web.",
+      "Le site propose un design moderne du jeu original avec des fonctionnalités comme le changement de thème et un mode sombre activable via des boutons sous le jeu.",
+      "Ce projet m'a permis de renforcer mes compétences en JavaScript, notamment sur la gestion d'animations, la logique de jeu et l’optimisation des performances."
+    ],
+    "Link":["https://carlos75clc.github.io/DIP392-BCH92/snake.html"],
+    "Code":["https://github.com/Carlos75clc/DIP392-BCH92"]
+  },
+  {
+    "id": "asmasse",
+    "title": "ASMASSE",
+    "description": "Cabinet de massages et bien-être",
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "languages_pourcentage": ["14.6", "79.6", "5.8"],
+    "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
+    "tags": ["Développement-web", "Stage", "Front-end", "Figma", "UX/UI", "Responsive"],
+    "tags_context": ["Developpement-web", "Stage", "Front-end", "Figma", "UX-UI", "Responsive"],
+    "icone": ["Icones/asmasse.svg"],
+    "couverture": ["Images/asmasse.png"],
+    "images": [
+      "Images/asmasse.png",
+      "Images/asmasse_1.png",
+      "Images/asmasse_2.png",
+      "Images/asmasse_3.png",
+      "Images/asmasse_4.png",
+      "Images/asmasse_5.png"
+    ],
+    "description_det": [
+      "Lors de mon stage chez ASMASSE, j'ai reconstruit complètement le site internet de l’entreprise spécialisée dans le bien-être.",
+      "Mon travail s'est divisé en trois étapes : la conception du design avec Figma, le développement en HTML, CSS et JavaScript, et le déploiement du site.",
+      "J'ai collaboré avec l’équipe pour créer une interface moderne, axée sur l’expérience utilisateur et responsive. J'ai également assuré la mise en production en corrigeant des bugs et en effectuant des tests.",
+      "Ce stage m'a permis de renforcer mes compétences en développement web et en UX/UI design dans un contexte réel."
+    ],
+    "Link":["http://www.asmasse.eu/"],
+    "Code":[""]
+  },
+  {
+    "id": "portfolio",
+    "title": "Portfolio",
+    "description": "Vous êtes actuellement sur le site :)",
+    "languages": ["HTML", "CSS", "Javascript"],
+    "languages_pourcentage": ["17", "59.7", "23.3"],
+    "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
+    "tags": ["Développement-web", "Projet personnel", "Full Stack", "UX-UI", "Responsive", "Node.js"],
+    "tags_context": ["Developpement-web", "Projet", "FullStack", "UX-UI", "Responsive", "NodeJS"],
+    "icone": ["Icones/B.svg"],
+    "couverture": ["Images/Portfolio.png"],
+    "images": [
+      "Images/Portfolio.png",
+      "Images/Portfolio_1.png",
+      "Images/Portfolio_2.png",
+      "Images/Portfolio_3.png",
+      "Images/Portfolio_4.png"
+    ],
+    "description_det": [
+      "Mon portfolio présente mes projets de développement informatique de manière dynamique et optimisée.",
+      "Grâce à un fichier JSON, le code JavaScript génère automatiquement les encadrés des projets et leurs popups, réduisant ainsi le code source et améliorant la performance du site.",
+      "Ce projet met en valeur mes compétences en développement web (HTML, CSS, JavaScript) et FullStack, tout en offrant une navigation fluide et rapide grâce à une gestion optimisée des données.",
+      "Mon portfolio est constamment mis à jour pour améliorer son efficacité et garantir une expérience utilisateur optimale."
+    ],
+    "Link":[""],
+    "Code":["https://github.com/bastosjt/Portfolio"]
+  },
+  {
+    "id": "kubernetes",
+    "title": "Kubernetes",
+    "description": "App web sur un cluster Kubernetes",
+    "languages": ["HTML", "Javascript"],
+    "languages_pourcentage": ["65.6", "33", "1.4"],
+    "languages_pourcentage_couleur": ["#1574BC", "#FBB343", "#2496ED"],
+    "tags": ["DevSecOps", "Projet scolaire", "Kubernetes", "Docker", "Node.js", "MySQL"],
+    "tags_context": ["DevSecOps", "Projet", "Kubernetes", "Docker", "NodeJS", "MySQL"],
+    "icone": ["Icones/kubernetes.svg"],
+    "couverture": ["Images/Kubernetes.png"],
+    "images": [
+      "Images/Kubernetes.png",
+      "Images/Kubernetes_1.png",
+      "Images/Kubernetes_2.png",
+      "Images/Kubernetes_3.png",
+      "Images/Kubernetes_4.png",
+      "Images/Kubernetes_5.png"
+    ],
+    "description_det": [
+      "Ce projet consiste en le déploiement d'une application web utilisant Node.js pour le backend et MySQL pour la base de données, sur un cluster Kubernetes via Minikube.",
+      "L'application utilise Node.js pour le backend et MySQL comme base de données. L'ensemble des services est conteneurisé avec Docker, puis orchestré via Kubernetes, garantissant ainsi la scalabilité, la sécurité et la résilience de l'application.",
+      "Ce projet met en valeur mes compétences en DevSecOps, notamment dans la gestion d'infrastructure cloud, le déploiement d'applications conteneurisées et l'orchestration avec Kubernetes et Docker.",
+      "Pour plus de détails sur la configuration et l'architecture, vous pouvez consulter le code complet sur mon GitHub."
+    ],
+    "Link":[""],
+    "Code":["https://github.com/bastosjt/Projet-kubernetes"]
+  },
+  {
+    "id": "data_visualisation",
+    "title": "Dashboard cyber",
+    "description": "Analyse des attaques APT",
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "languages_pourcentage": ["10.0", "12.6", "77.4"],
+    "languages_pourcentage_couleur": ["#1574BC", "#F35C2B", "#FBB343"],
+    "tags": ["Visualisation data", "Projet scolaire", "Cybersécurité", "Full Stack", "D3.js"],
+    "tags_context": ["Visualisation-Data", "Projet", "Cybersécurité", "FullStack", "D3JS"],
+    "icone": ["Icones/DataViz.svg"],
+    "couverture": ["Images/DataViz.png"],
+    "images": [
+      "Images/DataViz.png",
+      "Images/DataViz_1.png",
+      "Images/DataViz_2.png"
+    ],
+    "description_det": [
+      "Ce projet consiste en la création d'un dashboard interactif permettant d'explorer et d'analyser les données relatives aux attaques APT survenues en 2023-2024.",
+      "Les données sont d'abord manipulées avec Python avant d'être intégrées et visualisées sous forme de graphiques interactifs (camemberts, donuts, courbes, cartes) via D3.js.",
+      "Le dashboard permet aux utilisateurs de filtrer les attaques selon leur type, avec des graphiques qui s'ajustent dynamiquement pour offrir des informations pertinentes sur chaque type de menace.",
+      "Ce projet renforce mes compétences en visualisation data, en développement web interactif et en cybersécurité, tout en offrant une expérience utilisateur fluide et engageante."
+    ],
+    "Link": ["https://bastosjt.github.io/Data-Visulation/"],
+    "Code": ["https://github.com/bastosjt/Data-Visulation"]
+  },
+  {
+    "id": "asmasse_php",
+    "title": "ASMASSE - Back end",
+    "description": "Cabinet de massages et bien-être",
+    "languages": ["HTML", "PHP", "SQL"],
+    "languages_pourcentage": ["undefined ", "undefined ", "undefined "],
+    "languages_pourcentage_couleur": ["#1574BC", "#807cb4", "#08bcf4"],
+    "tags": ["Développement web", "Stage","Back-end", "PHP", "MySQL", "Responsive"],
+    "tags_context": ["Developpement-web", "Stage", "Back-end", "PHP", "MySQL", "Responsive"],
+    "icone": ["Icones/asmasse.svg"],
+    "couverture": ["Images/asmasse.png"],
+    "images": [
+      "Images/asmasse.png",
+      "Images/asmasse_1.png",
+      "Images/asmasse_2.png",
+      "Images/asmasse_3.png",
+      "Images/asmasse_4.png",
+      "Images/asmasse_5.png"
+    ],
+    "description_det": [
+      "Projet en cours de réalisation durant mon stage cybersécurité SSI du 05/2025 au 09/2025.",
+      "Ce projet consiste à reprendre un site vitrine statique développé en 2024 pour le rendre dynamique et sécurisé.",
+      "Objectifs du projet : Migration d’un site statique vers une architecture dynamique (PHP/MySQL), Structuration et sécurisation d’une base de données SQL contre les attaques XXS et SQL injections."
+    ],
+    "Link":["http://www.asmasse.eu/"],
+    "Code":[""]
+  }
+]
