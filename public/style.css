@@ -317,20 +317,61 @@ body{
     width: 345px;
     height: auto;
     z-index: 1;
-    margin-bottom: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding-top: 5px;
 }
 
 .projet:hover{
     transform: scale(1.05);
 }
 
-.projet img{
-    width: 335px;
-    border-radius: 10px;
-    margin: 5px;
+.projet_titre_contexte{
+    position: absolute;
+    z-index: 1;
+    color: #ffffff;
+    margin-left: 5px;
+    margin-top: 10px;
+    box-shadow: 2px 0px 15px 5px #2a2a2ab1;
 }
+
+.projet_titre_contexte h4{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+}
+
+.projet_img{
+    width: 335px;
+    height: 215px;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 5px 5px 5px;
+}
+
+/*  Projet img slides    */
+
+/*
+#de_vinyles{animation: slideImagesDeVinyles 8s infinite ease;}
+@keyframes slideImagesDeVinyles {
+    0% {background-image: url('Images/De_vinyles.png');}
+    33.33% {background-image: url('Images/De_vinylesV2.png');}
+    66.66% {background-image: url('Images/De_vinylesV3.png');}
+    100% {background-image: url('Images/De_vinyles.png');}
+}
+
+#cocktails{animation: slideImagesCocktails 8s infinite ease-in;}
+@keyframes slideImagesCocktails {
+    0% {background-image: url('Images/Cocktails.png');}
+    33.33% {background-image: url('Images/CocktailsV2.png');}
+    66.66% {background-image: url('Images/CocktailsV3.png');}
+    100% {background-image: url('Images/Cocktails.png');}
+}
+    */
 
 #projet_container h1{
     font-family: 'Maven Pro', sans-serif;
@@ -421,6 +462,8 @@ body{
 
 #DevSecOps{border: 3px solid #C9510C}
 
+#Digitalisation{border: 3px solid #6A6A6A}
+
 #Dockerfile, #Docker{border: 3px solid #2496ED}
 
 #Figma{border: 3px solid #0ACF83}
@@ -445,11 +488,21 @@ body{
 
 #PHP{border: 3px solid #807cb4;}
 
-#Projet{border: 3px solid #22c55e;}
+#Power_Apps{border: 3px solid #742774;}
+
+#Power_Automate{border: 3px solid #0086D1}
+
+#Power_Bi{border: 3px solid #F2C811;}
+
+#Projet_scolaire{border: 3px solid #22c55e;}
+
+#Projet_perso{border: 3px solid #f97316;}
 
 #Python{border: 3px solid #3776AB}
 
 #Responsive{border: 3px solid #2D9CDB}
+
+#SharePoint{border: 3px solid #0078D4;}
 
 #Stage{border: 3px solid #9ca3af;}
 
@@ -521,13 +574,13 @@ body{
     padding: 25px;
     border-radius: 25px;
     text-align: center;
-    max-width: 1200px;
     width: 100%;
     position: relative;
     color: #ffffff;
-    max-height: 80vh;
+    height: 90vh;
     transform: scale(1);
     transition: transform 0.3s ease;
+    margin: 0 5px;
 }
 
 .popup-content-inner {
@@ -578,7 +631,7 @@ body{
     background-color: #222222;
     border-radius: 10px;
     overflow-y: auto;
-    max-height: calc(82vh - 100px);
+    max-height: calc(90vh - 85px);
     margin-top: 20px;
 }
 
@@ -636,12 +689,7 @@ body{
     border-radius: 10px;
     transition: 200ms ease-in-out;
     box-shadow: 0px 6px 10px 5px rgba(0,0,0,0.35);
-}
-
-.popup-main-image:hover{
     cursor: pointer;
-    transition: 200ms ease-in-out;
-    transform: scale(1.015);
 }
   
 .popup-mini-images img{
@@ -927,7 +975,7 @@ body.dark-mode{
 @media(max-width: 800px){
     #projet_container{width: 600px;}
     .projet{width: 245px;height: auto}
-    .projet img{width: 235px;}
+    .projet_img{width: 235px;height: 151px;}
     #projet_container h1{font-size: 1.25rem;}
     .projet ul{flex-direction: column;}
     .projet ul li{margin-left: 0px;margin-bottom: 10px;}
@@ -955,7 +1003,7 @@ body.dark-mode{
 @media(max-width: 600px){
     #projet_container{width: 290px;}
     .projet{width: 245px;height: auto;max-height: 350px}
-    .projet img{width: 235px;}
+    .projet_img{width: 235px;height: 151px;}
     #projet_container h1{font-size: 1.25rem;}
     .projet ul{flex-direction: column;}
     .projet ul li{margin-left: 0px;margin-bottom: 10px;}

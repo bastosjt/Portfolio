@@ -11,7 +11,10 @@ fetch('data/projets.json')
   container.innerHTML = data.map(projet => `
     <div class="projet_box">
       <div class="projet" data-id="${projet.id}">
-        <img src="${projet.couverture}" alt="${projet.title}">
+        <div class="projet_titre_contexte" style="background-color:${projet.titre_contexte_color};">
+          <h4>${projet.titre_contexte}</h4>
+        </div>
+        <div class="projet_img" style="background-image: url('${projet.couverture}');" id="${projet.id}"></div>
         <h1>${projet.title}</h1>
         <div id="ligne"></div>
         <p>${projet.description}</p>
@@ -119,8 +122,8 @@ function showPopup(projet) {
   document.body.classList.add('no-scroll');
 
   document.querySelectorAll('.popup-mini-images img').forEach((img) => {
+    // Clic : met à jour l'image principale et la passe en plein écran
     img.addEventListener('click', (e) => {
-
       const mainImage = document.querySelector('.popup-main-image');
       mainImage.src = e.target.src;
 
@@ -128,10 +131,37 @@ function showPopup(projet) {
         img.style.border = '3px solid #3C3C3C';
         img.style.borderRadius = '5px';
       });
-      
+
       e.target.style.border = '3px solid #2AA4FE';
       e.target.style.borderRadius = '10px';
+
+      // Lancer le plein écran après mise à jour de l'image principale
+      if (mainImage.requestFullscreen) {
+        mainImage.requestFullscreen();
+      } else if (mainImage.mozRequestFullScreen) {
+        mainImage.mozRequestFullScreen();
+      } else if (mainImage.webkitRequestFullscreen) {
+        mainImage.webkitRequestFullscreen();
+      } else if (mainImage.msRequestFullscreen) {
+        mainImage.msRequestFullscreen();
+      }
     });
+
+    // Hover (desktop) : met à jour l'image principale sans fullscreen
+    if (!('ontouchstart' in window)) {
+      img.addEventListener('mouseenter', (e) => {
+        const mainImage = document.querySelector('.popup-main-image');
+        mainImage.src = e.target.src;
+
+        document.querySelectorAll('.popup-mini-images img').forEach((img) => {
+          img.style.border = '3px solid #3C3C3C';
+          img.style.borderRadius = '5px';
+        });
+
+        e.target.style.border = '3px solid #2AA4FE';
+        e.target.style.borderRadius = '10px';
+      });
+    }
   });
 
   document.querySelector('.popup-main-image').addEventListener('click', (e) => {
