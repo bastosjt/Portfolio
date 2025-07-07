@@ -474,6 +474,8 @@ body{
 
 #HTML{border: 3px solid #F35C2B}
 
+#IA{border: 3px solid #8b5cf6;}
+
 #JavaScript{border: 3px solid #FBB343}
 
 #Kubernetes {border: 3px solid #326CE5}
@@ -504,7 +506,7 @@ body{
 
 #SharePoint{border: 3px solid #0078D4;}
 
-#Stage{border: 3px solid #9ca3af;}
+#Stage{border: 3px solid #2563eb;}
 
 #SQL{border: 3px solid #08bcf4;}
 
@@ -652,6 +654,19 @@ body{
 
 .popup-detail::-webkit-scrollbar-thumb:hover {
     background: #2aa6fe91;
+}
+
+.popup-detail-p{
+    margin: 10px 15px;
+    display: flex;
+}
+
+.popup-detail-p p{
+    font-family: Inter;
+    color: #ffffff;
+    opacity: 1;
+    padding: 5px 10px;
+    border-radius: 125px
 }
 
 .popup-tags{
@@ -1011,7 +1026,7 @@ body.dark-mode{
     .popup-header{flex-direction: column;align-items: center;justify-content: center;}
     .popup-content-icone{margin-bottom: 15px;}
     .popup-header-title{display: flex;align-items: center;}
-    .popup-detail{max-height: calc(82vh - 180px);}
+    .popup-detail{max-height: calc(82vh - 100px);}
     .close-btn{margin-top: 0px;}
     .projet p{padding-bottom: 10px;height: auto;}
 }
@@ -1041,9 +1056,7 @@ body.dark-mode{
     #projets h1{font-size: 1.75rem;}
     #projet_container h1{font-size: 1.2rem;}
 
-    .popup-content{max-height: 80vh;height: 800vh;}
-    .popup-header{margin-top: 20px;}
-    .popup-detail{max-height: calc(82vh - 200px);}
+    .popup-detail{max-height: calc(82vh - 100px);}
     .popup-content p{text-align: left;}
     .popup-tags p{font-size: 0.8rem;}
     .language_projet p{text-align: center;}
@@ -1063,7 +1076,7 @@ body.dark-mode{
 }
 
 @media(max-width: 420px){
-    .popup-detail{max-height: calc(82vh - 200px);}
+    .popup-detail{max-height: calc(82vh - 100px);}
     .popup-detail-lang{width: 100%;flex-direction: column;}
     .language_projet{margin: 10px 0;}
 }

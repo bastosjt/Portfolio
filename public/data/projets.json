@@ -2,6 +2,7 @@
   {
     "id": "de_vinyles",
     "title": "De Vinyles",
+    "date": "12 décembre 2022",
     "description": "Magasin et service fictif de vinyles",
     "titre_contexte": ["Projet scolaire"],
     "titre_contexte_color": ["#22c55e"],
@@ -32,6 +33,7 @@
   {
     "id": "snakey",
     "title": "Snakey",
+    "date": "28 mai 2024",
     "description": "Jeu de serpent",
     "titre_contexte": ["Projet scolaire"],
     "titre_contexte_color": ["#22c55e"],
@@ -61,6 +63,7 @@
   {
     "id": "asmasse",
     "title": "ASMASSE",
+    "date": "5 août 2024",
     "description": "Cabinet de massages et bien-être",
     "titre_contexte": ["Stage"],
     "titre_contexte_color": ["#2563eb"],
@@ -90,6 +93,7 @@
   {
     "id": "registre_securite",
     "title": "Registre sécurité",
+    "date": "27 sept. 2024",
     "description": "Sécurité et gestion d'un chantier",
     "titre_contexte": ["Stage"],
     "titre_contexte_color": ["#2563eb"],
@@ -120,6 +124,7 @@
   {
     "id": "portfolio",
     "title": "Portfolio",
+    "date": "",
     "description": "Vous êtes actuellement sur le site :)",
     "titre_contexte": ["Projet personnel"],
     "titre_contexte_color": ["#f97316"],
@@ -148,6 +153,7 @@
   {
     "id": "kubernetes",
     "title": "Kubernetes",
+    "date": "12 déc. 2024",
     "description": "App web sur un cluster Kubernetes",
     "titre_contexte": ["Projet scolaire"],
     "titre_contexte_color": ["#22c55e"],
@@ -178,6 +184,7 @@
   {
     "id": "data_visualisation",
     "title": "Dashboard cyber",
+    "date": "9 avril 2025",
     "description": "Analyse des attaques APT",
     "titre_contexte": ["Projet scolaire"],
     "titre_contexte_color": ["#22c55e"],
@@ -205,6 +212,7 @@
   {
     "id": "asmasse_php",
     "title": "ASMASSE - Back end",
+    "date": "26 sept. 2025",
     "description": "Cabinet de massages et bien-être",
     "titre_contexte": ["Stage"],
     "titre_contexte_color": ["#2563eb"],
@@ -245,10 +253,11 @@
     "icone": ["Icones/cocktails.svg"],
     "couverture": ["Images/Cocktails.png"],
     "images": [
-      "Images/Cocktails.png",
-      "Images/bastos_cocktails_1.png",
-      "Images/bastos_cocktails_2.png",
-      "Images/bastos_cocktails_3.png"
+      "Images/cocktails_1.png",
+      "Images/cocktails_2.png",
+      "Images/cocktails_3.png",
+      "Images/cocktails_4.png",
+      "Images/cocktails_5.png"
     ],
     "description_det": [
       "Projet en cours de réalisation.",

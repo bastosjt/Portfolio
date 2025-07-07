@@ -75,6 +75,9 @@ function showPopup(projet) {
         <div class="popup-tags">
         ${projet.tags.map((tag, i) => `<p id="${projet.tags_context[i]}">${tag}</p>`).join('')}
         </div>
+        <div class="popup-detail-p">
+          <p style="background-color: ${projet.titre_contexte_color};">Projet terminé le ${projet.date}</p>
+        </div>
         <div class="popup-detail-inner">
           <div class="popup-detail-img">
             <img class="popup-main-image" src="${projet.images[0]}">
