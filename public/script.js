@@ -23,9 +23,9 @@ fetch('data/projets.json')
         </div>
       </div>
       <div class="projet_desc">
-        ${projet.languages.map((lang, index) => `
-          <div class="lang_box_circle" id="${lang}_box_circle" style="border: 3px solid ${projet.languages_pourcentage_couleur[index]};border-radius:5px;"></div>
-          <p>${lang}</p>
+        ${projet.titre_description.map((titre_desc, index) => `
+          <div class="lang_box_circle" id="${titre_desc}_box_circle" style="border: 3px solid ${projet.titre_description_color[index]};border-radius:5px;"></div>
+          <p>${titre_desc}</p>
         `).join('')}
       </div>
     </div>
