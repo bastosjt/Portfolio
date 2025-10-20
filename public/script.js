@@ -16,10 +16,8 @@ fetch('data/projets.json')
         </div>
         <div class="projet_img" style="background-image: url('${projet.couverture}');" id="${projet.id}"></div>
         <h1>${projet.title}</h1>
-        <div id="ligne"></div>
-        <p>${projet.description}</p>
         <div class="projet_view">
-          <p>cliquer pour visualiser</p>
+          <p>voir le projet</p>
         </div>
       </div>
       <div class="projet_desc">
@@ -62,7 +60,7 @@ function showPopup(projet) {
   popup.classList.add('popup');
   popup.innerHTML = `
     <div class="popup-content">
-      <span class="close-btn">&times;</span>
+      <div class="close-btn">&times;</div>
       <div class="popup-header">
         <img class="popup-content-icone" src="${projet.icone}">
         <div class="popup-header-title">
@@ -71,50 +69,51 @@ function showPopup(projet) {
           <p>${projet.description}</p>
         </div>
       </div>
-      <div class="popup-detail">
-        <div class="popup-tags">
-        ${projet.tags.map((tag, i) => `<p id="${projet.tags_context[i]}">${tag}</p>`).join('')}
-        </div>
-        <div class="popup-detail-p">
-          <p style="background-color: ${projet.titre_contexte_color};">Projet terminé le ${projet.date}</p>
-        </div>
-        <div class="popup-detail-inner">
-          <div class="popup-detail-img">
-            <img class="popup-main-image" src="${projet.images[0]}">
-            <div class="popup-mini-images">
-              ${projet.images.map(img => `<img src="${img}">`).join('')}
-            </div>
+      <div class="popup-detail-wrapper">
+        <div class="popup-detail">
+          <div class="popup-tags">
+          ${projet.tags.map((tag, i) => `<p id="${projet.tags_context[i]}">${tag}</p>`).join('')}
           </div>
-          <div class="popup-detail-desc">
-            ${projet.description_det.map(desc => `<p>${desc}</p>`).join('')}
-          </div>
-        </div>
-        <div class="popup-detail-lang">
-          ${projet.languages.map((lang, index) => `
-            <div class="language_projet">
-              <p>${lang}</p>
-              <div class="language_pourcentage">
-                <p>${projet.languages_pourcentage[index]}%</p>
-                <div class="language_barre">
-                  <div class="language_barre_det" style="width: ${projet.languages_pourcentage[index]}%; background-color: ${projet.languages_pourcentage_couleur[index]}"></div>
-                </div>
+          <div class="popup-detail-inner">
+            <div class="popup-detail-img">
+              <img class="popup-main-image" src="${projet.images[0]}">
+              <div class="popup-mini-images">
+                ${projet.images.map(img => `<img src="${img}">`).join('')}
               </div>
             </div>
-          `).join('')}
-        </div>
-        <div class="buttons-footer">
-          <button 
-            class="view-projet" 
-            onclick="window.open('${projet.Link[0]}', '_blank')" 
-            style="display: ${projet.Link[0] ? 'block' : 'none'}">
-            Visualiser le projet
-          </button>
-          <button 
-            class="view-code" 
-            onclick="window.open('${projet.Code[0]}', '_blank')" 
-            style="display: ${projet.Code[0] ? 'block' : 'none'}">
-            Visualiser le code
-          </button>
+            <div class="popup-detail-desc">
+              ${projet.description_det.map(desc => `<p>${desc}</p>`).join('')}
+            </div>
+          </div>
+          <div class="popup-detail-lang">
+            <div class="popup-lang-box">
+              ${projet.languages.map((lang, index) => `
+                <div class="language_projet">
+                  <p>${lang}</p>
+                </div>
+                ${index < projet.languages.length - 1 ? '<div class="lang_trait"></div>' : ''}
+              `).join('')}
+            </div>
+          </div>
+          <div class="buttons-footer">
+            <div class="buttons-footer-box">   
+              <button 
+                class="view-projet" 
+                onclick="window.open('${projet.Link[0]}', '_blank')" 
+                style="display: ${projet.Link[0] ? 'block' : 'none'}">
+                Voir le projet
+              </button>
+              <button 
+                class="view-code" 
+                onclick="window.open('${projet.Code[0]}', '_blank')" 
+                style="display: ${projet.Code[0] ? 'block' : 'none'}">
+                Voir le code
+              </button>
+            </div>
+          </div>
+          <div class="popup-detail-p">
+            <p>Projet terminé le ${projet.date}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -232,29 +231,11 @@ function copier_mail() {
 }
 
 window.addEventListener('scroll', function() {
-  const header = document.getElementById('header');
-  const header_group_img = document.getElementById('header_group_img');
-  const header_group_h1 = document.getElementById('header_group_h1');
-  const header_a1 = document.getElementById('header_a1');
-  const header_a2 = document.getElementById('header_a2');
-  const header_a3 = document.getElementById('header_a3');
-  const hover_square = document.getElementById('hover_square');
+
 
   if (window.scrollY > 175) {
-      header.classList.add('shrink');
-      header_group_img.classList.add('shrink');
-      header_group_h1.classList.add('shrink');
-      header_a1.classList.add('shrink');
-      header_a2.classList.add('shrink');
-      header_a3.classList.add('shrink');
-      hover_square.classList.add('shrink');
+
   } else {
-      header.classList.remove('shrink');
-      header_group_img.classList.remove('shrink');
-      header_group_h1.classList.remove('shrink');
-      header_a1.classList.remove('shrink');
-      header_a2.classList.remove('shrink');
-      header_a3.classList.remove('shrink');
-      hover_square.classList.remove('shrink');
+
   }
 });
