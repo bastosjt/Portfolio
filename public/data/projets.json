@@ -220,7 +220,7 @@
     "languages": ["HTML", "JavaScript", "Python"],
     "tags": ["Développement app", "Cybersécurité", "Stage","Full Stack"],
     "tags_context": ["Developpement-app", "Cybersécurité", "Stage", "FullStack"],
-    "icone": ["Icones/Python.svg"],
+    "icone": ["Icones/python.svg"],
     "couverture": ["Images/antiphishing_1.webp"],
     "images": [
       "Images/antiphishing_1.webp",
@@ -251,11 +251,11 @@
     "icone": ["Icones/cocktails.svg"],
     "couverture": ["Images/Cocktails.webp"],
     "images": [
-      "Images/cocktails_1.webp",
-      "Images/cocktails_2.webp",
-      "Images/cocktails_3.webp",
-      "Images/cocktails_4.webp",
-      "Images/cocktails_5.webp"
+      "Images/Cocktails_1.webp",
+      "Images/Cocktails_2.webp",
+      "Images/Cocktails_3.webp",
+      "Images/Cocktails_4.webp",
+      "Images/Cocktails_5.webp"
     ],
     "description_det": [
       "Ce projet consiste à créer un bar virtuel entièrement interactif, permettant de présenter les différentes recettes de cocktails et mocktails. Les utilisateurs peuvent accéder à chaque recette et suivre sa réalisation directement sur le site, offrant une expérience immersive et ludique.",
