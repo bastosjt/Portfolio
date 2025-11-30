@@ -98,7 +98,7 @@ window.addEventListener('scroll', () => {
   document.getElementById('galerie_background_6').style.transform = `translateY(${limitedScroll * -0.05}px)`;
 });
 
-
+/*
 setTimeout(() => {
   const projetBoxes = document.querySelectorAll('.projet_box');
 
@@ -117,7 +117,7 @@ setTimeout(() => {
   }, { threshold: 0.4 });
 
   projetBoxes.forEach(box => observer.observe(box));
-}, 50);
+}, 50);*/
 
 function ouvrir_linkedin(){
   window.open('https://www.linkedin.com/in/bastien-jamet/');
