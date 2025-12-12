@@ -11,15 +11,15 @@
     "languages": ["HTML", "CSS"],
     "tags": ["Développement web", "Projet scolaire", "Front end", "Figma"],
     "tags_context": ["Developpement-web", "Projet_scolaire", "Front-end", "Figma"],
-    "icone": ["Icones/vinyle.svg"],
-    "couverture": ["Images/De_vinyles.webp"],
+    "icone": ["vinyle.svg"],
+    "couverture": ["De_vinyles.webp"],
     "images": [
-      "Images/De_vinyles.webp",
-      "Images/De_vinyles_1.webp",
-      "Images/De_vinyles_2.webp",
-      "Images/De_vinyles_3.webp",
-      "Images/De_vinyles_4.webp",
-      "Images/De_vinyles_5.webp"
+      "De_vinyles.webp",
+      "De_vinyles_1.webp",
+      "De_vinyles_2.webp",
+      "De_vinyles_3.webp",
+      "De_vinyles_4.webp",
+      "De_vinyles_5.webp"
     ],
     "description_det": [
       "Dans le cadre de mon projet final de première année, j’ai conçu et développé un site vitrine pour une entreprise fictive spécialisée dans la vente de platines et de vinyles personnalisés.",
@@ -41,14 +41,14 @@
     "languages": ["HTML", "CSS", "JavaScript"],
     "tags": ["Développement app", "Projet scolaire", "Full Stack"],
     "tags_context": ["Developpement-app", "Projet_scolaire", "FullStack", "Figma"],
-    "icone": ["Icones/snakey.svg"],
-    "couverture": ["Images/Snakey.webp"],
+    "icone": ["snakey.svg"],
+    "couverture": ["Snakey.webp"],
     "images": [
-      "Images/Snakey.webp",
-      "Images/Snakey_1.webp",
-      "Images/Snakey_2.webp",
-      "Images/Snakey_3.webp",
-      "Images/Snakey_4.webp"
+      "Snakey.webp",
+      "Snakey_1.webp",
+      "Snakey_2.webp",
+      "Snakey_3.webp",
+      "Snakey_4.webp"
     ],
     "description_det": [
       "Dans le cadre d’un projet final en groupe réalisé avec un camarade lors de mon échange universitaire en Lettonie, j’ai conçu et développé une version moderne du jeu Snake entièrement codée en HTML, CSS et JavaScript.",
@@ -71,14 +71,14 @@
     "languages": ["HTML", "CSS", "JavaScript"],
     "tags": ["Développement-web", "Stage", "Front-end", "Figma", "UX/UI", "Responsive"],
     "tags_context": ["Developpement-web", "Stage", "Front-end", "Figma", "UX-UI", "Responsive"],
-    "icone": ["Icones/asmasse.svg"],
-    "couverture": ["Images/asmasse.webp"],
+    "icone": ["asmasse.svg"],
+    "couverture": ["asmasse.webp"],
     "images": [
-      "Images/asmasse_1.webp",
-      "Images/asmasse_2.webp",
-      "Images/asmasse_3.webp",
-      "Images/asmasse_4.webp",
-      "Images/asmasse_5.webp"
+      "asmasse_1.webp",
+      "asmasse_2.webp",
+      "asmasse_3.webp",
+      "asmasse_4.webp",
+      "asmasse_5.webp"
     ],
     "description_det": [
       "Lors de mon stage chez ASMASSE, j’ai reconstruit entièrement le site internet de l’entreprise spécialisée dans le bien-être.",
@@ -102,14 +102,14 @@
     "tags": ["Développement app", "Stage","Power Apps", "Power Automate", "Power BI", "SharePoint", "Digitalisation"],
     "tags_context": ["Developpement-app", "Stage", "Power_Apps", "Power_Automate", "Power_Bi", "SharePoint", "Digitalisation"],
     "icone": ["Icones/registre_securite.svg"],
-    "couverture": ["Images/registre_securite.webp"],
+    "couverture": ["registre_securite.webp"],
     "images": [
-      "Images/registre_securite.webp",
-      "Images/registre_securite_1.webp",
-      "Images/registre_securite_2.webp",
-      "Images/registre_securite_3.webp",
-      "Images/registre_securite_4.webp",
-      "Images/registre_securite_5.webp"
+      "registre_securite.webp",
+      "registre_securite_1.webp",
+      "registre_securite_2.webp",
+      "registre_securite_3.webp",
+      "registre_securite_4.webp",
+      "registre_securite_5.webp"
     ],
     "description_det": [
       "Lors de mon stage chez Vinci Construction, j’ai développé une application Power Apps pour digitaliser la gestion des ouvrages provisoires sur le chantier de la ligne 18 du Grand Paris Express.",
@@ -132,13 +132,13 @@
     "languages": ["HTML", "Tailwind CSS", "Javascript"],
     "tags": ["Développement-web", "Projet personnel", "Full Stack", "UX-UI", "Responsive", "Node.js"],
     "tags_context": ["Developpement-web", "Projet_perso", "FullStack", "UX-UI", "Responsive", "NodeJS"],
-    "icone": ["Icones/B.svg"],
-    "couverture": ["Images/Portfolio.webp"],
+    "icone": ["B.svg"],
+    "couverture": ["Portfolio.webp"],
     "images": [
-      "Images/Portfolio_1.webp",
-      "Images/Portfolio_2.webp",
-      "Images/Portfolio_3.webp",
-      "Images/Portfolio_4.webp"
+      "Portfolio_1.webp",
+      "Portfolio_2.webp",
+      "Portfolio_3.webp",
+      "Portfolio_4.webp"
     ],
     "description_det": [
       "Mon portfolio présente mes projets de développement informatique de manière dynamique et optimisée.",
@@ -161,12 +161,12 @@
     "languages": ["HTML", "CSS", "JavaScript"],
     "tags": ["Visualisation data", "Projet scolaire", "Cybersécurité", "Full Stack", "D3.js"],
     "tags_context": ["Visualisation-Data", "Projet_scolaire", "Cybersécurité", "FullStack", "D3JS"],
-    "icone": ["Icones/DataViz.svg"],
-    "couverture": ["Images/DataViz.webp"],
+    "icone": ["DataViz.svg"],
+    "couverture": ["DataViz.webp"],
     "images": [
-      "Images/DataViz.webp",
-      "Images/DataViz_1.webp",
-      "Images/DataViz_2.webp"
+      "DataViz.webp",
+      "DataViz_1.webp",
+      "DataViz_2.webp"
     ],
     "description_det": [
       "Ce projet consiste en la création d’un dashboard interactif permettant d’explorer et d’analyser les données relatives aux attaques APT survenues en 2023-2024.",
@@ -189,15 +189,15 @@
     "languages": ["HTML", "PHP", "SQL"],
     "tags": ["Développement web", "Stage","Back-end", "PHP", "MySQL", "Responsive"],
     "tags_context": ["Developpement-web", "Stage", "Back-end", "PHP", "MySQL", "Responsive"],
-    "icone": ["Icones/asmasse.svg"],
-    "couverture": ["Images/asmasse.webp"],
+    "icone": ["asmasse.svg"],
+    "couverture": ["asmasse.webp"],
     "images": [
-      "Images/asmasse.webp",
-      "Images/asmasse_1.webp",
-      "Images/asmasse_2.webp",
-      "Images/asmasse_3.webp",
-      "Images/asmasse_4.webp",
-      "Images/asmasse_5.webp"
+      "asmasse.webp",
+      "asmasse_1.webp",
+      "asmasse_2.webp",
+      "asmasse_3.webp",
+      "asmasse_4.webp",
+      "asmasse_5.webp"
     ],
     "description_det": [
       "Dans le cadre de mon stage cybersécurité SSI chez ASMASSE, j’ai repris un site vitrine statique développé en 2024 pour le rendre dynamique et sécurisé.",
@@ -220,12 +220,12 @@
     "languages": ["HTML", "JavaScript", "Python"],
     "tags": ["Développement app", "Cybersécurité", "Stage","Full Stack"],
     "tags_context": ["Developpement-app", "Cybersécurité", "Stage", "FullStack"],
-    "icone": ["Icones/python.svg"],
-    "couverture": ["Images/antiphishing_1.webp"],
+    "icone": ["python.svg"],
+    "couverture": ["antiphishing_1.webp"],
     "images": [
-      "Images/antiphishing_1.webp",
-      "Images/antiphishing_2.webp",
-      "Images/antiphishing_3.webp"
+      "antiphishing_1.webp",
+      "antiphishing_2.webp",
+      "antiphishing_3.webp"
     ],
     "description_det": [
       "Ce projet consiste à développer un programme en Python capable d’analyser des emails et des pages web pour détecter des tentatives de phishing. Le moteur combine des règles heuristiques et des modèles basés sur des features extraites automatiquement afin d’identifier les éléments suspects..",
@@ -248,14 +248,14 @@
     "languages": ["HTML", "CSS", "JavaScript"],
     "tags": ["Développement web", "Projet personnel","Full Stack", "ReactJS","Responsive", "IA"],
     "tags_context": ["Developpement-web", "Projet_perso", "FullStack" , "ReactJS","Responsive", "IA"],
-    "icone": ["Icones/cocktails.svg"],
-    "couverture": ["Images/Cocktails.webp"],
+    "icone": ["cocktails.svg"],
+    "couverture": ["Cocktails.webp"],
     "images": [
-      "Images/Cocktails_1.webp",
-      "Images/Cocktails_2.webp",
-      "Images/Cocktails_3.webp",
-      "Images/Cocktails_4.webp",
-      "Images/Cocktails_5.webp"
+      "Cocktails_1.webp",
+      "Cocktails_2.webp",
+      "Cocktails_3.webp",
+      "Cocktails_4.webp",
+      "Cocktails_5.webp"
     ],
     "description_det": [
       "Ce projet consiste à créer un bar virtuel entièrement interactif, permettant de présenter les différentes recettes de cocktails et mocktails. Les utilisateurs peuvent accéder à chaque recette et suivre sa réalisation directement sur le site, offrant une expérience immersive et ludique.",

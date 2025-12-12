@@ -66,13 +66,13 @@ body{
   100% { background-position: 100% 50%; }
 }
 
-#galerie_background_1 { background-image: url("Images/wave_layer_1.svg"); z-index:1; animation: panRight 54s ease-in-out infinite; }
-#galerie_background_2 { background-image: url("Images/wave_layer_2.svg"); z-index:2; animation: panLeft 56s ease-in-out infinite; }
-#galerie_background_3 { background-image: url("Images/wave_layer_3.svg"); z-index:3; animation: panRight 58s ease-in-out infinite; }
-#galerie_background_4 { background-image: url("Images/wave_layer_4.svg"); z-index:4; animation: panLeft 60s ease-in-out infinite; }
-#galerie_background_5 { background-image: url("Images/wave_layer_5.svg"); z-index:5; animation: panRight 62s ease-in-out infinite; }
-#galerie_background_6 { background-image: url("Images/wave_layer_6.svg"); z-index:6; animation: panLeft 64s ease-in-out infinite; }
-#galerie_background_7 { background-image: url("Images/wave_layer_7.svg"); z-index:7; animation: panRight 66s ease-in-out infinite; }
+#galerie_background_1 { background-image: url("assets/images/wave_layer_1.svg"); z-index:1; animation: panRight 54s ease-in-out infinite; }
+#galerie_background_2 { background-image: url("assets/images/wave_layer_2.svg"); z-index:2; animation: panLeft 56s ease-in-out infinite; }
+#galerie_background_3 { background-image: url("assets/images/wave_layer_3.svg"); z-index:3; animation: panRight 58s ease-in-out infinite; }
+#galerie_background_4 { background-image: url("assets/images/wave_layer_4.svg"); z-index:4; animation: panLeft 60s ease-in-out infinite; }
+#galerie_background_5 { background-image: url("assets/images/wave_layer_5.svg"); z-index:5; animation: panRight 62s ease-in-out infinite; }
+#galerie_background_6 { background-image: url("assets/images/wave_layer_6.svg"); z-index:6; animation: panLeft 64s ease-in-out infinite; }
+#galerie_background_7 { background-image: url("assets/images/wave_layer_7.svg"); z-index:7; animation: panRight 66s ease-in-out infinite; }
 
 
 /* HEADER */
@@ -371,20 +371,20 @@ body{
 
 #mail_svg{
     width: 45px;
-    background-image: url(Icones/mail_blue.svg);
+    background-image: url(assets/icons/mail_blue.svg);
     background-repeat: no-repeat;
     transform: translate(-60px);
 }
 
 #linkedin_svg{
     width: 45px;
-    background-image: url(Icones/linkedin_blue.svg);
+    background-image: url(assets/icons/linkedin_blue.svg);
     background-repeat: no-repeat;
 }
 
 #github_svg{
     width: 45px;
-    background-image: url(Icones/github_blue.svg);
+    background-image: url(assets/icons/github_blue.svg);
     background-repeat: no-repeat;
     transform: translate(60px);
 }
@@ -410,7 +410,7 @@ body{
 /* PROJETS */
 
 #projets{
-    margin: 40vh 0;
+    margin: 35vh 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1154,15 +1154,15 @@ body{
     transition: 250ms;
 }
 
-#contact_container_telephone{background-image: url(Icones/telephone.svg);}
+#contact_container_telephone{background-image: url(assets/icons/telephone.svg);}
 
-#contact_container_mail{background-image: url(Icones/mail.svg);}
+#contact_container_mail{background-image: url(assets/icons/mail.svg);}
 
-#contact_container_localisation{background-image: url(Icones/localisation.svg);}
+#contact_container_localisation{background-image: url(assets/icons/localisation.svg);}
 
-#contact_container_linkedin{background-image: url(Icones/linkedin.svg);}
+#contact_container_linkedin{background-image: url(assets/icons/linkedin.svg);}
 
-#contact_container_github{background-image: url(Icones/github.svg);}
+#contact_container_github{background-image: url(assets/icons/github.svg);}
 
 #contact_det{
     margin-left: 15px;

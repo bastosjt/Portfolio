@@ -1,4 +1,4 @@
-fetch('data/projets.json')
+fetch('assets/data/projets.json')
 .then(response => response.json())
 .then(data => {
   const container = document.getElementById('projet_container');
@@ -14,7 +14,7 @@ fetch('data/projets.json')
         <div class="projet_titre_contexte" style="background-color:${projet.titre_contexte_color};">
           <h4>${projet.titre_contexte}</h4>
         </div>
-        <div class="projet_img" style="background-image: url('${projet.couverture}');" id="${projet.id}"></div>
+        <div class="projet_img" style="background-image: url('assets/images/${projet.couverture}');" id="${projet.id}"></div>
         <h1>${projet.title}</h1>
         <div class="projet_view">
           <p>voir le projet</p>
@@ -65,7 +65,7 @@ function showPopup(projet) {
     <div class="popup-content">
       <div class="close-btn">&times;</div>
       <div class="popup-header">
-        <img class="popup-content-icone" src="${projet.icone}">
+        <img class="popup-content-icone" src="assets/icons/${projet.icone}">
         <div class="popup-header-title">
           <h1>${projet.title}</h1>
           <div class="popup-header-ligne"></div>
@@ -79,9 +79,9 @@ function showPopup(projet) {
           </div>
           <div class="popup-detail-inner">
             <div class="popup-detail-img">
-              <img class="popup-main-image" src="${projet.images[0]}">
+              <img class="popup-main-image" src="assets/images/${projet.images[0]}">
               <div class="popup-mini-images">
-                ${projet.images.map(img => `<img src="${img}">`).join('')}
+                ${projet.images.map(img => `<img src="assets/images/${img}">`).join('')}
               </div>
             </div>
             <div class="popup-detail-desc">
