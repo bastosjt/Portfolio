@@ -11,9 +11,6 @@ fetch('assets/data/projets.json')
   container.innerHTML = data.map(projet => `
     <div class="projet_box">
       <div class="projet" data-id="${projet.id}">
-        <div class="projet_titre_contexte" style="background-color:${projet.titre_contexte_color};">
-          <h4>${projet.titre_contexte}</h4>
-        </div>
         <div class="projet_img" style="background-image: url('assets/images/${projet.couverture}');" id="${projet.id}"></div>
         <h1>${projet.title}</h1>
         <div class="projet_view">

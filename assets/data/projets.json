@@ -101,7 +101,7 @@
     "languages": ["Power FX"],
     "tags": ["Développement app", "Stage","Power Apps", "Power Automate", "Power BI", "SharePoint", "Digitalisation"],
     "tags_context": ["Developpement-app", "Stage", "Power_Apps", "Power_Automate", "Power_Bi", "SharePoint", "Digitalisation"],
-    "icone": ["Icones/registre_securite.svg"],
+    "icone": ["registre_securite.svg"],
     "couverture": ["registre_securite.webp"],
     "images": [
       "registre_securite.webp",

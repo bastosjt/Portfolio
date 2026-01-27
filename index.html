@@ -6,7 +6,6 @@
 
         <script src="assets/js/script.js" defer></script>
         <script src="assets/js/style.js" defer></script>
-         <script src="assets/js/menu.js" defer></script>
 
         <link rel="icon" href="assets/icons/B.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +22,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-
     </head>
     
     <body id="body_scroll">
@@ -43,12 +41,6 @@
                 <div id="header_group">
                     <img src="assets/icons/B.svg" width="30px" id="header_group_img">
                 </div>
-                <ul id="header_text">
-                    <a id="header_a1" href="#projets">Projets</a>
-                    <a id="header_a2" href="#skills">Skills</a>
-                    <a id="header_a3" href="#contact">Contact</a>
-                    <div id="hover_square"></div>
-                </ul>
                 <div id="header_group" class="header_group_menu">
                     <img src="assets/icons/menu.svg" width="30px" id="header_group_img" onclick="ouvrir_menu()">
                 </div>
@@ -62,7 +54,6 @@
                 <div id="nav_trait"></div>
                 <div id="navigation">
                     <a id="header_a1" href="#projets" onclick="ouvrir_menu()">Projets</a>
-                    <a id="header_a2" href="#skills" onclick="ouvrir_menu()">Skills</a>
                     <a id="header_a3" href="#contact" onclick="ouvrir_menu()">Contact</a>
                 </div>
             </div>
@@ -74,9 +65,9 @@
                     </div>
                     <div id="infos" class="liquid_glass">
                         <div id="socials">
-                            <button id="mail_svg" onclick="copier_mail()"></button>
-                            <button id="linkedin_svg" onclick="ouvrir_linkedin()"></button>
-                            <button id="github_svg" onclick="ouvrir_github()"></button>
+                            <button id="mail_svg" onclick="copier_mail()" aria-label="Copier l'adresse mail"></button>
+                            <button id="linkedin_svg" onclick="ouvrir_linkedin()" aria-label="Ouvrir le profil LinkedIn"></button>
+                            <button id="github_svg" onclick="ouvrir_github()" aria-label="Ouvrir le profil GitHub"></button>
                         </div>
                     </div>
                 </div>
@@ -98,7 +89,7 @@
                                 <h2>Téléphone</h2>
                                 <p>06 43 30 94 52</p>
                             </div>
-                            <button><img src="assets/icons/copier.svg"></button>
+                            <button aria-label="Copier le numéro de téléphone"><img src="assets/icons/copier.svg"></button>
                         </div>
                         <div id="contact_container_box" onclick="copier_mail()">
                             <div class="contact_container_img" id="contact_container_mail"></div>
@@ -106,7 +97,7 @@
                                 <h2>Adresse mail</h2>
                                 <p>bastien.jamet92@gmail.com</p>
                             </div>
-                            <button><img src="assets/icons/copier.svg"></button>
+                            <button aria-label="Copier l'adresse mail"><img src="assets/icons/copier.svg"></button>
                         </div>
                         <div id="contact_container_box" onclick="ouvrir_localisation()"">
                             <div class="contact_container_img" id="contact_container_localisation"></div>
@@ -114,7 +105,7 @@
                                 <h2>Localisation</h2>
                                 <p>92500 Rueil-Malmaison</p>
                             </div>
-                            <button><img src="assets/icons/voir.svg"></button>
+                            <button aria-label="Voir la localisation"><img src="assets/icons/voir.svg"></button>
                         </div>
                         <div id="contact_container_box" onclick="ouvrir_linkedin()">
                             <div class="contact_container_img" id="contact_container_linkedin"></div>
@@ -122,7 +113,7 @@
                                 <h2>LinkedIn</h2>
                                 <p>Mon profil LinkedIn</p>
                             </div>
-                            <button><img src="assets/icons/voir.svg"></button>
+                            <button aria-label="Ouvrir le profil LinkedIn"><img src="assets/icons/voir.svg"></button>
                         </div>
                         <div id="contact_container_box" onclick="ouvrir_github()">
                             <div class="contact_container_img" id="contact_container_github"></div>
@@ -130,7 +121,7 @@
                                 <h2>Github</h2>
                                 <p>Mon profil Github</p>
                             </div>
-                            <button><img src="assets/icons/voir.svg"></button>
+                            <button aria-label="Ouvrir le profil GitHub"><img src="assets/icons/voir.svg"></button>
                         </div>
                     </div>
                 </div>
@@ -139,9 +130,46 @@
                 </div>
             </div>
             <div id="version">
-                <p>Portfolio version 2.7</p>
+                <p>Portfolio version 2.8</p>
             </div>
         </div>
 
     </body>
 </html>
+
+<script>
+    const menu_defilant = document.getElementById('menu_defilant');
+    const menu_defilant_bg = document.getElementById('menu_defilant_bg');
+    const body_scroll = document.getElementById('body_scroll')
+
+    let menuOuvert = false;
+
+    function ouvrir_menu() {
+        if (!menuOuvert) {
+            body_scroll.style.overflowY = 'hidden';
+            menu_defilant.style.opacity = '1';
+            menu_defilant_bg.style.visibility = 'visible';
+            menu_defilant_bg.style.opacity = '1';
+            menu_defilant.style.width = '40vh';
+            menuOuvert = true;
+        } else {
+            body_scroll.style.overflowY = 'scroll';
+            menu_defilant.style.opacity = '0';
+            menu_defilant_bg.style.visibility = 'hidden';
+            menu_defilant.style.width = '0%';
+            menu_defilant_bg.style.opacity = '0';
+            menuOuvert = false;
+        }
+    }
+
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            body_scroll.style.overflowY = 'scroll';
+            menu_defilant.style.opacity = '0';
+            menu_defilant_bg.style.visibility = 'hidden';
+            menu_defilant.style.width = '0%';
+            menu_defilant_bg.style.opacity = '0';
+            menuOuvert = false;
+        }
+    });
+</script>

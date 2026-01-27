@@ -10,14 +10,25 @@ function ouvrir_menu() {
     menu_defilant.style.opacity = '1';
     menu_defilant_bg.style.visibility = 'visible';
     menu_defilant_bg.style.opacity = '1';
-    menu_defilant.style.height = '40vh';
+    menu_defilant.style.width = '40vh';
     menuOuvert = true;
   } else {
     body_scroll.style.overflowY = 'scroll';
     menu_defilant.style.opacity = '0';
     menu_defilant_bg.style.visibility = 'hidden';
+    menu_defilant.style.width = '0%';
     menu_defilant_bg.style.opacity = '0';
-    menu_defilant.style.height = '0';
     menuOuvert = false;
   }
 }
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      body_scroll.style.overflowY = 'scroll';
+      menu_defilant.style.opacity = '0';
+      menu_defilant_bg.style.visibility = 'hidden';
+      menu_defilant.style.width = '0%';
+      menu_defilant_bg.style.opacity = '0';
+      menuOuvert = false;
+    }
+  });

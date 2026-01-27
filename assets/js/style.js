@@ -133,12 +133,13 @@ function ouvrir_localisation(){
 
 function copier_telephone() {
   navigator.clipboard.writeText("0643309452");
-  element_copied()
+  element_copied();
 }
 
 function copier_mail() {
   navigator.clipboard.writeText("bastien.jamet92@gmail.com");
-  element_copied()
+  element_copied();
+  window.open('mailto:bastien.jamet92@gmail.com');
 }
 
 function element_copied(){
