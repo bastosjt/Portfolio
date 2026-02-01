@@ -49,12 +49,12 @@
             <div id="menu_defilant">
                 <div class="close-btn-menu" onclick="ouvrir_menu()">&times;</div>
                 <div id="menu_header">
-                    <h1>Portfolio</h1>
+                    <img src="assets/icons/B.svg" alt="logo_portfolio_bastien_jamet">
                 </div>
                 <div id="nav_trait"></div>
                 <div id="navigation">
-                    <a id="header_a1" href="#projets" onclick="ouvrir_menu()">Projets</a>
-                    <a id="header_a3" href="#contact" onclick="ouvrir_menu()">Contact</a>
+                    <a id="header_a1" href="#projets" onclick="ouvrir_menu()"> <img src="assets/icons/arrow.svg" alt="navigation_arrow"> Projets</a>
+                    <a id="header_a3" href="#contact" onclick="ouvrir_menu()"> <img src="assets/icons/arrow.svg" alt="navigation_arrow">Contact</a>
                 </div>
             </div>
             <div id="galerie">
@@ -82,6 +82,7 @@
             <div id="contact">
                 <div id="contact_box">
                     <h1 class="container_h1_title">Contact</h1>
+                    <div class="contact_separator"></div>
                     <div id="contact_container">
                         <div id="contact_container_box" onclick="copier_telephone()">
                             <div class="contact_container_img" id="contact_container_telephone"></div>
@@ -99,7 +100,7 @@
                             </div>
                             <button aria-label="Copier l'adresse mail"><img src="assets/icons/copier.svg"></button>
                         </div>
-                        <div id="contact_container_box" onclick="ouvrir_localisation()"">
+                        <div id="contact_container_box" onclick="ouvrir_localisation()">
                             <div class="contact_container_img" id="contact_container_localisation"></div>
                             <div id="contact_det">
                                 <h2>Localisation</h2>
@@ -130,7 +131,7 @@
                 </div>
             </div>
             <div id="version">
-                <p>Portfolio version 2.8</p>
+                <p>Portfolio version 2.9</p>
             </div>
         </div>
 
@@ -141,6 +142,7 @@
     const menu_defilant = document.getElementById('menu_defilant');
     const menu_defilant_bg = document.getElementById('menu_defilant_bg');
     const body_scroll = document.getElementById('body_scroll')
+    const header = document.getElementById('header');
 
     let menuOuvert = false;
 
@@ -148,27 +150,58 @@
         if (!menuOuvert) {
             body_scroll.style.overflowY = 'hidden';
             menu_defilant.style.opacity = '1';
+            menu_defilant.style.pointerEvents = 'auto';
             menu_defilant_bg.style.visibility = 'visible';
             menu_defilant_bg.style.opacity = '1';
-            menu_defilant.style.width = '40vh';
+
+            header.style.opacity = '0';
+
+            if (window.innerWidth <= 500) {
+                menu_defilant.style.width = 'calc(100vw - 24px)';
+            } else if (window.innerWidth <= 768) {
+                menu_defilant.style.width = '50%';
+            } else {
+                menu_defilant.style.width = '25%';
+            }
+            
             menuOuvert = true;
         } else {
             body_scroll.style.overflowY = 'scroll';
             menu_defilant.style.opacity = '0';
+            menu_defilant.style.pointerEvents = 'none';
             menu_defilant_bg.style.visibility = 'hidden';
             menu_defilant.style.width = '0%';
             menu_defilant_bg.style.opacity = '0';
+
+            header.style.opacity = '1';
+
             menuOuvert = false;
         }
     }
+
+    window.addEventListener('resize', () => {
+        if (menuOuvert) {
+            if (window.innerWidth <= 500) {
+                menu_defilant.style.width = 'calc(100vw - 24px)';
+            } else if (window.innerWidth <= 768) {
+                menu_defilant.style.width = '50%';
+            } else {
+                menu_defilant.style.width = '25%';
+            }
+        }
+    });
 
     window.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             body_scroll.style.overflowY = 'scroll';
             menu_defilant.style.opacity = '0';
+            menu_defilant.style.pointerEvents = 'none';
             menu_defilant_bg.style.visibility = 'hidden';
             menu_defilant.style.width = '0%';
             menu_defilant_bg.style.opacity = '0';
+
+            header.style.opacity = '1';
+
             menuOuvert = false;
         }
     });

@@ -102,7 +102,7 @@
     "tags": ["Développement app", "Stage","Power Apps", "Power Automate", "Power BI", "SharePoint", "Digitalisation"],
     "tags_context": ["Developpement-app", "Stage", "Power_Apps", "Power_Automate", "Power_Bi", "SharePoint", "Digitalisation"],
     "icone": ["registre_securite.svg"],
-    "couverture": ["registre_securite.webp"],
+    "couverture": ["registre_securite_0.webp"],
     "images": [
       "registre_securite.webp",
       "registre_securite_1.webp",
@@ -166,7 +166,8 @@
     "images": [
       "DataViz.webp",
       "DataViz_1.webp",
-      "DataViz_2.webp"
+      "DataViz_2.webp",
+      "DataViz_3.webp"
     ],
     "description_det": [
       "Ce projet consiste en la création d’un dashboard interactif permettant d’explorer et d’analyser les données relatives aux attaques APT survenues en 2023-2024.",
@@ -254,8 +255,7 @@
       "Cocktails_1.webp",
       "Cocktails_2.webp",
       "Cocktails_3.webp",
-      "Cocktails_4.webp",
-      "Cocktails_5.webp"
+      "Cocktails_4.webp"
     ],
     "description_det": [
       "Ce projet consiste à créer un bar virtuel entièrement interactif, permettant de présenter les différentes recettes de cocktails et mocktails. Les utilisateurs peuvent accéder à chaque recette et suivre sa réalisation directement sur le site, offrant une expérience immersive et ludique.",

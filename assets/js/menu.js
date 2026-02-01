@@ -10,7 +10,13 @@ function ouvrir_menu() {
     menu_defilant.style.opacity = '1';
     menu_defilant_bg.style.visibility = 'visible';
     menu_defilant_bg.style.opacity = '1';
-    menu_defilant.style.width = '40vh';
+    
+    if (window.matchMedia("(max-width: 450px)").matches) {
+      menu_defilant.style.width = '100%';
+    } else {
+      menu_defilant.style.width = '40%';
+    }
+
     menuOuvert = true;
   } else {
     body_scroll.style.overflowY = 'scroll';

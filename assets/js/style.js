@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
   const galerie_background_6 = document.getElementById('galerie_background_6');
   const galerie_background_7 = document.getElementById('galerie_background_7');
 
-  titre_principal_h1.style.transition = 'transform 0.75s ease, opacity 1.5s ease, color 0.75s ease';
+  titre_principal_h1.style.transition = 'transform 1s ease, opacity 1.5s ease, color 0.75s ease';
   titre_principal_h1.style.opacity = '1';
 
   titre_principal_h3.style.transition = 'transform 0.75s ease';
