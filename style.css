@@ -8,6 +8,7 @@
 body{
     background-color: #222222;
     color: #ffffff;
+    overflow-x: hidden;
     overflow-y: scroll;
 }
 
@@ -316,9 +317,10 @@ body{
 }
 
 #navigation a img{
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     transform: rotate(-90deg);
+    margin-right: 5px;
 }
 
 @media(max-width: 500px){
@@ -1522,6 +1524,10 @@ body{
 }
 
 /* RESPONSIVE */
+
+@media(max-width: 1245px){
+    #projet_container{width: min(1155px, calc(100vw - 40px));}
+}
 
 @media(max-width: 1195px){
     #projet_container{width: 770px;}

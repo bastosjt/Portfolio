@@ -1,0 +1,76 @@
+/* Polices hébergées localement – Téléchargez les .woff2 depuis https://gwfh.mranftl.com/fonts */
+
+/* Inter - 300, 500, 800 */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./Inter-300.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./Inter-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./Inter-800.woff2') format('woff2');
+}
+
+/* Comfortaa - 300, 500 */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./Comfortaa-300.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./Comfortaa-500.woff2') format('woff2');
+}
+
+/* Maven Pro - 500 */
+@font-face {
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./MavenPro-500.woff2') format('woff2');
+}
+
+/* Fira Code - Regular */
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./FiraCode-Regular.woff2') format('woff2');
+}
+
+/* Sansation - Regular */
+@font-face {
+  font-family: 'Sansation';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./Sansation-Regular.woff2') format('woff2');
+}
+
+/* Nunito Sans - variable */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url('./NunitoSans-Variable.woff2') format('woff2');
+}

@@ -30,10 +30,48 @@ fetch('assets/data/projets.json')
     </div>
   `).join('');
 
+  const preloadedProjects = new Set();
+  const PRELOAD_DELAY = 180;
+
+  function preloadProjectAssets(projet) {
+    const icon = Array.isArray(projet.icone) ? projet.icone[0] : projet.icone;
+    const urls = [
+      `assets/icons/${icon}`,
+      ...projet.images.map(img => `assets/images/${img}`)
+    ];
+
+    urls.forEach(url => {
+      const img = new Image();
+      img.src = url;
+    });
+  }
+
   const projets = document.querySelectorAll('.projet');
-  projets.forEach(projet => {
-    projet.addEventListener('click', () => {
-      const projetId = projet.getAttribute('data-id');
+  projets.forEach(projetEl => {
+    let preloadTimeout = null;
+
+    projetEl.addEventListener('mouseenter', () => {
+      const projetId = projetEl.getAttribute('data-id');
+      const projet = data.find(p => p.id === projetId);
+      if (!projet) return;
+
+      if (preloadedProjects.has(projetId)) return;
+      preloadTimeout = setTimeout(() => {
+        preloadTimeout = null;
+        preloadedProjects.add(projetId);
+        preloadProjectAssets(projet);
+      }, PRELOAD_DELAY);
+    });
+
+    projetEl.addEventListener('mouseleave', () => {
+      if (preloadTimeout) {
+        clearTimeout(preloadTimeout);
+        preloadTimeout = null;
+      }
+    });
+
+    projetEl.addEventListener('click', () => {
+      const projetId = projetEl.getAttribute('data-id');
       const selectedProjet = data.find(p => p.id === projetId);
       showPopup(selectedProjet);
     });
