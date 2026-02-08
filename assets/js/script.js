@@ -98,6 +98,9 @@ function showPopup(projet) {
     document.body.style.paddingRight = scrollbarWidth + 'px';
   }
 
+  const primaryDescription = (projet.description_det && projet.description_det[0]) || projet.description || '';
+  const detailPoints = (projet.description_det && projet.description_det.slice(1)) || [];
+
   const popup = document.createElement('div');
   popup.classList.add('popup');
   popup.innerHTML = `
@@ -126,10 +129,15 @@ function showPopup(projet) {
           </div>
         </div>
         <div class="popup-detail-desc">
-          <h2>Description du projet :</h2>
-          <div class="popup-desc-p">
-            ${projet.description_det.map(desc => `<p>${desc}</p>`).join('')}
+          <div class="popup-desc-highlight liquid_glass">
+            <h3>${projet.title}</h3>
+            <p>${primaryDescription}</p>
           </div>
+          ${detailPoints.length ? `
+          <ul class="popup-desc-list">
+            ${detailPoints.map(point => `<li>${point}</li>`).join('')}
+          </ul>
+          ` : ''}
           <h2 style="margin-bottom: 25px;">Contexte et technologies :</h2>
           <div class="popup-tags">
             ${projet.tags.map((tag, i) => `<p id="${projet.tags_context[i]}">${tag}</p>`).join('')}

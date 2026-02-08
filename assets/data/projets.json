@@ -4,15 +4,44 @@
     "title": "De Vinyles",
     "date": "12 décembre 2022",
     "description": "Boutique fictive de vinyles",
-    "titre_description" : ["Dev web - Front end"],
-    "titre_description_color" : ["#aa86ff"],
-    "titre_contexte": ["Projet scolaire"],
-    "titre_contexte_color": ["#22c55e"],
-    "languages": ["HTML", "CSS"],
-    "tags": ["Développement web", "Projet scolaire", "Front end", "HTML", "CSS", "Figma"],
-    "tags_context": ["Developpement-web", "Projet_scolaire", "Front-end", "HTML", "CSS", "Figma"],
-    "icone": ["vinyle.svg"],
-    "couverture": ["De_vinyles.webp"],
+    "titre_description": [
+      "Dev web - Front end"
+    ],
+    "titre_description_color": [
+      "#aa86ff"
+    ],
+    "titre_contexte": [
+      "Projet scolaire"
+    ],
+    "titre_contexte_color": [
+      "#22c55e"
+    ],
+    "languages": [
+      "HTML",
+      "CSS"
+    ],
+    "tags": [
+      "Développement web",
+      "Projet scolaire",
+      "Front end",
+      "HTML",
+      "CSS",
+      "Figma"
+    ],
+    "tags_context": [
+      "Developpement-web",
+      "Projet_scolaire",
+      "Front-end",
+      "HTML",
+      "CSS",
+      "Figma"
+    ],
+    "icone": [
+      "vinyle.svg"
+    ],
+    "couverture": [
+      "De_vinyles.webp"
+    ],
     "images": [
       "De_vinyles.webp",
       "De_vinyles_1.webp",
@@ -22,27 +51,63 @@
       "De_vinyles_5.webp"
     ],
     "description_det": [
-      "Dans le cadre de mon projet final de première année, j’ai conçu et développé un site vitrine pour une entreprise fictive spécialisée dans la vente de platines et de vinyles personnalisés.",
-      "J’ai commencé par la création de la maquette sur Figma, en travaillant l’identité visuelle, la charte graphique et la structure du site. Ensuite, j’ai intégré le site entièrement en HTML et CSS, en respectant fidèlement le design et en ajoutant plusieurs effets interactifs et animations pour rendre l’expérience utilisateur plus vivante.",
-      "Ce projet m’a permis de maîtriser l’intégration web avancée (animations CSS, gestion des médias, design responsive) et d’approfondir mes compétences en conception d’interface utilisateur."
+      "Un site vitrine conçu pour une boutique en ligne fictive spécialisée dans la vente de platines et de vinyles personnalisés. L’interface allie identité visuelle forte, navigation claire et expérience utilisateur immersive pour présenter les produits de manière élégante et attrayante.",
+      "Création et conception d’une interface complète sur Figma avec une identité visuelle marquée.",
+      "Intégration front-end en HTML et CSS avec une structure propre et fidèle au design.",
+      "Optimisation de l’expérience utilisateur grâce à des animations fluides et un design responsive."
     ],
-    "Link":["https://www.figma.com/proto/qkA8rlELkQqzCuMI75jVUr/De-Vinyles?node-id=1001-2&p=f&t=Yk6ppiZWalTZTG7K-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1001%3A2"],
-    "Code":[""]
+    "Link": [
+      "https://www.figma.com/proto/qkA8rlELkQqzCuMI75jVUr/De-Vinyles?node-id=1001-2&p=f&t=Yk6ppiZWalTZTG7K-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1001%3A2"
+    ],
+    "Code": [
+      ""
+    ]
   },
   {
     "id": "snakey",
     "title": "Snakey",
     "date": "28 mai 2024",
     "description": "Jeu de serpent moderne",
-    "titre_description" : ["Dev app - Full Stack"],
-    "titre_description_color" : ["#f97316"],
-    "titre_contexte": ["Projet scolaire"],
-    "titre_contexte_color": ["#22c55e"],
-    "languages": ["HTML", "CSS", "JavaScript"],
-    "tags": ["Développement app", "Projet scolaire", "Full Stack", "HTML", "CSS", "JavaScript"],
-    "tags_context": ["Developpement-app", "Projet_scolaire", "FullStack", "Figma", "HTML", "CSS", "JavaScript"],
-    "icone": ["snakey.svg"],
-    "couverture": ["Snakey.webp"],
+    "titre_description": [
+      "Dev app - Full Stack"
+    ],
+    "titre_description_color": [
+      "#f97316"
+    ],
+    "titre_contexte": [
+      "Projet scolaire"
+    ],
+    "titre_contexte_color": [
+      "#22c55e"
+    ],
+    "languages": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tags": [
+      "Développement app",
+      "Projet scolaire",
+      "Full Stack",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tags_context": [
+      "Developpement-app",
+      "Projet_scolaire",
+      "FullStack",
+      "Figma",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "icone": [
+      "snakey.svg"
+    ],
+    "couverture": [
+      "Snakey.webp"
+    ],
     "images": [
       "Snakey.webp",
       "Snakey_1.webp",
@@ -51,58 +116,62 @@
       "Snakey_4.webp"
     ],
     "description_det": [
-      "Dans le cadre d’un projet final en groupe réalisé avec un camarade lors de mon échange universitaire en Lettonie, j’ai conçu et développé une version moderne du jeu Snake entièrement codée en HTML, CSS et JavaScript.",
-      "L’objectif était de créer un jeu fluide, interactif et visuellement attrayant tout en garantissant de bonnes performances sur tous les navigateurs web.",
-      "Le site propose une refonte moderne du jeu classique avec un design épuré et responsive, un mode sombre activable via un bouton et un changement de thème dynamique permettant de personnaliser l’expérience. Le joueur contrôle le serpent à l’aide des touches fléchées du clavier pour diriger ses déplacements en temps réel",
-      "Ce projet m’a permis de renforcer mes compétences en JavaScript, notamment sur la gestion des animations, la logique de jeu en temps réel et l’optimisation des performances côté client."
+      "Une version moderne du jeu Snake développée comme une application web interactive et fluide. Le jeu propose un gameplay en temps réel avec des mécaniques dynamiques et un design épuré qui immerge le joueur dans une expérience engageante.",
+      "Développement du jeu en JavaScript avec une logique en temps réel fluide.",
+      "Conception d’une interface moderne en CSS et JavaScript avec des thèmes dynamiques.",
+      "Optimisation des animations et des performances web côté client."
     ],
-    "Link":["https://carlos75clc.github.io/DIP392-BCH92/snake.html"],
-    "Code":["https://github.com/Carlos75clc/DIP392-BCH92"]
-  },
-  {
-    "id": "asmasse",
-    "title": "ASMASSE",
-    "date": "5 août 2024",
-    "description": "Cabinet de massages et bien-être",
-    "titre_description" : ["Dev web - Front end"],
-    "titre_description_color" : ["#aa86ff"],
-    "titre_contexte": ["Stage"],
-    "titre_contexte_color": ["#2563eb"],
-    "languages": ["HTML", "CSS", "JavaScript"],
-    "tags": ["Développement-web", "Stage", "Front-end", "Figma", "UX/UI", "Responsive", "HTML", "CSS", "JavaScript"],
-    "tags_context": ["Developpement-web", "Stage", "Front-end", "Figma", "UX-UI", "Responsive", "HTML", "CSS", "JavaScript"],
-    "icone": ["asmasse.svg"],
-    "couverture": ["asmasse.webp"],
-    "images": [
-      "asmasse_1.webp",
-      "asmasse_2.webp",
-      "asmasse_3.webp",
-      "asmasse_4.webp",
-      "asmasse_5.webp"
+    "Link": [
+      "https://carlos75clc.github.io/DIP392-BCH92/snake.html"
     ],
-    "description_det": [
-      "Lors de mon stage chez ASMASSE, j’ai reconstruit entièrement le site internet de l’entreprise spécialisée dans le bien-être.",
-      "Mon travail s’est articulé autour de trois étapes principales : la conception du design sur Figma, le développement en HTML, CSS et JavaScript, et le déploiement du site.",
-      "J’ai collaboré avec l’équipe pour créer une interface moderne, centrée sur l’expérience utilisateur et entièrement responsive. J’ai également pris en charge la mise en production, en corrigeant les bugs et en effectuant des tests pour garantir la qualité du site.",
-      "Ce stage m’a permis de renforcer mes compétences en développement web et en UX/UI design dans un contexte professionnel réel."
-    ],
-    "Link":["http://www.asmasse.eu/"],
-    "Code":[""]
+    "Code": [
+      "https://github.com/Carlos75clc/DIP392-BCH92"
+    ]
   },
   {
     "id": "registre_securite",
     "title": "Registre sécurité",
     "date": "27 sept. 2024",
     "description": "Sécurité et gestion d'un chantier",
-    "titre_description" : ["Dev app - Low Code"],
-    "titre_description_color" : ["#f97316"],
-    "titre_contexte": ["Stage"],
-    "titre_contexte_color": ["#2563eb"],
-    "languages": ["Power FX"],
-    "tags": ["Développement app", "Stage","Power Apps", "Power Automate", "Power BI", "SharePoint", "Digitalisation"],
-    "tags_context": ["Developpement-app", "Stage", "Power_Apps", "Power_Automate", "Power_Bi", "SharePoint", "Digitalisation"],
-    "icone": ["registre_securite.svg"],
-    "couverture": ["registre_securite_0.webp"],
+    "titre_description": [
+      "Dev app - Low Code"
+    ],
+    "titre_description_color": [
+      "#f97316"
+    ],
+    "titre_contexte": [
+      "Stage"
+    ],
+    "titre_contexte_color": [
+      "#2563eb"
+    ],
+    "languages": [
+      "Power FX"
+    ],
+    "tags": [
+      "Développement app",
+      "Stage",
+      "Power Apps",
+      "Power Automate",
+      "Power BI",
+      "SharePoint",
+      "Digitalisation"
+    ],
+    "tags_context": [
+      "Developpement-app",
+      "Stage",
+      "Power_Apps",
+      "Power_Automate",
+      "Power_Bi",
+      "SharePoint",
+      "Digitalisation"
+    ],
+    "icone": [
+      "registre_securite.svg"
+    ],
+    "couverture": [
+      "registre_securite_0.webp"
+    ],
     "images": [
       "registre_securite.webp",
       "registre_securite_1.webp",
@@ -112,28 +181,68 @@
       "registre_securite_5.webp"
     ],
     "description_det": [
-      "Lors de mon stage chez Vinci Construction, j’ai développé une application Power Apps pour digitaliser la gestion des ouvrages provisoires sur le chantier de la ligne 18 du Grand Paris Express.",
-      "L’application permet de suivre les équipements, de filtrer les ouvrages selon différents critères et d’ajouter de nouveaux éléments via un formulaire avec validations automatiques, en centralisant toutes les données dans SharePoint.",
-      "Des flux Power Automate automatisent l’envoi des documents de vérification aux signataires, facilitant le suivi des échéances et renforçant la conformité des processus.",
-      "J’ai également conçu un tableau de bord Power BI pour visualiser les données du chantier avec des indicateurs et filtres interactifs, remplaçant efficacement les processus papier et améliorant la prise de décision."
+      "Application Power Apps développée pour digitaliser la gestion des ouvrages provisoires sur le chantier de la ligne 18 du Grand Paris Express. Elle permet l’automatisation des processus, le suivi en temps réel des équipements et la centralisation des données dans SharePoint. Des tableaux de bord interactifs et des flux automatisés facilitent la prise de décision et remplacent efficacement les processus papier.",
+      "Développement en Power FX et intégration des formulaires et validations automatiques.",
+      "Création des flux Power Automate pour automatiser l’envoi des documents.",
+      "Conception d'un tableau de bord interactif pour le suivi et l’analyse."
     ],
-    "Link":[""],
-    "Code":[""]
+    "Link": [
+      ""
+    ],
+    "Code": [
+      ""
+    ]
   },
   {
     "id": "portfolio",
     "title": "Portfolio",
     "date": "19 juillet 2025",
     "description": "Vous êtes actuellement sur le site :)",
-    "titre_description" : ["Dev web - Full Stack"],
-    "titre_description_color" : ["#aa86ff"],
-    "titre_contexte": ["Projet personnel"],
-    "titre_contexte_color": ["#f97316"],
-    "languages": ["HTML", "CSS", "Javascript"],
-    "tags": ["Développement-web", "Projet personnel", "Full Stack", "UX-UI", "Responsive", "Optimisation Web", "HTML", "CSS", "Javascript"],
-    "tags_context": ["Developpement-web", "Projet_perso", "FullStack", "UX-UI", "Responsive",  "Optimisation_Web", "HTML", "CSS", "Javascript"],
-    "icone": ["B.svg"],
-    "couverture": ["Portfolio.webp"],
+    "titre_description": [
+      "Dev web - Full Stack"
+    ],
+    "titre_description_color": [
+      "#aa86ff"
+    ],
+    "titre_contexte": [
+      "Projet personnel"
+    ],
+    "titre_contexte_color": [
+      "#f97316"
+    ],
+    "languages": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ],
+    "tags": [
+      "Développement-web",
+      "Projet personnel",
+      "Full Stack",
+      "UX-UI",
+      "Responsive",
+      "Optimisation Web",
+      "HTML",
+      "CSS",
+      "Javascript"
+    ],
+    "tags_context": [
+      "Developpement-web",
+      "Projet_perso",
+      "FullStack",
+      "UX-UI",
+      "Responsive",
+      "Optimisation_Web",
+      "HTML",
+      "CSS",
+      "Javascript"
+    ],
+    "icone": [
+      "B.svg"
+    ],
+    "couverture": [
+      "Portfolio.webp"
+    ],
     "images": [
       "Portfolio_1.webp",
       "Portfolio_2.webp",
@@ -141,28 +250,66 @@
       "Portfolio_4.webp"
     ],
     "description_det": [
-      "Mon portfolio présente mes projets de développement informatique de manière dynamique et optimisée.",
-      "Le site utilise un fichier JSON pour générer automatiquement les encadrés des projets et leurs popups grâce au code JavaScript, ce qui réduit le code source et améliore la performance du site.",
-      "Ce projet met en valeur mes compétences en développement web (HTML, CSS, JavaScript) et Full Stack tout en offrant une navigation fluide et rapide grâce à une gestion optimisée des données.",
-      "Mon portfolio est constamment mis à jour pour améliorer son efficacité et garantir une expérience utilisateur optimale."
+      "site web dynamique présentant l’ensemble de mes projets de développement informatique de manière claire et optimisée. Il utilise un fichier JSON pour générer automatiquement les encadrés de projets et leurs popups via JavaScript, réduisant le code source tout en améliorant les performances. Chaque fonctionnalité est pensée pour offrir une navigation fluide et mettre en valeur mes compétences Full Stack et UX/UI.",
+      "Développement en en HTML, CSS et JavaScript avec la génération dynamique des projets.",
+      "Optimisation de la performance web et de la gestion des données pour une navigation rapide",
+      "Mise en place d'une interface fluide et intuitive pour valoriser l’expérience utilisateur."
     ],
-    "Link":[""],
-    "Code":["https://github.com/bastosjt/Portfolio"]
+    "Link": [
+      ""
+    ],
+    "Code": [
+      "https://github.com/bastosjt/Portfolio"
+    ]
   },
   {
     "id": "data_visualisation",
     "title": "Dashboard cyber",
     "date": "9 avril 2025",
     "description": "Analyse des attaques APT",
-    "titre_description" : ["Dev web - Visualisation Data"],
-    "titre_description_color" : ["#aa86ff"],
-    "titre_contexte": ["Projet scolaire"],
-    "titre_contexte_color": ["#22c55e"],
-    "languages": ["HTML", "CSS", "JavaScript"],
-    "tags": ["Visualisation data", "Projet scolaire", "Cybersécurité", "Full Stack", "D3.js", "HTML", "CSS", "JavaScript"],
-    "tags_context": ["Visualisation-Data", "Projet_scolaire", "Cybersécurité", "FullStack", "D3JS", "HTML", "CSS", "JavaScript"],
-    "icone": ["DataViz.svg"],
-    "couverture": ["DataViz.webp"],
+    "titre_description": [
+      "Dev web - Visualisation Data"
+    ],
+    "titre_description_color": [
+      "#aa86ff"
+    ],
+    "titre_contexte": [
+      "Projet scolaire"
+    ],
+    "titre_contexte_color": [
+      "#22c55e"
+    ],
+    "languages": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tags": [
+      "Visualisation data",
+      "Projet scolaire",
+      "Cybersécurité",
+      "Full Stack",
+      "D3.js",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tags_context": [
+      "Visualisation-Data",
+      "Projet_scolaire",
+      "Cybersécurité",
+      "FullStack",
+      "D3JS",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "icone": [
+      "DataViz.svg"
+    ],
+    "couverture": [
+      "DataViz.webp"
+    ],
     "images": [
       "DataViz.webp",
       "DataViz_1.webp",
@@ -170,28 +317,78 @@
       "DataViz_3.webp"
     ],
     "description_det": [
-      "Ce projet consiste en la création d’un dashboard interactif permettant d’explorer et d’analyser les données relatives aux attaques APT survenues en 2023-2024.",
-      "Les données sont d’abord manipulées avec Python avant d’être intégrées et visualisées sous forme de graphiques interactifs tels que camemberts, donuts, courbes et cartes via D3.js.",
-      "Le dashboard permet aux utilisateurs de filtrer les attaques selon leur type, avec des graphiques qui s’ajustent dynamiquement pour offrir des informations pertinentes sur chaque menace.",
-      "Ce projet renforce mes compétences en visualisation de données, en développement web interactif et en cybersécurité tout en offrant une expérience utilisateur fluide et engageante."
+      "dashboard interactif conçu pour explorer et analyser les attaques APT survenues en 2023-2024. Les données sont traitées avec Python puis visualisées via D3.js sous forme de graphiques interactifs tels que camemberts, donuts, courbes et cartes, offrant une lecture claire et pertinente des menaces. L’interface permet de filtrer les attaques par type et d’ajuster dynamiquement les graphiques pour fournir des informations précises et exploitables.",
+      "Création d’un dashboard interactif en D3.js avec graphiques dynamiques.",
+      "Traitement des données en Python pour structurer et filtrer les informations.",
+      "Mise en place de filtres et interactions pour une exploration efficace des données."
     ],
-    "Link": ["https://bastosjt.github.io/Data-Visulation/"],
-    "Code": ["https://github.com/bastosjt/Data-Visulation"]
+    "Link": [
+      "https://bastosjt.github.io/Data-Visulation/"
+    ],
+    "Code": [
+      "https://github.com/bastosjt/Data-Visulation"
+    ]
   },
   {
-    "id": "asmasse_php",
-    "title": "ASMASSE - Back end",
-    "date": "26 sept. 2025",
+    "id": "asmasse",
+    "title": "ASMASSE",
+    "date": "2024 – 2025",
     "description": "Cabinet de massages et bien-être",
-    "titre_description" : ["Dev web - DevSecOps"],
-    "titre_description_color" : ["#C9510C"],
-    "titre_contexte": ["Stage"],
-    "titre_contexte_color": ["#2563eb"],
-    "languages": ["HTML", "PHP", "SQL"],
-    "tags": ["Développement web", "Stage","Back-end", "Responsive", "Cybersécurité", "HTML", "PHP", "SQL", "CSS"],
-    "tags_context": ["Developpement-web", "Stage", "Back-end", "Responsive", "Cybersécurité", "HTML", "PHP", "SQL", "CSS"],
-    "icone": ["asmasse.svg"],
-    "couverture": ["asmasse.webp"],
+    "titre_description": [
+      "Dev web - Full Stack & Sécurisation"
+    ],
+    "titre_description_color": [
+      "#aa86ff"
+    ],
+    "titre_contexte": [
+      "Stage"
+    ],
+    "titre_contexte_color": [
+      "#2563eb"
+    ],
+    "languages": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "SQL"
+    ],
+    "tags": [
+      "Développement web",
+      "Stage",
+      "Full Stack",
+      "Front-end",
+      "Back-end",
+      "Cybersécurité",
+      "UX/UI",
+      "Responsive",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "SQL"
+    ],
+    "tags_context": [
+      "Developpement-web",
+      "Stage",
+      "FullStack",
+      "Front-end",
+      "Back-end",
+      "Cybersécurité",
+      "UX-UI",
+      "Responsive",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "SQL"
+    ],
+    "icone": [
+      "asmasse.svg"
+    ],
+    "couverture": [
+      "asmasse.webp"
+    ],
     "images": [
       "asmasse.webp",
       "asmasse_1.webp",
@@ -201,69 +398,82 @@
       "asmasse_5.webp"
     ],
     "description_det": [
-      "Dans le cadre de mon stage cybersécurité SSI chez ASMASSE, j’ai repris un site vitrine statique développé en 2024 pour le rendre dynamique et sécurisé.",
-      "Le projet consiste à migrer le site vers une architecture PHP/MySQL, tout en structurant et sécurisant la base de données contre les attaques XXS et SQL injections. Cette mission m’a permis de mettre en pratique mes compétences en développement back-end ainsi qu’en sécurisation des données.",
-      "J’ai travaillé à rendre le site fiable et performant, en appliquant les bonnes pratiques de développement sécurisé et en testant chaque fonctionnalité pour garantir l’intégrité des données et la stabilité du site. Cette expérience m’a permis de comprendre concrètement les enjeux de la cybersécurité dans un projet web réel et d’améliorer mes compétences en gestion de bases de données sécurisées.",
-      "Ce projet illustre mon savoir-faire dans la conception de sites dynamiques, la gestion de bases de données SQL et l’intégration de bonnes pratiques de sécurité dans un contexte professionnel."
+      "Projet réalisé sur deux stages successifs pour un cabinet de massages et bien-être. Le site a d’abord été conçu comme un site vitrine moderne, avant d’être repris et transformé en application web dynamique et sécurisée.",
+      "Conception UX/UI et développement front-end responsive en HTML, CSS et JavaScript.",
+      "Implémentation d’un back-end en PHP et und base de données MySQL sécurisée.",
+      "Mise en place d'une sécurité avancée et d'une navigation HTTPS sécurisée contre les failles XSS et injections SQL."
     ],
-    "Link":["http://www.asmasse.eu/"],
-    "Code":[""]
+    "Link": [
+      "http://www.asmasse.eu/"
+    ],
+    "Code": [
+      ""
+    ]
   },
   {
     "id": "antiphishing",
     "title": "Anti-phishing",
     "date": "26 sept. 2025",
     "description": "Programme d'analyse mails",
-    "titre_description" : ["Dev app - Full Stack"],
-    "titre_description_color" : ["#f97316"],
-    "titre_contexte": ["Stage"],
-    "titre_contexte_color": ["#2563eb"],
-    "languages": ["HTML", "JavaScript", "Python"],
-    "tags": ["Développement app", "Cybersécurité", "Stage","Full Stack", "React", "Flask", "JavaScript", "Python"],
-    "tags_context": ["Developpement-app", "Cybersécurité", "Stage", "FullStack", "React", "Flask", "JavaScript", "Python"],
-    "icone": ["python.svg"],
-    "couverture": ["antiphishing_1.webp"],
+    "titre_description": [
+      "Dev app - Full Stack"
+    ],
+    "titre_description_color": [
+      "#f97316"
+    ],
+    "titre_contexte": [
+      "Stage"
+    ],
+    "titre_contexte_color": [
+      "#2563eb"
+    ],
+    "languages": [
+      "HTML",
+      "JavaScript",
+      "Python"
+    ],
+    "tags": [
+      "Développement app",
+      "Cybersécurité",
+      "Stage",
+      "Full Stack",
+      "React",
+      "Flask",
+      "JavaScript",
+      "Python"
+    ],
+    "tags_context": [
+      "Developpement-app",
+      "Cybersécurité",
+      "Stage",
+      "FullStack",
+      "React",
+      "Flask",
+      "JavaScript",
+      "Python"
+    ],
+    "icone": [
+      "python.svg"
+    ],
+    "couverture": [
+      "antiphishing_1.webp"
+    ],
     "images": [
       "antiphishing_1.webp",
       "antiphishing_2.webp",
       "antiphishing_3.webp"
     ],
     "description_det": [
-      "Ce projet consiste à développer un programme en Python capable d’analyser des emails et des pages web pour détecter des tentatives de phishing. Le moteur combine des règles heuristiques et des modèles basés sur des features extraites automatiquement afin d’identifier les éléments suspects..",
-      "L’application propose une interface web permettant de soumettre un email ou une URL pour analyse, d’afficher le diagnostic détaillé et de visualiser les éléments à risque, avec un historique des analyses et des rapports exportables. L’interface est pensée pour être simple et informative, adaptée aux utilisateurs comme aux administrateurs.",
-      "Ce projet m’a permis de renforcer mes compétences en Python, en sécurité des applications web et en développement d’interfaces interactives, tout en travaillant sur la robustesse et la confidentialité des données analysées.",
-      "Il met en valeur ma capacité à combiner cybersécurité, analyse de données et développement web, et à créer des outils pratiques permettant de détecter et prévenir les attaques de phishing de manière efficace."
+      "Application web interne de détection de phishing, combinant l'analyse heuristique, la visualisation des menaces et le reporting sécurisé pour protéger utilisateurs et systèmes au sein de l'entreprise Sparkly Code.",
+      "Développement d’un moteur d’analyse de mails pour détecter les tentatives de phishing.",
+      "Analyse heuristique et extraction automatique d’indicateurs de compromission en Python.",
+      "Création d’une aplication web Full Stack sécurisée pour l’analyse, le reporting et la visualisation des menaces."
     ],
-    "Link":[""],
-    "Code":[""]
-  },
-  {
-    "id": "cocktails",
-    "title": "Bastos cocktails",
-    "date": "1er nov. 2025",
-    "description": "Bar virtuel et recettes de cocktails",
-    "titre_description" : ["Dev web - Full Stack"],
-    "titre_description_color" : ["#aa86ff"],
-    "titre_contexte": ["Projet personnel"],
-    "titre_contexte_color": ["#f97316"],
-    "languages": ["HTML", "CSS", "JavaScript"],
-    "tags": ["Développement web", "Projet personnel","Full Stack", "ReactJS","Responsive", "IA"],
-    "tags_context": ["Developpement-web", "Projet_perso", "FullStack" , "ReactJS","Responsive", "IA"],
-    "icone": ["cocktails.svg"],
-    "couverture": ["Cocktails.webp"],
-    "images": [
-      "Cocktails_1.webp",
-      "Cocktails_2.webp",
-      "Cocktails_3.webp",
-      "Cocktails_4.webp"
+    "Link": [
+      ""
     ],
-    "description_det": [
-      "Ce projet consiste à créer un bar virtuel entièrement interactif, permettant de présenter les différentes recettes de cocktails et mocktails. Les utilisateurs peuvent accéder à chaque recette et suivre sa réalisation directement sur le site, offrant une expérience immersive et ludique.",
-      "Pour ce projet, j’ai approfondi React.js de manière autonome, afin de gérer l’affichage dynamique des cocktails et mocktails, optimiser les interactions et rendre la navigation fluide et réactive. Cela m’a permis de mieux comprendre la structure des applications modernes et la gestion d’état en front-end.",
-      "Une dimension innovante du projet est prévue : l’intégration d’une IA capable de générer des recettes personnalisées. Cela permettra aux utilisateurs de créer de nouvelles combinaisons de boissons selon leurs goûts, renforçant l’aspect interactif et unique du site.",
-      "Ce projet met en valeur mes compétences en développement web Full Stack, en création d’interfaces interactives et en intégration de fonctionnalités intelligentes, tout en me permettant d’expérimenter et de perfectionner mes connaissances en React.js et en gestion de projets personnels."
-    ],
-    "Link":["https://bastosjt.github.io/Cocktails/"],
-    "Code":["https://github.com/bastosjt/Cocktails"]
+    "Code": [
+      ""
+    ]
   }
 ]

@@ -35,7 +35,7 @@ window.addEventListener('load', () => {
   galerie_background_7.style.transition = 'opacity 0.5s ease-in';
 
   galerie_background_div.style.opacity = '0.6';
-  galerie_background_div.style.filter = 'saturate(160%)';
+  galerie_background_div.style.filter = 'saturate(120%)';
 
   setTimeout(() => {
     titre_principal_h1.style.transform = 'translateY(0) scale(1)';
@@ -94,8 +94,9 @@ window.addEventListener('scroll', () => {
   document.getElementById('galerie_background_2').style.transform = `translateY(${limitedScroll * -0.4}px)`;
   document.getElementById('galerie_background_3').style.transform = `translateY(${limitedScroll * -0.3}px)`;
   document.getElementById('galerie_background_4').style.transform = `translateY(${limitedScroll * -0.2}px)`;
-  document.getElementById('galerie_background_5').style.transform = `translateY(${limitedScroll * -0.1}px)`;
-  document.getElementById('galerie_background_6').style.transform = `translateY(${limitedScroll * -0.05}px)`;
+  document.getElementById('galerie_background_5').style.transform = `translateY(${limitedScroll * -0.1}px) scale(1.02)`;
+  document.getElementById('galerie_background_6').style.transform = `translateY(${limitedScroll * -0.05}px) scale(1.03)`;
+  document.getElementById('galerie_background_7').style.transform = `scale(1.04)`;
 });
 
 /*
