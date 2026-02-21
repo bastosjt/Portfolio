@@ -19,69 +19,76 @@ window.addEventListener('load', () => {
   const galerie_background_6 = document.getElementById('galerie_background_6');
   const galerie_background_7 = document.getElementById('galerie_background_7');
 
-  titre_principal_h1.style.transition = 'transform 1s ease, opacity 1.5s ease, color 0.75s ease';
+  // Animation du titre : scale rapide (gardé), couleur plus lente (ralentie)
+  titre_principal_h1.style.transition = 'transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), color 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
   titre_principal_h1.style.opacity = '1';
 
-  titre_principal_h3.style.transition = 'transform 0.75s ease';
+  titre_principal_h3.style.transition = 'transform 0.75s cubic-bezier(0.34, 1.56, 0.64, 1)';
 
-  div_infos.style.transition = 'transform 0.75s ease';
+  div_infos.style.transition = 'transform 0.75s cubic-bezier(0.34, 1.56, 0.64, 1)';
 
-  galerie_background_1.style.transition = 'opacity 0.5s ease-in';
-  galerie_background_2.style.transition = 'opacity 0.5s ease-in';
-  galerie_background_3.style.transition = 'opacity 0.5s ease-in';
-  galerie_background_4.style.transition = 'opacity 0.5s ease-in';
-  galerie_background_5.style.transition = 'opacity 0.5s ease-in';
-  galerie_background_6.style.transition = 'opacity 0.5s ease-in';
-  galerie_background_7.style.transition = 'opacity 0.5s ease-in';
+  // Waves avec transition plus lente
+  galerie_background_1.style.transition = 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+  galerie_background_2.style.transition = 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+  galerie_background_3.style.transition = 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+  galerie_background_4.style.transition = 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+  galerie_background_5.style.transition = 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+  galerie_background_6.style.transition = 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+  galerie_background_7.style.transition = 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
 
   galerie_background_div.style.opacity = '0.6';
   galerie_background_div.style.filter = 'saturate(120%)';
 
+  // Animation du titre principal - scale rapide (gardé)
   setTimeout(() => {
     titre_principal_h1.style.transform = 'translateY(0) scale(1)';
-    header.style.transition = 'opacity 1s ease';
+    header.style.transition = 'opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
     header.style.opacity = '1';
-  }, 700);
+  }, 100);
 
+  // Couleur du titre - attendre un peu avant de se remplir (ralenti)
   setTimeout(() => {
     titre_principal_h1.style.color = '#ffffff';
-  }, 1000);
+  }, 900);
 
+  // Sous-titre - apparaît après le scale du titre
   setTimeout(() => {
     titre_principal_h3.style.transform = 'translateY(0)';
+  }, 1200);
+
+  // Socials - apparaît après le sous-titre
+  setTimeout(() => {
+    div_infos.style.transform = 'scale(1)';
   }, 1500);
 
-  setTimeout(() => {
-    div_infos.style.transform = 'scale(01)';
-  }, 1700);
-
+  // Waves apparaissent en cascade après les autres éléments (120ms entre chaque, légèrement ralenti)
   setTimeout(() => {
     galerie_background_7.style.opacity = '1';
-  }, 1800);
+  }, 1650);
 
   setTimeout(() => {
     galerie_background_6.style.opacity = '1';
-  }, 1900);
+  }, 1770);
 
   setTimeout(() => {
     galerie_background_5.style.opacity = '1';
-  }, 2000);
+  }, 1890);
 
   setTimeout(() => {
     galerie_background_4.style.opacity = '1';
-  }, 2100);
+  }, 2010);
 
   setTimeout(() => {
     galerie_background_3.style.opacity = '1';
-  }, 2200);
+  }, 2130);
 
   setTimeout(() => {
     galerie_background_2.style.opacity = '1';
-  }, 2300);
+  }, 2250);
 
   setTimeout(() => {
     galerie_background_1.style.opacity = '1';
-  }, 2400);
+  }, 2370);
 
 });
 

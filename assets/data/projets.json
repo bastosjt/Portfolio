@@ -1,69 +1,5 @@
 [
   {
-    "id": "de_vinyles",
-    "title": "De Vinyles",
-    "date": "12 décembre 2022",
-    "description": "Boutique fictive de vinyles",
-    "titre_description": [
-      "Dev web - Front end"
-    ],
-    "titre_description_color": [
-      "#aa86ff"
-    ],
-    "titre_contexte": [
-      "Projet scolaire"
-    ],
-    "titre_contexte_color": [
-      "#22c55e"
-    ],
-    "languages": [
-      "HTML",
-      "CSS"
-    ],
-    "tags": [
-      "Développement web",
-      "Projet scolaire",
-      "Front end",
-      "HTML",
-      "CSS",
-      "Figma"
-    ],
-    "tags_context": [
-      "Developpement-web",
-      "Projet_scolaire",
-      "Front-end",
-      "HTML",
-      "CSS",
-      "Figma"
-    ],
-    "icone": [
-      "vinyle.svg"
-    ],
-    "couverture": [
-      "De_vinyles.webp"
-    ],
-    "images": [
-      "De_vinyles.webp",
-      "De_vinyles_1.webp",
-      "De_vinyles_2.webp",
-      "De_vinyles_3.webp",
-      "De_vinyles_4.webp",
-      "De_vinyles_5.webp"
-    ],
-    "description_det": [
-      "Un site vitrine conçu pour une boutique en ligne fictive spécialisée dans la vente de platines et de vinyles personnalisés. L’interface allie identité visuelle forte, navigation claire et expérience utilisateur immersive pour présenter les produits de manière élégante et attrayante.",
-      "Création et conception d’une interface complète sur Figma avec une identité visuelle marquée.",
-      "Intégration front-end en HTML et CSS avec une structure propre et fidèle au design.",
-      "Optimisation de l’expérience utilisateur grâce à des animations fluides et un design responsive."
-    ],
-    "Link": [
-      "https://www.figma.com/proto/qkA8rlELkQqzCuMI75jVUr/De-Vinyles?node-id=1001-2&p=f&t=Yk6ppiZWalTZTG7K-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1001%3A2"
-    ],
-    "Code": [
-      ""
-    ]
-  },
-  {
     "id": "snakey",
     "title": "Snakey",
     "date": "28 mai 2024",
@@ -398,7 +334,7 @@
       "asmasse_5.webp"
     ],
     "description_det": [
-      "Projet réalisé sur deux stages successifs pour un cabinet de massages et bien-être. Le site a d’abord été conçu comme un site vitrine moderne, avant d’être repris et transformé en application web dynamique et sécurisée.",
+      "Site web repensé pour un cabinet de massages et bien-être, offrant une expérience moderne et une présentation professionnelle des services.",
       "Conception UX/UI et développement front-end responsive en HTML, CSS et JavaScript.",
       "Implémentation d’un back-end en PHP et und base de données MySQL sécurisée.",
       "Mise en place d'une sécurité avancée et d'une navigation HTTPS sécurisée contre les failles XSS et injections SQL."
@@ -464,7 +400,7 @@
       "antiphishing_3.webp"
     ],
     "description_det": [
-      "Application web interne de détection de phishing, combinant l'analyse heuristique, la visualisation des menaces et le reporting sécurisé pour protéger utilisateurs et systèmes au sein de l'entreprise Sparkly Code.",
+      "Application web interne de détection de phishing, combinant l'analyse heuristique, la visualisation des menaces et le reporting sécurisé.",
       "Développement d’un moteur d’analyse de mails pour détecter les tentatives de phishing.",
       "Analyse heuristique et extraction automatique d’indicateurs de compromission en Python.",
       "Création d’une aplication web Full Stack sécurisée pour l’analyse, le reporting et la visualisation des menaces."
