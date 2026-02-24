@@ -112,7 +112,9 @@ function showPopup(projet) {
   popup.classList.add('popup');
   popup.innerHTML = `
     <div class="popup-content">
-      <div class="close-btn">&times;</div>
+      <div class="close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </div>
       <div class="popup-header">
         <img class="popup-content-icone" src="assets/icons/${projet.icone}">
         <div class="popup-header-title">
@@ -261,9 +263,12 @@ function showPopup(projet) {
     });
   });  
   
+  /* Double rAF pour laisser le layout se calculer (évite glitch Safari/Arc sur l’affichage des infos) */
   requestAnimationFrame(() => {
-    popupBackground.classList.add('show');
-    popup.classList.add('show');
+    requestAnimationFrame(() => {
+      popupBackground.classList.add('show');
+      popup.classList.add('show');
+    });
   });
 
   function closePopup() {
