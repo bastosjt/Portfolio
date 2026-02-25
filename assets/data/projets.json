@@ -130,75 +130,6 @@
     ]
   },
   {
-    "id": "portfolio",
-    "title": "Portfolio",
-    "date": "19 juillet 2025",
-    "description": "Vous êtes actuellement sur le site :)",
-    "titre_description": [
-      "Dev web - Full Stack"
-    ],
-    "titre_description_color": [
-      "#aa86ff"
-    ],
-    "titre_contexte": [
-      "Projet personnel"
-    ],
-    "titre_contexte_color": [
-      "#f97316"
-    ],
-    "languages": [
-      "HTML",
-      "CSS",
-      "Javascript"
-    ],
-    "tags": [
-      "Développement-web",
-      "Projet personnel",
-      "Full Stack",
-      "UX-UI",
-      "Responsive",
-      "Optimisation Web",
-      "HTML",
-      "CSS",
-      "Javascript"
-    ],
-    "tags_context": [
-      "Developpement-web",
-      "Projet_perso",
-      "FullStack",
-      "UX-UI",
-      "Responsive",
-      "Optimisation_Web",
-      "HTML",
-      "CSS",
-      "Javascript"
-    ],
-    "icone": [
-      "B.svg"
-    ],
-    "couverture": [
-      "Portfolio.webp"
-    ],
-    "images": [
-      "Portfolio_1.webp",
-      "Portfolio_2.webp",
-      "Portfolio_3.webp",
-      "Portfolio_4.webp"
-    ],
-    "description_det": [
-      "site web dynamique présentant l’ensemble de mes projets de développement informatique de manière claire et optimisée. Il utilise un fichier JSON pour générer automatiquement les encadrés de projets et leurs popups via JavaScript, réduisant le code source tout en améliorant les performances. Chaque fonctionnalité est pensée pour offrir une navigation fluide et mettre en valeur mes compétences Full Stack et UX/UI.",
-      "Développement en en HTML, CSS et JavaScript avec la génération dynamique des projets.",
-      "Optimisation de la performance web et de la gestion des données pour une navigation rapide",
-      "Mise en place d'une interface fluide et intuitive pour valoriser l’expérience utilisateur."
-    ],
-    "Link": [
-      ""
-    ],
-    "Code": [
-      "https://github.com/bastosjt/Portfolio"
-    ]
-  },
-  {
     "id": "data_visualisation",
     "title": "Dashboard cyber",
     "date": "9 avril 2025",
@@ -295,9 +226,9 @@
       "Full Stack",
       "Front-end",
       "Back-end",
-      "Cybersécurité",
       "UX/UI",
       "Responsive",
+      "Optimisation web",
       "HTML",
       "CSS",
       "JavaScript",
@@ -310,9 +241,9 @@
       "FullStack",
       "Front-end",
       "Back-end",
-      "Cybersécurité",
       "UX-UI",
       "Responsive",
+      "Optimisation_Web",
       "HTML",
       "CSS",
       "JavaScript",

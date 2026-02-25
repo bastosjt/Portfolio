@@ -7,6 +7,7 @@
 
         <script src="assets/js/script.js" defer></script>
         <script src="assets/js/style.js" defer></script>
+        <script src="assets/js/menu.js" defer></script>
 
         <link rel="icon" href="assets/icons/B.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,12 +47,16 @@
                 <div id="nav_trait"></div>
                 <div id="navigation">
                     
+                    <a id="header_a_about" href="#about" onclick="ouvrir_menu()"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        À propos
+                    </a>
                     <a id="header_a2" href="#projets" onclick="ouvrir_menu()"> 
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-app-window-icon lucide-app-window"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 4v4"/><path d="M2 8h20"/><path d="M6 4v4"/></svg>
                         Projets
                     </a>
                     <a id="header_a3" href="#contact" onclick="ouvrir_menu()"> 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round-icon lucide-circle-user-round"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><circle cx="12" cy="12" r="10"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
                         Contact
                     </a>
                 </div>
@@ -79,14 +84,56 @@
                 </div>
             </div>
 
-            <!-- Derniers projets -->
+            <section id="about">
+                <h1 class="container_h1_title">à propos</h1>
+                <div class="contact_separator"></div>
+                <div class="about_content">
+                    <div class="about_card liquid_glass about_photo_placeholder">
+                        <div class="about_photo_wrap">
+                            <span class="about_photo_text">[Photo de profil]</span>
+                        </div>
+                    </div>
+                    <div class="about_card liquid_glass about_presentation">
+                        <h2 class="about_card_title">Qui je suis</h2>
+                            <div class="about_card_separator"></div>
+                            <p class="about_paragraph">
+                                Passionné par le développement web et mobile, je développe mes compétences à travers mes projets personnels et mes stages, avec l’objectif de devenir développeur full stack. 
+                            </p>
+                            <p class="about_paragraph" style="margin-top: 15px;">
+                                Curieux, créatif et adaptable, j’aime explorer de nouvelles technologies et concevoir des solutions originales qui allient la technique et l’esthétique.
+                            </p>
+                    </div>
+                    <div class="about_card liquid_glass about_values">
+                        <h2 class="about_card_title">Approche & valeurs</h2>
+                        <div class="about_card_separator"></div>
+                        <ul class="about_list about_list_bullets">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a8e2ffe0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap-icon lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+                                <span>Performance et qualité : code propre, optimisation web, Lighthouse à 95+</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a8e2ffe0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml-icon lucide-code-xml"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+                                <span>Curiosité technique : exploration des environnements variés : Python, React, Symfony ...</span> 
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a8e2ffe0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor-smartphone-icon lucide-monitor-smartphone"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></svg>
+                                <span>Souci du détail : de l'intégration Figma à l'UX/UI et responsivité</span> 
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a8e2ffe0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check-icon lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+                                <span>Sécurité applicative : HTTPS, gestion des accès et respect des bonnes pratiques</span> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             <section id="featured_projects">
                 <h1 class="container_h1_title">derniers projets</h1>
                 <div class="contact_separator"></div>
                 <div id="featured_projects_container"></div>
             </section>
 
-            <!-- Projets -->
             <section id="projets">
                 <h1 class="container_h1_title">projets</h1>
                 <div class="contact_separator"></div>
@@ -95,7 +142,6 @@
                 </div>
             </section>
 
-            <!-- Contact -->
             <section id="contact">
                 <div id="contact_box">
                     <h1 class="container_h1_title">Contact</h1>
@@ -164,66 +210,3 @@
         </div>
     </body>
 </html>
-
-<script>
-    const menu_defilant = document.getElementById('menu_defilant');
-    const menu_defilant_bg = document.getElementById('menu_defilant_bg');
-    const body_scroll = document.getElementById('body_scroll');
-    const header = document.getElementById('header');
-
-    let menuOuvert = false;
-
-    function ouvrir_menu() {
-        if (!menuOuvert) {
-            body_scroll.style.overflowY = 'hidden';
-            menu_defilant.style.opacity = '1';
-            menu_defilant.style.pointerEvents = 'auto';
-            menu_defilant_bg.style.visibility = 'visible';
-            menu_defilant_bg.style.opacity = '1';
-            header.style.opacity = '0';
-
-            if (window.innerWidth <= 500) {
-                menu_defilant.style.width = 'calc(100vw - 24px)';
-            } else if (window.innerWidth <= 768) {
-                menu_defilant.style.width = '50%';
-            } else {
-                menu_defilant.style.width = '25%';
-            }
-            menuOuvert = true;
-        } else {
-            body_scroll.style.overflowY = 'scroll';
-            menu_defilant.style.opacity = '0';
-            menu_defilant.style.pointerEvents = 'none';
-            menu_defilant_bg.style.visibility = 'hidden';
-            menu_defilant.style.width = '0%';
-            menu_defilant_bg.style.opacity = '0';
-            header.style.opacity = '1';
-            menuOuvert = false;
-        }
-    }
-
-    window.addEventListener('resize', () => {
-        if (menuOuvert) {
-            if (window.innerWidth <= 500) {
-                menu_defilant.style.width = 'calc(100vw - 24px)';
-            } else if (window.innerWidth <= 768) {
-                menu_defilant.style.width = '50%';
-            } else {
-                menu_defilant.style.width = '25%';
-            }
-        }
-    });
-
-    window.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            body_scroll.style.overflowY = 'scroll';
-            menu_defilant.style.opacity = '0';
-            menu_defilant.style.pointerEvents = 'none';
-            menu_defilant_bg.style.visibility = 'hidden';
-            menu_defilant.style.width = '0%';
-            menu_defilant_bg.style.opacity = '0';
-            header.style.opacity = '1';
-            menuOuvert = false;
-        }
-    });
-</script>

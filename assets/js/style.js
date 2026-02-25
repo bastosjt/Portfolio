@@ -19,7 +19,6 @@ window.addEventListener('load', () => {
   const galerie_background_6 = document.getElementById('galerie_background_6');
   const galerie_background_7 = document.getElementById('galerie_background_7');
 
-  // Animation du titre : scale rapide (gardé), couleur plus lente (ralentie)
   titre_principal_h1.style.transition = 'transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), color 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
   titre_principal_h1.style.opacity = '1';
 
@@ -27,7 +26,6 @@ window.addEventListener('load', () => {
 
   div_infos.style.transition = 'transform 0.75s cubic-bezier(0.34, 1.56, 0.64, 1)';
 
-  // Waves avec transition plus lente
   galerie_background_1.style.transition = 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
   galerie_background_2.style.transition = 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
   galerie_background_3.style.transition = 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
@@ -39,29 +37,24 @@ window.addEventListener('load', () => {
   galerie_background_div.style.opacity = '0.6';
   galerie_background_div.style.filter = 'saturate(120%)';
 
-  // Animation du titre principal - scale rapide (gardé)
   setTimeout(() => {
     titre_principal_h1.style.transform = 'translateY(0) scale(1)';
     header.style.transition = 'opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
     header.style.opacity = '1';
   }, 100);
 
-  // Couleur du titre - attendre un peu avant de se remplir (ralenti)
   setTimeout(() => {
     titre_principal_h1.style.color = '#ffffff';
   }, 900);
 
-  // Sous-titre - apparaît après le scale du titre
   setTimeout(() => {
     titre_principal_h3.style.transform = 'translateY(0)';
   }, 1200);
 
-  // Socials - apparaît après le sous-titre
   setTimeout(() => {
     div_infos.style.transform = 'scale(1)';
   }, 1500);
 
-  // Waves apparaissent en cascade après les autres éléments (120ms entre chaque, légèrement ralenti)
   setTimeout(() => {
     galerie_background_7.style.opacity = '1';
   }, 1650);
@@ -105,27 +98,6 @@ window.addEventListener('scroll', () => {
   document.getElementById('galerie_background_6').style.transform = `translateY(${limitedScroll * -0.05}px) scale(1.03)`;
   document.getElementById('galerie_background_7').style.transform = `scale(1.04)`;
 });
-
-/*
-setTimeout(() => {
-  const projetBoxes = document.querySelectorAll('.projet_box');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const index = Array.from(projetBoxes).indexOf(entry.target);
-
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, 40 * (index + 1));
-
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.4 });
-
-  projetBoxes.forEach(box => observer.observe(box));
-}, 50);*/
 
 function ouvrir_linkedin(){
   window.open('https://www.linkedin.com/in/bastien-jamet/');

@@ -3,10 +3,7 @@ fetch('assets/data/projets.json')
 .then(data => {
   const container = document.getElementById('projet_container');
 
-  if (!container) {
-    console.error('Conteneur introuvable');
-    return;
-  }
+  if (!container) return;
 
   container.innerHTML = data.map(projet => `
     <div class="projet_box">
@@ -14,9 +11,6 @@ fetch('assets/data/projets.json')
         <div class="projet_media">
           <div class="projet_img-wrap">
             <div class="projet_img" style="background-image: url('assets/images/${projet.couverture}');" id="${projet.id}"></div>
-          </div>
-          <div class="projet_view">
-            <img src="assets/icons/arrow.svg" alt="Voir le projet">
           </div>
         </div>
         <div class="projet_separator"></div>
@@ -78,34 +72,27 @@ fetch('assets/data/projets.json')
   });
 })
 
-.catch(error => {
-  console.error('Erreur :', error);
+.catch(() => {
   const container = document.getElementById('projet_container');
-  if (container) {
-    container.innerHTML = `<p>Impossible de charger les projets</p>`;
-  }
+  if (container) container.innerHTML = `<p>Impossible de charger les projets</p>`;
 });
 
 function showPopup(projet) {
   const popupBackground = document.createElement('div');
   popupBackground.classList.add('popup-background');
   const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-  const body_scroll = document.getElementById('body_scroll')
-
+  const body_scroll = document.getElementById('body_scroll');
   body_scroll.style.overflowY = 'hidden';
 
   if (scrollbarWidth > 0) {
     document.body.style.paddingRight = scrollbarWidth + 'px';
   }
 
-  // Utiliser description_det[0] comme description principale dans le popup (identique à la section featured)
-  // On affiche les 3 derniers points de description_det dans le popup (en excluant [0])
   const primaryDescription = (projet.description_det && projet.description_det[0]) || projet.description || '';
   let detailPoints = [];
   if (projet.description_det && projet.description_det.length > 1) {
-    // Prendre les 3 derniers éléments (en excluant [0] qui est utilisé comme description principale)
     const remainingPoints = projet.description_det.slice(1);
-    detailPoints = remainingPoints.slice(-3); // Les 3 derniers
+    detailPoints = remainingPoints.slice(-3);
   }
 
   const popup = document.createElement('div');
@@ -147,12 +134,14 @@ function showPopup(projet) {
             ${detailPoints.map(point => `<li>${point}</li>`).join('')}
           </ul>
           ` : ''}
-          <h2 style="margin-bottom: 25px;">Contexte et technologies :</h2>
+          <h2 class="popup-section-title">Contexte et technologies</h2>
+          <div class="popup-section-separator"></div>
           <div class="popup-tags">
             ${projet.tags.map((tag, i) => `<p id="${projet.tags_context[i]}">${tag}</p>`).join('')}
           </div>
           ${(projet.Link?.[0] || projet.Code?.[0]) ? `
-          <h2 style="margin: 50px 0 25px 0;">Liens externes :</h2>
+          <h2 class="popup-section-title popup-section-title-links">Liens externes</h2>
+          <div class="popup-section-separator"></div>
           <div class="popup-links">
             ${projet.Link?.[0] ? `<a href="${projet.Link[0]}" target="_blank" rel="noopener noreferrer" class="popup-link-btn view-projet">Voir le projet</a>` : ''}
             ${projet.Code?.[0] ? `<a href="${projet.Code[0]}" target="_blank" rel="noopener noreferrer" class="popup-link-btn view-code">Voir le code</a>` : ''}
@@ -261,9 +250,8 @@ function showPopup(projet) {
         img.classList.add('active');
       }
     });
-  });  
-  
-  /* Double rAF pour laisser le layout se calculer (évite glitch Safari/Arc sur l’affichage des infos) */
+  });
+
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       popupBackground.classList.add('show');
@@ -299,27 +287,21 @@ function showPopup(projet) {
   });
 }
 
-// Charger les 2 derniers projets pour la section featured
+// Charger les 2 derniers projets pour la section featured (par index JSON : dernier puis avant-dernier)
 fetch('assets/data/projets.json')
 .then(response => response.json())
 .then(data => {
   const container = document.getElementById('featured_projects_container');
   
-  if (!container) {
-    console.error('Conteneur featured_projects_container introuvable');
-    return;
+  if (!container) return;
+
+  const len = data.length;
+  const featuredProjects = [];
+  if (len >= 2) {
+    featuredProjects.push(data[len - 1], data[len - 2]);
+  } else if (len === 1) {
+    featuredProjects.push(data[0]);
   }
-
-  // Trier les projets par date (du plus récent au plus ancien)
-  // Convertir les dates en format comparable
-  const sortedProjects = [...data].sort((a, b) => {
-    const dateA = parseDate(a.date);
-    const dateB = parseDate(b.date);
-    return dateB - dateA; // Plus récent en premier
-  });
-
-  // Prendre les 2 premiers projets (les plus récents)
-  const featuredProjects = sortedProjects.slice(0, 2);
 
   if (featuredProjects.length === 0) {
     container.innerHTML = '<p>Aucun projet à afficher</p>';
@@ -327,13 +309,9 @@ fetch('assets/data/projets.json')
   }
 
   container.innerHTML = featuredProjects.map((projet, index) => {
-    // index 0 = dernier projet (pas inversé), index 1 = avant-dernier projet (inversé)
-    // L'ordre sera inversé visuellement avec column-reverse en CSS
     const isReverse = index === 1;
     const couverture = Array.isArray(projet.couverture) ? projet.couverture[0] : projet.couverture;
     const icone = Array.isArray(projet.icone) ? projet.icone[0] : projet.icone;
-    
-    // Utiliser description_det[0] comme description principale, sinon description
     const mainDescription = (projet.description_det && projet.description_det[0]) || projet.description || '';
     
     return `
@@ -355,21 +333,13 @@ fetch('assets/data/projets.json')
     `;
   }).join('');
 
-  // Ajouter les événements de clic - UN SEUL event listener par projet pour éviter le double clic
   container.querySelectorAll('.featured_project').forEach((projectEl, index) => {
-    const projetId = featuredProjects[index].id;
-    const projet = data.find(p => p.id === projetId);
-    
+    const projet = featuredProjects[index];
     if (!projet) return;
-    
-    // Event listener sur le projet entier
+
     projectEl.addEventListener('click', (e) => {
-      // Ne pas ouvrir la popup si on clique sur un lien externe
-      if (e.target.tagName === 'A' && e.target.href && !e.target.href.includes('#')) {
-        return; // Laisser le lien s'ouvrir normalement
-      }
-      
-      // Si c'est le bouton "En savoir plus", ouvrir la popup
+      if (e.target.tagName === 'A' && e.target.href && !e.target.href.includes('#')) return;
+
       const button = e.target.closest('button');
       if (button) {
         e.preventDefault();
@@ -377,66 +347,12 @@ fetch('assets/data/projets.json')
         showPopup(projet);
         return;
       }
-      
-      // Pour les autres clics sur le projet (image, info, etc.), ouvrir la popup
+
       showPopup(projet);
     });
   });
 })
-.catch(error => {
-  console.error('Erreur lors du chargement des projets featured :', error);
+.catch(() => {
   const container = document.getElementById('featured_projects_container');
-  if (container) {
-    container.innerHTML = '<p>Impossible de charger les projets</p>';
-  }
+  if (container) container.innerHTML = '<p>Impossible de charger les projets</p>';
 });
-
-// Fonction pour parser les dates et les convertir en objets Date comparables
-function parseDate(dateString) {
-  if (!dateString) return new Date(0);
-  
-  // Gérer les formats de date variés
-  // Format "26 sept. 2025"
-  const months = {
-    'janvier': 0, 'janv.': 0, 'jan': 0,
-    'février': 1, 'févr.': 1, 'fév': 1,
-    'mars': 2, 'mar': 2,
-    'avril': 3, 'avr': 3,
-    'mai': 4,
-    'juin': 5,
-    'juillet': 6, 'juil': 6,
-    'août': 7, 'aout': 7,
-    'septembre': 8, 'sept.': 8, 'sep': 8,
-    'octobre': 9, 'oct': 9,
-    'novembre': 10, 'nov': 10,
-    'décembre': 11, 'déc': 11, 'dec': 11
-  };
-
-  // Format "26 sept. 2025"
-  const match1 = dateString.match(/(\d+)\s+([a-zéèêàùûôîïç]+)\.?\s+(\d{4})/i);
-  if (match1) {
-    const day = parseInt(match1[1]);
-    const monthName = match1[2].toLowerCase();
-    const year = parseInt(match1[3]);
-    const month = months[monthName];
-    if (month !== undefined) {
-      return new Date(year, month, day);
-    }
-  }
-
-  // Format "2024 – 2025" (plage de dates)
-  const match2 = dateString.match(/(\d{4})\s*[–-]\s*(\d{4})/);
-  if (match2) {
-    const year = parseInt(match2[2]); // Prendre la dernière année
-    return new Date(year, 11, 31); // Fin de l'année
-  }
-
-  // Format simple "2025"
-  const match3 = dateString.match(/(\d{4})/);
-  if (match3) {
-    return new Date(parseInt(match3[1]), 11, 31);
-  }
-
-  // Par défaut, retourner une date très ancienne
-  return new Date(0);
-}
