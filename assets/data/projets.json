@@ -278,6 +278,59 @@
     ]
   },
   {
+    "id": "bastos_cocktails",
+    "title": "Bastos Cocktails",
+    "date": "mars 2026",
+    "description": "Bar haut de gamme virtuel",
+    "titre_description": ["Dev web - Front-end & UX/UI"],
+    "titre_description_color": ["#aa86ff"],
+    "titre_contexte": ["Bar haut de gamme virtuel"],
+    "titre_contexte_color": ["#c4a574"],
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "tags": [
+      "Développement web",
+      "Front-end",
+      "UX/UI",
+      "Performance web",
+      "Fluidité",
+      "JSON",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tags_context": [
+      "Developpement-web",
+      "Front-end",
+      "UX-UI",
+      "Performance-web",
+      "Fluidité",
+      "Site-vitrine",
+      "Bar-restauration",
+      "Filtrage-instantané",
+      "JSON",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "icone": ["cocktails.svg"],
+    "couverture": ["cocktails_0.webp"],
+    "images": [
+      "cocktails_1.webp",
+      "cocktails_2.webp",
+      "cocktails_3.webp",
+      "cocktails_4.webp",
+      "cocktails_5.webp"
+    ],
+    "description_det": [
+      "Site vitrine d’un bar haut de gamme virtuel : il présente l’offre comme une expérience premium, avec fiches recettes détaillées (ingrédients, dosages, matériel, étapes) et une navigation fluide entre cocktails, mocktails et sélection par ingrédients. Le tout pensé comme une extension élégante du bar.",
+      "Front-end pensé pour la performance : pages statiques légères, chargement des contenus via un fichier JSON unique et rendu côté client, sans surcouche lourde pour un objectif latence minimale et ressenti « instantané » sur le parcours principal.",
+      "UX/UI orientée fluidité : hiérarchie visuelle forte, animations et transitions maîtrisées (menu mobile, révélations de contenu), confort de lecture et parcours mobile-first pour un rendu net et premium sur tous les écrans.",
+      "Sélection d’ingrédients quasi instantanée : filtres dynamiques construits à partir du jeu de données (type de boisson, catégories d’ingrédients), mise à jour immédiate des résultats côté navigateur avec possibilité de tout réinitialiser en un clic. Parfait pour explorer le catalogue du bar en temps réel."
+    ],
+    "Link": ["https://bastosjt.github.io/Cocktails/"],
+    "Code": ["https://github.com/bastosjt/Cocktails"]
+  },
+  {
     "id": "antiphishing",
     "title": "Anti-phishing",
     "date": "26 sept. 2025",
