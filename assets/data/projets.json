@@ -312,13 +312,13 @@
       "JavaScript"
     ],
     "icone": ["cocktails.svg"],
-    "couverture": ["cocktails_0.webp"],
+    "couverture": ["bastos_cocktails_0.webp"],
     "images": [
-      "cocktails_1.webp",
-      "cocktails_2.webp",
-      "cocktails_3.webp",
-      "cocktails_4.webp",
-      "cocktails_5.webp"
+      "bastos_cocktails_1.webp",
+      "bastos_cocktails_2.webp",
+      "bastos_cocktails_3.webp",
+      "bastos_cocktails_4.webp",
+      "bastos_cocktails_5.webp"
     ],
     "description_det": [
       "Site vitrine d’un bar haut de gamme virtuel : il présente l’offre comme une expérience premium, avec fiches recettes détaillées (ingrédients, dosages, matériel, étapes) et une navigation fluide entre cocktails, mocktails et sélection par ingrédients. Le tout pensé comme une extension élégante du bar.",
