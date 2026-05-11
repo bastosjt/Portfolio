@@ -257,7 +257,6 @@
       "asmasse.webp"
     ],
     "images": [
-      "asmasse.webp",
       "asmasse_1.webp",
       "asmasse_2.webp",
       "asmasse_3.webp",
@@ -376,7 +375,7 @@
       "python.svg"
     ],
     "couverture": [
-      "antiphishing_1.webp"
+      "antiphishing_0.webp"
     ],
     "images": [
       "antiphishing_1.webp",
@@ -388,6 +387,83 @@
       "Développement d’un moteur d’analyse de mails pour détecter les tentatives de phishing.",
       "Analyse heuristique et extraction automatique d’indicateurs de compromission en Python.",
       "Création d’une aplication web Full Stack sécurisée pour l’analyse, le reporting et la visualisation des menaces."
+    ],
+    "Link": [
+      ""
+    ],
+    "Code": [
+      ""
+    ]
+  },
+  {
+    "id": "carte_blanche",
+    "title": "Carte Blanche",
+    "date": "2025 – 2026",
+    "description": "Plateforme d’enchères de restaurants",
+    "titre_description": [
+      "Dev web - Full Stack & IA"
+    ],
+    "titre_description_color": [
+      "#aa86ff"
+    ],
+    "titre_contexte": [
+      "Projet d'équipe"
+    ],
+    "titre_contexte_color": [
+      "#22c55e"
+    ],
+    "languages": [
+      "PHP",
+      "SQL",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "tags": [
+      "Développement web",
+      "Full Stack",
+      "Symfony",
+      "API REST",
+      "PostgreSQL",
+      "Docker",
+      "Tailwind",
+      "IA",
+      "Tests",
+      "PHP",
+      "JavaScript"
+    ],
+    "tags_context": [
+      "Developpement-web",
+      "FullStack",
+      "Symfony",
+      "API-REST",
+      "PostgreSQL",
+      "Docker",
+      "Tailwind",
+      "IA",
+      "Tests",
+      "PHP",
+      "JavaScript"
+    ],
+    "icone": [
+      "carte_blanche.svg"
+    ],
+    "couverture": [
+      "carte_blanche_0.webp"
+    ],
+    "images": [
+      "carte_blanche_1.webp",
+      "carte_blanche_2.webp",
+      "carte_blanche_3.webp",
+      "carte_blanche_4.webp",
+      "carte_blanche_5.webp",
+      "carte_blanche_6.webp"
+    ],
+    "description_det": [
+      "Carte Blanche est une plateforme web complète orientée enchères et réservation de restaurants, avec un espace utilisateur, un espace vendeur et un back-office administrateur.",
+      "Développement full stack sous Symfony (architecture MVC, sécurité, gestion des rôles, workflows métiers) avec persistance PostgreSQL et exécution conteneurisée via Docker.",
+      "Conception d’API REST documentée (Nelmio/OpenAPI), intégration de fonctionnalités IA (recommandation, chatbot, génération de contenus) et traitements asynchrones avec Messenger.",
+      "Mise en place de tests unitaires/fonctionnels, optimisation UX/UI (Tailwind, composants Twig, interactions JS) et industrialisation du projet avec scripts quality et CI."
     ],
     "Link": [
       ""

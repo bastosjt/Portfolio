@@ -258,6 +258,8 @@ body {
     border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
     transition: background 0.25s ease, box-shadow 0.25s ease;
     background: var(--accent-soft);
     backdrop-filter: blur(8px);
@@ -594,8 +596,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(145deg, var(--accent-soft) 0%, rgba(42, 164, 254, 0.08) 100%);
+    background-color: var(--accent-soft);
+    background-image: url("assets/images/moi.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: var(--radius-sm);
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
 }
 
 .about_photo_text {
@@ -606,6 +616,7 @@ body {
     color: var(--text-muted);
     opacity: 0.8;
 }
+
 
 @media (max-width: 900px) {
     .about_content {
