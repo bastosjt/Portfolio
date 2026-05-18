@@ -1,6 +1,6 @@
-# Portfolio (en cours de réalisation)
+# Portfolio 
 
-## Portfolio de Bastien JAMET présentant mes différents projets de développement informatique, allant du front-end au full stack, avec des expériences en cybersécurité, DevSecOps, React.js et visualisation de données.
+## Portfolio de Bastien JAMET présentant mes différents projets de développement informatique, allant du front-end au full stack, avec des expériences en cybersécurité, DevSecOps et visualisation de données.
 
 Ce portfolio met en avant mes compétences à travers des projets personnels, scolaires et de stage. Chaque projet illustre ma capacité à concevoir des interfaces modernes, à développer des applications interactives et sécurisées, et à gérer des bases de données ou des infrastructures complexes.
 
