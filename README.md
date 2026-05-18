@@ -11,7 +11,3 @@ Le site est conçu pour être dynamique et optimisé, utilisant notamment du Jav
 - Présenter mes projets avec des descriptions détaillées et techniques
 - Illustrer mes compétences en développement web, full stack et cybersécurité
 - Offrir une interface agréable et moderne pour l’utilisateur
-
-## Technologies utilisées
-
-HTML, CSS, JavaScript, Node.js, React.js, D3.js, PHP, MySQL, Tailwind CSS, Kubernetes, Docker
